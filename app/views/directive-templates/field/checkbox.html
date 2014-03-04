@@ -1,0 +1,9 @@
+
+<div class="form-group">
+    <label for="{{field.field_id}}">{{field.field_title}}
+        <small class="text-muted" data-ng-show="field.field_required" >(required)</small>
+    </label>
+
+    <input data-ng-model="field.field_value" id="{{field.field_id}}" type="checkbox" ng-true-value="1" ng-false-value="0" ng-required="field.field_required"/>
+
+</div>

@@ -1,0 +1,127 @@
+
+<!--Data Designer Panel-->
+<div id="designer" class="panel panel-default">
+    <div class="panel-body">
+
+        <!--model name-->
+        <div class="row">
+            <div class="col-sm-4">
+                <h4>Element name</h4>
+                <input type="text"  class="form-control" name="form-name" ng-disabled="previewMode" ng-model="element.name">
+            </div>
+
+
+        </div>
+
+
+        <div class="row">
+            <div class="col-sm-4">
+
+                <!--Add fields-->
+                <h4>Add fields</h4>
+                <ul class="list-unstyled text-center">
+                    <li class="" data-ng-repeat="type in fieldTypes">
+                        <button class="btn btn-block btn-primary"  data-ng-click="addNewField(type.name)" >{{type.value}}</button>
+                    </li>
+                </ul>
+            </div>
+            <div class="col-sm-8">
+
+                <div  data-ng-show="element.name !== ''"  class="well well-sm">
+                    <h3>{{element.name}}</h3>
+
+                    <!--Accordian-->
+                    <accordion>
+
+                        <accordion-group ng-repeat="field in element.fields">
+
+                            <accordion-heading>
+
+                                <span class="h4">{{field.field_title}}</span>
+                                <button class="btn btn-sm btn-primary pull-right">edit</button>
+                                <div class="clearfix"></div>
+
+                            </accordion-heading>
+
+
+                            <div class="accordion-edit">
+
+                                <form name="fieldForm" novalidate>
+
+                                    <p>Field type: {{field.field_type}}</p>
+
+                                    <div class="form-group">
+                                        <label class="control-label">Name</label>
+                                        <input class="form-control"  type="text" ng-model="field.field_title" value="{{field.field_title}}">
+                                    </div>
+
+                                    <div class="form-group">
+                                        <label class="control-label">Default</label>
+                                        <input class="form-control"  type="text" ng-model="field.field_value" value="{{field.field_value}}">
+                                    </div>
+
+                                    <div class="checkbox">
+                                        <label>
+                                            Required <input ng-model="field.field_required" value="{{field.field_required}}" type="checkbox">
+                                        </label>
+                                    </div>
+
+                                    <div class="well" ng-show="showAddOptions(field)">
+
+                                        <label>Options:</label>
+
+                                        <ul class="list-unstyled">
+
+                                            <li ng-repeat="option in field.field_options">
+                                                <div class="input-group">
+                                                    <input class="form-control" type="text" ng-model="option.option_title" value="{{option.option_title}}">
+                                            <span class="input-group-btn">
+                                                <button class="btn btn-default" ng-click="deleteOption(field, option)">
+                                                    <span class="glyphicon glyphicon-remove"></span>
+                                                </button>
+                                            </span>
+                                                </div>
+                                            </li>
+
+                                        </ul>
+
+                                        <button class="btn btn-primary btn-sm" type="button" ng-click="addOption(field)">
+                                            <span class="glyphicon-plus"></span>
+                                            Add Option
+                                        </button>
+
+                                    </div>
+
+                                </form>
+
+                                <div class="">
+                                    <button class="btn btn-danger " type="button" ng-click="deleteField(field.field_id)">Delete</button>
+                                </div>
+
+                            </div>
+
+                        </accordion-group>
+                    </accordion>
+
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <!--Buttons: preview, save, clear-->
+    <div class="panel-footer">
+
+        <div class="text-center">
+            <!--<button class="btn btn-primary" type="button" ng-click="previewOn(form)">Preview Form</button>-->
+            <button class="btn btn-danger" type="button" ng-click="reset()">Reset</button>
+            <!--<button class="btn btn-success" type="button" ng-click="createElement(form)">Save</button>-->
+        </div>
+
+    </div>
+
+</div>
+
+<div hljs data-source="htmlSource(element)">
+
+</div>
