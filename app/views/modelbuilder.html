@@ -9,26 +9,23 @@
                 <h4>Element name</h4>
                 <input type="text"  class="form-control" name="form-name" ng-disabled="previewMode" ng-model="element.name">
             </div>
-
-
         </div>
 
 
         <div class="row">
-            <div class="col-sm-4">
-
+            <div  data-collapse="element.name == ''" class="col-sm-4">
                 <!--Add fields-->
                 <h4>Add fields</h4>
                 <ul class="list-unstyled text-center">
-                    <li class="" data-ng-repeat="type in fieldTypes">
+                    <li class="fieldTypeButton" data-ng-repeat="type in fieldTypes">
                         <button class="btn btn-block btn-primary"  data-ng-click="addNewField(type.name)" >{{type.value}}</button>
                     </li>
                 </ul>
             </div>
             <div class="col-sm-8">
 
-                <div  data-ng-show="element.name !== ''"  class="well well-sm">
-                    <h3>{{element.name}}</h3>
+                <div data-collapse="element.name == ''" class="well well-sm">
+                    <h4>{{element.name}}</h4>
 
                     <!--Accordian-->
                     <accordion>
@@ -66,7 +63,7 @@
                                         </label>
                                     </div>
 
-                                    <div class="well" ng-show="showAddOptions(field)">
+                                    <div class="well" ng-show="field.options">
 
                                         <label>Options:</label>
 
@@ -122,6 +119,21 @@
 
 </div>
 
-<div hljs data-source="htmlSource(element)">
+<div data-collapse="element.name ==''" class="panel panel-default">
+
+    <div class="panel-heading">
+
+        <h4>Output</h4>
+
+        <ul class="list-inline">
+            <li><button class="btn btn-primary outputButton" type="button" data-ng-repeat="button in outputButtons" data-ng-class="{active: button.type == style.type}"  data-ng-click="style.type = button.type">{{button.name}}</button></li>
+        </ul>
+
+    </div>
+
+    <div class="panel-body" hljs data-source="codeSource(element, style.type)">
+    </div>
 
 </div>
+
+

@@ -1,7 +1,7 @@
 'use strict';
 
 angular.module('quickFormApp')
-  .controller('ModelbuilderCtrl', function ($scope, $http, $compile, fieldTypes ) {
+  .controller('ModelbuilderCtrl', function ($scope, $http, $compile, fieldTypes, outputfactory ) {
 
     //designer field types
     $scope.fieldTypes = fieldTypes.fieldTypes;
@@ -13,11 +13,27 @@ angular.module('quickFormApp')
       fields: []
     };
 
+    $scope.style = {
+      type:'html'
+    };
+
+    var newFieldId = function(){
+
+      var index = $scope.element.fields.length;
+
+      if(index > 0){
+        return $scope.element.fields[$scope.element.fields.length - 1].field_id + 1
+      }
+
+      return 1;
+
+    };
+
     // add form field
     $scope.addNewField = function(type){
 
       var newField = {
-        "field_id" : '',
+        "field_id" : newFieldId(),
         "field_title" : type,
         "field_type" : type,
         "field_value" : '',
@@ -80,30 +96,14 @@ angular.module('quickFormApp')
       }
     };
 
-    $scope.htmlSource = function(element){
 
-      var formBegin = '<form name="' + element.name + '">';
-      var formEnd = '</form>';
+    $scope.outputButtons = outputfactory.buttons;
 
-      var fields = function(element){
+    $scope.codeSource = function(element, style){
 
-        var fieldsRaw = '';
-
-        for(var i = 0; i< element.fields.length; i++){
-
-          //label
-          fieldsRaw += '<label>' + element.fields[i].field_title + '</label>';
-
-          //input
-          fieldsRaw += '<input type="' + element.fields[i].field_type + '">';
-
-        }
-
-        return fieldsRaw;
-
-      };
-
-      return formBegin + fields(element) + formEnd;
+      return outputfactory.output(element, style);
 
     };
+
+
   });

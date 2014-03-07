@@ -11,12 +11,16 @@ angular.module('quickFormApp', [
   .config(function ($routeProvider) {
     $routeProvider
       .when('/', {
-        templateUrl: 'views/main.html',
-        controller: 'MainCtrl'
+        templateUrl: 'views/modelbuilder.html',
+        controller: 'ModelbuilderCtrl'
       })
       .when('/modelBuilder', {
         templateUrl: 'views/modelbuilder.html',
         controller: 'ModelbuilderCtrl'
+      })
+      .when('/navBar', {
+        templateUrl: 'views/navbar.html',
+        controller: 'NavbarCtrl'
       })
       .otherwise({
         redirectTo: '/'

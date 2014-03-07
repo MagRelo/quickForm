@@ -27,7 +27,15 @@
     <![endif]-->
 
     <!-- Add your site or application content here -->
-    <div class="container" ng-view=""></div>
+
+    <div class="container">
+
+        <div data-ng-include="'views/navbar.html'"></div>
+
+        <div data-ng-view=""></div>
+
+
+    </div>
 
     <!-- Google Analytics: change UA-XXXXX-X to be your site's ID -->
      <script>
@@ -70,6 +78,8 @@
 
         <script src="scripts/directives/quickForm.js"></script>
         <script src="scripts/directives/quickFormField.js"></script>
+        <script src="scripts/controllers/navBar.js"></script>
+        <script src="scripts/services/outputfactory.js"></script>
         <!-- endbuild -->
 </body>
 </html>
