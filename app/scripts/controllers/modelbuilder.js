@@ -1,21 +1,22 @@
 'use strict';
 
 angular.module('quickFormApp')
-  .controller('ModelbuilderCtrl', function ($scope, $http, $compile, fieldTypes, outputfactory ) {
+  .controller('ModelbuilderCtrl', function ($scope, $http, $modal, $compile, inputTypes, outputfactory ) {
 
     //designer field types
-    $scope.fieldTypes = fieldTypes.fieldTypes;
+    $scope.inputTypes = inputTypes.inputTypes;
+    $scope.outputButtons = outputfactory.outputTypes;
 
+    // preview form mode
+    $scope.previewForm = {};
+    $scope.previewMode = false;
 
-    //element defaults
+    //defaults
     $scope.element = {
       name: '',
       fields: []
     };
-
-    $scope.style = {
-      type:'html'
-    };
+    $scope.style = {type:'html'};
 
     var newFieldId = function(){
 
@@ -45,17 +46,18 @@ angular.module('quickFormApp')
 
     };
     $scope.deleteField = function (field_id){
-      for(var i = 0; i < $scope.form.form_fields.length; i++){
-        if($scope.form.form_fields[i].field_id == field_id){
-          $scope.form.form_fields.splice(i, 1);
+
+      for(var i = 0; i < $scope.element.fields.length; i++){
+        if($scope.element.fields[i].field_id == field_id){
+          $scope.element.fields.splice(i, 1);
           break;
         }
       }
     };
     $scope.reset = function (){
-      $scope.form.form_fields.splice(0, $scope.form.form_fields.length);
-      $scope.addField.lastAddedID = 0;
-    }
+      $scope.element.name = '';
+      $scope.element.fields.splice(0, $scope.element.fields.length);
+    };
 
     // decides whether field options block will be shown (true for dropdown and radio fields)
     $scope.showAddOptions = function (field){
@@ -96,14 +98,50 @@ angular.module('quickFormApp')
       }
     };
 
-
-    $scope.outputButtons = outputfactory.buttons;
-
+    //output
     $scope.codeSource = function(element, style){
 
-      return outputfactory.output(element, style);
+      return outputfactory.outputFunction(element, style);
 
     };
 
+    // preview form
+    $scope.previewOn = function(element){
+
+      var modalInstance = $modal.open({
+        templateUrl: './views/formPreview.html',
+        controller: ModalInstanceCtrl,
+        resolve: {
+          form: function(){
+            return element;
+          }
+        }
+      });
+
+      modalInstance.result.then(function (selectedItem) {
+        $scope.selected = selectedItem;
+      }, function () {
+        //$log.info('Modal dismissed at: ' + new Date());
+      });
+
+    };
+    $scope.previewOff = function(){
+      $scope.previewMode = !$scope.previewMode;
+    }
+
 
   });
+
+//modal preview window controller
+var ModalInstanceCtrl = function ($scope, $modalInstance, form) {
+
+  $scope.form = form;
+
+  $scope.ok = function () {
+    $modalInstance.close($scope.selected.item);
+  };
+
+  $scope.cancel = function () {
+    $modalInstance.dismiss('cancel');
+  };
+};

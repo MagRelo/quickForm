@@ -3,20 +3,18 @@
 angular.module('quickFormApp')
   .factory('outputfactory', function () {
 
+    var newline = String.fromCharCode(13);
+    var tab = '  ';
 
     var htmlOutput = function(element){
-      var newline = String.fromCharCode(13);
-      var tab = String.fromCharCode(9);
 
       var formBegin = '<form name="' + element.name + 'Form">' +
         newline + newline +
         tab + '<legend>' + element.name + '</legend>'
         + newline + newline;
 
-      var formEnd = '</form>';
-      var fieldsRaw = '';
-
       var fields = function(element){
+        var fieldsRaw = '';
 
         for(var i = 0; i< element.fields.length; i++){
 
@@ -34,22 +32,24 @@ angular.module('quickFormApp')
 
       };
 
-      return formBegin + fields(element) + formEnd;
+      var button = tab + '<button type="submit">Submit</button>' + newline + newline;
+
+      var formEnd = '</form>';
+
+      return formBegin + fields(element) + button + formEnd;
     };
 
     var angularOutput = function(element){
-      var newline = String.fromCharCode(13);
-      var tab = String.fromCharCode(9);
 
-      var formBegin = '<form name="' + element.name + 'Form" novalidate>' +
+      var formBegin = '<form name="' + element.name + 'Form" data-ng-submit="submit' + element.name + '('+ element.name +')" novalidate>' +
         newline + newline +
         tab + '<legend>' + element.name + '</legend>'
         + newline + newline;
 
       var formEnd = '</form>';
-      var fieldsRaw = '';
 
       var fields = function(element){
+        var fieldsRaw = '';
 
         for(var i = 0; i< element.fields.length; i++){
 
@@ -67,56 +67,160 @@ angular.module('quickFormApp')
 
       };
 
-      return formBegin + fields(element) + formEnd;
+      var button = tab + '<button type="submit">Submit</button>' + newline + newline;
+
+      return formBegin + fields(element) + button + formEnd;
     };
 
     var mongooseOutput = function(element){
-      var newline = String.fromCharCode(13);
-      var tab = String.fromCharCode(9);
 
-      var fileBegin =  "'use strict';" + newline
-                      + "var mongoose = require('mongoose')," + newline
-                      + "Schema = mongoose.Schema;" + newline + newline
+      function mgRequired(required){
+        if(required){
+          return ', required: true'
+        }
+        return ''
+      }
 
-      var model = function(){
+      function mgDataType(dataType){
 
-        var modelRaw = "/**" + newline
-        + "* " + element.name + " Schema" + newline
-        + "*/" + newline
-        + " var plutoPOIschema = new Schema({" + newline;
-
-        for(var i = 0; i< element.fields.length; i++){
-
-          modelRaw += tab + element.fields[i].field_title + ":" + element.fields[i].field_title + "," + newline
-
+        //String
+        if(dataType == 'text' || dataType == 'textarea' || dataType == 'email' || dataType == 'radio' || dataType == 'dropdown'){
+          return 'String'
+        }
+        //Number
+        if(dataType == 'number'){
+          return 'Number'
+        }
+        //Boolean
+        if(dataType == 'checkbox'){
+          return 'Boolean'
+        }
+        //Date
+        if(dataType == 'date'){
+          return 'Date'
         }
 
+        //Buffer
+        //Mixed
+        //ObjectID
+        //Array
+        return 'n/a'
+      }
+
+      var fileBegin =  "'use strict';" + newline
+        + "var mongoose = require('mongoose')," + newline
+        + "Schema = mongoose.Schema;" + newline + newline
+        + "/**" + newline
+        + "* " + element.name + " Schema" + newline
+        + "*/" + newline
+        + " var " + element.name + "Schema = new Schema({" + newline;
+
+      var model = function(){
+        var modelRaw = '';
+        for(var i = 0; i< element.fields.length; i++){
+
+          modelRaw += tab + element.fields[i].field_title + ": " + '{type: '
+            + mgDataType(element.fields[i].field_type)
+            + mgRequired(element.fields[i].field_required)
+            + '}' + "," + newline
+          }
+
         modelRaw += "});" + newline + newline;
-
         return modelRaw
-
-
       };
 
-      var validations = "";
+      var validations = "/**" + newline
+        + "*  Validations" + newline
+        + "*/" + newline + newline;
 
-      var initialize = "";
+      var initialize = "mongoose.model('" + element.name + "', " + element.name + "Schema);";
 
-      return fileBegin + model(element) + validations + initialize
+      return fileBegin + model() + validations + initialize
+    };
+
+    var firebaseOutput = function(element){
+
+      function fbRequiredFieldsString(){
+
+        var fields = '';
+        element.fields.forEach(function(field){
+
+          if(field.field_required){
+            fields += "'" + field.field_title.replace(/\s+/g, '') + "',";
+          }
+
+        });
+
+        //slice off last comma
+        return fields.slice(0,fields.length - 1);
+
+        //return '';
+      }
+
+      function fbDataType(type){
+
+        if(type !== 'checkbox' && type !== 'number'){
+          return 'newData.isString()'
+        }
+        if(type == 'checkbox'){
+          return 'newData.isBoolean()'
+        }
+        if(type == 'number'){
+          return 'newData.isNumber()'
+        }
+
+        return '';
+
+      }
+
+      function fbRequired(required){
+        if(required){
+          return " && newData.val() != ''";
+        }
+        return '';
+      }
+
+      var begin = '"' + element.name + '": {' + newline
+        + tab + '"$' + element.name + '": {' + newline
+        + tab + tab + '".read": true,' + newline
+        + tab + tab + '".write": true,' + newline
+        + tab + tab + '".validate": "newData.hasChildren([' + fbRequiredFieldsString() + '])",' + newline;
+
+      //fields
+      function fieldValidations(){
+        var fields = '';
+
+        element.fields.forEach(function(field){
+          fields += tab + tab + '"' + field.field_title +  '": {' + newline
+            + tab + tab + tab + '".validate": "' + fbDataType(field.field_type) + fbRequired(field.field_required) + '"},' + newline;
+        });
+
+        //slice off last comma
+        return fields.slice(0,fields.length - 2) + newline;
+      }
+
+      var end = tab + '}' + newline + '}' + newline;
+
+      return begin + fieldValidations() + end;
+
     };
 
     // Public API here
     return {
 
-      buttons: [
-        {name: 'html form', type: 'html'}
-        ,{name: 'html + angular form', type: 'angular'}
-        ,{name: 'mongoose', type: 'mongoose'}
-        ,{name: 'firebase', type: 'firebase'}
-      ],
+      outputTypes: {
+        frontend: [
+          {name: 'html', type: 'html'},
+          {name: 'angular', type: 'angular'}
+        ],
+        backend: [
+          {name: 'mongoose', type: 'mongoose'},
+          {name: 'firebase', type: 'firebase'}
+        ]
+      },
 
       //wrapper for functions
-      output: function (element, style) {
+      outputFunction: function (element, style) {
         switch(style){
           case 'html':
             return htmlOutput(element);
@@ -124,6 +228,8 @@ angular.module('quickFormApp')
             return angularOutput(element);
           case 'mongoose':
             return mongooseOutput(element);
+          case 'firebase':
+            return firebaseOutput(element);
         }
 
         return 'no output'

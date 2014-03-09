@@ -91,8 +91,14 @@ body {
     }
 }
 
+.nav, .pagination, .carousel, .panel-title a { cursor: pointer; }
+
 .fieldTypeButton{
   margin-bottom: 3px;
+}
+
+.dropdown-menu_fieldTypes{
+  padding: 6px;
 }
 
 .outputButton{

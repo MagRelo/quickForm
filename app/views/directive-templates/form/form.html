@@ -4,26 +4,16 @@
 
         <fieldset>
             <legend>
-                <span class="h2">{{ form.form_name }}</span>
+                <span class="h2">{{form.name}}</span>
             </legend>
 
-            <div data-ng-repeat="field in form.form_fields">
-                <field-directive field="field"></field-directive>
+            <div data-ng-repeat="field in form.fields">
+                <quick-form-field field="field"></quick-form-field>
             </div>
 
         </fieldset>
     </form>
 
-    <!--action buttons-->
-    <div class="pull-right">
-        <button class="btn btn-success" type="button" data-ng-disabled="!myForm.$valid" data-ng-click="">Save</button>
-        <button class="btn btn-success" type="button" data-ng-disabled="!myForm.$valid" data-ng-click="">Update</button>
-        <button class="btn btn-danger" type="button" data-ng-click="">Clear Form</button>
-    </div>
-    <div class="clearfix"></div>
-
     <!--Validation-->
-
-
 
 </div>
