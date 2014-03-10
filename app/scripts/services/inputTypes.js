@@ -7,129 +7,132 @@ angular.module('quickFormApp')
       inputTypes:[
         {
           display : 'Checkbox',
-          value : 'checkbox',
+          display_priority: '40',
+          input_type : 'checkbox',
+          template_url: './views/directive-templates/field/checkbox.html',
           options: false,
-          common: true,
-          priority: '40'
+          common: true
         },
         {
           display : 'Color',
-          value : 'color',
+          display_priority: '80',
+          template_url: './views/directive-templates/field/textfield.html',
+          input_type : 'color',
           options: false,
-          common: false,
-          priority: '80'
+          common: false
+
         },
         {
           display : 'Date',
-          value : 'date',
+          display_priority: '50',
+          template_url: './views/directive-templates/field/date.html',
+          input_type : 'date',
           options: false,
-          common: false,
-          priority: '50'
+          common: false
+
         },
         {
           display : 'Email',
-          value : 'email',
+          display_priority: '20',
+          template_url: './views/directive-templates/field/email.html',
+          input_type : 'email',
           options: false,
-          common: true,
-          priority: '20'
+          common: true
+
         },
-//        {
-//          display : 'File',
-//          value : 'file',
-//          options: false,
-//          common: false
-//        },
-//        {
-//          display : 'Hidden',
-//          value : 'hidden',
-//          options: false,
-//          common: true
-//        },
-//        {
-//          display : 'Image',
-//          value : 'image',
-//          options: false,
-//          common: false
-//        },
         {
           display : 'Month',
-          value : 'month',
+          display_priority: '55',
+          template_url: './views/directive-templates/field/date.html',
+          input_type : 'month',
           options: false,
-          common: false,
-          priority: '55'
+          common: false
         },
         {
           display : 'Number',
-          value : 'number',
+          display_priority: '20',
+          template_url: './views/directive-templates/field/textfield.html',
+          input_type : 'number',
           options: false,
-          common: false,
-          priority: '20'
+          common: false
         },
         {
           display : 'Password',
-          value : 'password',
+          display_priority: '30',
+          template_url: './views/directive-templates/field/password.html',
+          input_type : 'password',
           options: false,
-          common: true,
-          priority: '30'
+          common: true
         },
         {
           display : 'Radio',
-          value : 'radio',
+          display_priority: '40',
+          template_url: './views/directive-templates/field/radio.html',
+          input_type : 'radio',
           options: true,
-          common: true,
-          priority: '40'
+          common: true
+
         },
         {
           display : 'Range',
-          value : 'range',
+          display_priority: '30',
+          template_url: './views/directive-templates/field/textfield.html',
+          input_type : 'range',
           options: false,
-          common: false,
-          priority: '30'
+          common: false
+
         },
         {
           display : 'Telephone',
-          value : 'tel',
+          display_priority: '30',
+          template_url: './views/directive-templates/field/textfield.html',
+          input_type : 'tel',
           options: false,
-          common: false,
-          priority: '30'
+          common: false
+
         },
         {
-          display : 'Textbox',
-          value : 'text',
+          display : 'Text',
+          display_priority: '10',
+          input_type : 'text',
+          template_url: './views/directive-templates/field/textfield.html',
           options: false,
-          common: true,
-          priority: '10'
+          common: true
+
         },
         {
           display : 'Time',
-          value : 'time',
+          display_priority: '56',
+          template_url: './views/directive-templates/field/textfield.html',
+          input_type : 'time',
           options: false,
-          common: false,
-          priority: '56'
+          common: false
+
         },
         {
           display : 'URL',
-          value : 'url',
+          display_priority : '30',
+          template_url: './views/directive-templates/field/textfield.html',
+          input_type : 'url',
           options: false,
-          common: false,
-          priority: '30'
+          common: false
         },
         {
           display : 'Week',
+          display_priority: '52',
+          template_url: './views/directive-templates/field/textfield.html',
           value : 'week',
           options: false,
-          common: false,
-          priority: '52'
-        }
-
-        ,{
+          common: false
+        },
+        {
           display : 'Dropdown List',
-          value : 'dropdown',
+          display_priority: '40',
+          template_url: './views/directive-templates/field/dropdown.html',
+          input_type : 'dropdown',
           options: true,
-          common: true,
-          priority: '40'
+          common: true
         }
-
       ]
     }
 

@@ -5,14 +5,14 @@ angular.module('quickFormApp')
 
     //designer field types
     $scope.inputTypes = inputTypes.inputTypes;
-    $scope.outputButtons = outputfactory.outputTypes;
+
 
     // preview form mode
     $scope.previewForm = {};
     $scope.previewMode = false;
 
     //defaults
-    $scope.element = {
+    $scope.form = {
       name: '',
       fields: []
     };
@@ -20,14 +20,25 @@ angular.module('quickFormApp')
 
     var newFieldId = function(){
 
-      var index = $scope.element.fields.length;
+      var index = $scope.form.fields.length;
 
       if(index > 0){
-        return $scope.element.fields[$scope.element.fields.length - 1].field_id + 1
+        return $scope.form.fields[$scope.form.fields.length - 1].field_id + 1
       }
 
       return 1;
 
+    };
+
+    $scope.showFieldOptions = function(type){
+      var options = false;
+      angular.forEach(inputTypes.inputTypes, function(input){
+        if(type == input.input_type){
+          options = input.options;
+        }
+      });
+
+      return options;
     };
 
     // add form field
@@ -38,30 +49,26 @@ angular.module('quickFormApp')
         "field_title" : type,
         "field_type" : type,
         "field_value" : '',
-        "field_required" : false
+        "field_required": false,
+        "field_hasOptions": $scope.showFieldOptions(type)
       };
 
       // put newField into fields array
-      $scope.element.fields.push(newField);
+      $scope.form.fields.push(newField);
 
     };
     $scope.deleteField = function (field_id){
 
-      for(var i = 0; i < $scope.element.fields.length; i++){
-        if($scope.element.fields[i].field_id == field_id){
-          $scope.element.fields.splice(i, 1);
+      for(var i = 0; i < $scope.form.fields.length; i++){
+        if($scope.form.fields[i].field_id == field_id){
+          $scope.form.fields.splice(i, 1);
           break;
         }
       }
     };
     $scope.reset = function (){
-      $scope.element.name = '';
-      $scope.element.fields.splice(0, $scope.element.fields.length);
-    };
-
-    // decides whether field options block will be shown (true for dropdown and radio fields)
-    $scope.showAddOptions = function (field){
-      return (field.field_type == "radio" || field.field_type == "dropdown")
+      $scope.form.name = '';
+      $scope.form.fields.splice(0, $scope.form.fields.length);
     };
 
     //field options
@@ -98,22 +105,15 @@ angular.module('quickFormApp')
       }
     };
 
-    //output
-    $scope.codeSource = function(element, style){
-
-      return outputfactory.outputFunction(element, style);
-
-    };
-
-    // preview form
-    $scope.previewOn = function(element){
+    // modal preview form
+    $scope.previewOn = function(form){
 
       var modalInstance = $modal.open({
         templateUrl: './views/formPreview.html',
         controller: ModalInstanceCtrl,
         resolve: {
           form: function(){
-            return element;
+            return form;
           }
         }
       });
@@ -128,6 +128,13 @@ angular.module('quickFormApp')
     $scope.previewOff = function(){
       $scope.previewMode = !$scope.previewMode;
     }
+
+    //output
+    $scope.outputButtons = outputfactory.outputTypes;
+    $scope.codeSource = function(form, style){
+      return outputfactory.outputFunction(form, style);
+    };
+
 
 
   });

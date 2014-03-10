@@ -207,7 +207,6 @@ angular.module('quickFormApp')
 
     // Public API here
     return {
-
       outputTypes: {
         frontend: [
           {name: 'html', type: 'html'},
@@ -219,7 +218,6 @@ angular.module('quickFormApp')
         ]
       },
 
-      //wrapper for functions
       outputFunction: function (element, style) {
         switch(style){
           case 'html':
