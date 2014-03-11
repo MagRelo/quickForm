@@ -6,11 +6,6 @@ angular.module('quickFormApp')
     //designer field types
     $scope.inputTypes = inputTypes.inputTypes;
 
-
-    // preview form mode
-    $scope.previewForm = {};
-    $scope.previewMode = false;
-
     //defaults
     $scope.form = {
       name: '',
@@ -19,26 +14,10 @@ angular.module('quickFormApp')
     $scope.style = {type:'html'};
 
     var newFieldId = function(){
-
-      var index = $scope.form.fields.length;
-
-      if(index > 0){
+      if($scope.form.fields.length > 0){
         return $scope.form.fields[$scope.form.fields.length - 1].field_id + 1
       }
-
       return 1;
-
-    };
-
-    $scope.showFieldOptions = function(type){
-      var options = false;
-      angular.forEach(inputTypes.inputTypes, function(input){
-        if(type == input.input_type){
-          options = input.options;
-        }
-      });
-
-      return options;
     };
 
     // add form field
@@ -49,8 +28,7 @@ angular.module('quickFormApp')
         "field_title" : type,
         "field_type" : type,
         "field_value" : '',
-        "field_required": false,
-        "field_hasOptions": $scope.showFieldOptions(type)
+        "field_required": false
       };
 
       // put newField into fields array
@@ -65,6 +43,15 @@ angular.module('quickFormApp')
           break;
         }
       }
+    };
+    $scope.showFieldOptions = function(type){
+      var options = false;
+      angular.forEach(inputTypes.inputTypes, function(input){
+        if(type == input.input_type){
+          options = input.options;
+        }
+      });
+      return options;
     };
     $scope.reset = function (){
       $scope.form.name = '';
@@ -106,14 +93,24 @@ angular.module('quickFormApp')
     };
 
     // modal preview form
-    $scope.previewOn = function(form){
+    $scope.preview = function(form){
+
+      var previewForm = {};
+      angular.copy(form, previewForm);
 
       var modalInstance = $modal.open({
         templateUrl: './views/formPreview.html',
-        controller: ModalInstanceCtrl,
+        controller: function ($scope, $modalInstance, form) {
+
+          $scope.form = form;
+
+          $scope.cancel = function () {
+            $modalInstance.dismiss('cancel');
+          };
+        },
         resolve: {
           form: function(){
-            return form;
+            return previewForm;
           }
         }
       });
@@ -125,9 +122,6 @@ angular.module('quickFormApp')
       });
 
     };
-    $scope.previewOff = function(){
-      $scope.previewMode = !$scope.previewMode;
-    }
 
     //output
     $scope.outputButtons = outputfactory.outputTypes;
@@ -135,20 +129,4 @@ angular.module('quickFormApp')
       return outputfactory.outputFunction(form, style);
     };
 
-
-
   });
-
-//modal preview window controller
-var ModalInstanceCtrl = function ($scope, $modalInstance, form) {
-
-  $scope.form = form;
-
-  $scope.ok = function () {
-    $modalInstance.close($scope.selected.item);
-  };
-
-  $scope.cancel = function () {
-    $modalInstance.dismiss('cancel');
-  };
-};

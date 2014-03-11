@@ -1,18 +1,26 @@
 
+<div class="">
+
+</div>
+
+
+
 <!--Data Designer Panel-->
 <div id="designer" class="panel panel-default">
+
     <div class="panel-body">
 
         <!--model name-->
         <div class="row">
             <div class="col-sm-3">
                 <label for="form-name" class="h4">Form Name</label>
-                <input type="text" class="form-control" id="form-name" name="form-name" ng-model="form.name">
+                <input type="text" class="form-control" id="form-name" name="form-name" ng-model="form.name" autofocus>
             </div>
         </div>
 
-        <!--input type buttons-->
+
         <div class="row">
+            <!--input type buttons-->
             <div class="col-sm-3">
 
                 <h4>Input Types</h4>
@@ -30,8 +38,8 @@
                         </button>
 
                         <ul class="dropdown-menu dropdown-menu_fieldTypes">
-                            <p><i>the input types below
-                                <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/Input#Browser_compatibility" target="_blank">are not implemented in all browsers</a>.</i></p>
+                            <!--<p><i>the input types below-->
+                                <!--<a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/Input#Browser_compatibility" target="_blank">are not implemented in all browsers</a>.</i></p>-->
                             <li class="fieldTypeButton" ng-repeat="type in inputTypes | filter: {common: false} | orderBy: 'display_priority' ">
                                 <button class="btn btn-block btn-primary"  data-ng-click="addNewField(type.input_type)" >{{type.display}}</button>
                             </li>
@@ -42,7 +50,9 @@
                 </ul>
 
             </div>
-            <div class="col-sm-8">
+
+            <!--model-->
+            <div class="col-sm-offset-1 col-sm-7">
 
                 <div class="well well-sm">
                     <h4>{{form.name}}</h4>
@@ -52,7 +62,7 @@
                         <accordion-group ng-repeat="field in form.fields">
 
                             <accordion-heading>
-                                <span class="panel-title">{{field.field_title}}</span>
+                                <span class="">{{field.field_title}}</span>
                                 <button class="btn btn-sm btn-primary pull-right">edit</button>
                                 <div class="clearfix"></div>
                             </accordion-heading>
@@ -141,16 +151,15 @@
 
             </div>
         </div>
+
     </div>
 
-    <!--Buttons: preview, save, clear-->
+    <!--Footer Buttons-->
     <div class="panel-footer">
-
         <div class="text-center">
-            <button class="btn btn-primary" type="button" ng-click="previewOn(form)">Preview Form</button>
+            <button class="btn btn-primary" type="button" ng-click="preview(form)">Preview Form</button>
             <button class="btn btn-danger" type="button" ng-click="reset()">Reset</button>
         </div>
-
     </div>
 
 </div>
