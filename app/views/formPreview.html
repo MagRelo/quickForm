@@ -1,16 +1,17 @@
 
-<!--<div class="modal-header">-->
-    <!--<div class="h4">Previewing {{form.form_name}}</div>-->
-<!--</div>-->
+<h3 class="text-primary">Form Preview
+    <small> test your form validation</small>
+</h3>
 
-<div class="modal-body">
+<div class="well mg_section_well">
 
     <!--Form-->
-    <quick-form form="form"></quick-form>
+    <div class="well">
+        <quick-form form="form"></quick-form>
+    </div>
 
-    <div class="clearfix"></div>
-</div>
+    <div class="well" data-ng-show="elementForm.$valid">
 
-<div class="modal-footer">
-    <button class="btn btn-warning" ng-click="cancel()">Close</button>
+    </div>
+
 </div>

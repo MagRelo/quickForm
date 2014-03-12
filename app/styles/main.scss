@@ -13,12 +13,11 @@ $icon-font-path: "/bower_components/sass-bootstrap/fonts/";
 body {
     padding-top: 20px;
     padding-bottom: 20px;
-    background-color: #333;
+    background-color: #282B2E;
 }
 
-/* Everything but the jumbotron gets side spacing for mobile first views */
+/* Everything gets side spacing for mobile first views */
 .header,
-.marketing,
 .footer {
     padding-left: 15px;
     padding-right: 15px;
@@ -27,14 +26,6 @@ body {
 /* Custom page header */
 .header {
     border-bottom: 1px solid #888;
-}
-
-/* Make the masthead heading the same height as the navigation */
-.header h3 {
-    margin-top: 0;
-    margin-bottom: 0;
-    line-height: 40px;
-    padding-bottom: 19px;
 }
 
 /* Custom page footer */
@@ -48,50 +39,30 @@ body {
     margin: 30px 0;
 }
 
-/* Main marketing message and sign up button */
-.jumbotron {
-    text-align: center;
-    border-bottom: 1px solid #e5e5e5;
-}
-
-.jumbotron .btn {
-    font-size: 21px;
-    padding: 14px 24px;
-}
-
-/* Supporting marketing content */
-.marketing {
-    margin: 40px 0;
-}
-
-.marketing p + h4 {
-    margin-top: 28px;
-}
-
 /* Responsive: Portrait tablets and up */
 @media screen and (min-width: 768px) {
-    .container {
-        max-width: 730px;
-    }
+    //.container {
+    //    max-width: 730px;
+    //}
 
     /* Remove the padding we set earlier */
-    .header,
-    .marketing,
-    .footer {
+    .header{
         padding-left: 0;
         padding-right: 0;
+        margin-bottom: 20px;
     }
-    /* Space out the masthead */
-    .header {
-        margin-bottom: 10px;
-    }
-    /* Remove the bottom border on the jumbotron for visual effect */
-    .jumbotron {
-        border-bottom: 0;
-    }
+
 }
 
+
+
+//needed for angular-ui conponents
 .nav, .pagination, .carousel, .panel-title a { cursor: pointer; }
+
+pre{
+  background-color: #282B2E;
+  border: none;
+}
 
 .fieldTypeButton{
   margin-bottom: 3px;
@@ -105,6 +76,8 @@ body {
   margin-right: 3px;
 }
 
-.headerBox{
-  margin-bottom: 30px;
+.mg_section_well{
+  background-color: #3C3F42;
+  border-color: $gray-light;
 }
+

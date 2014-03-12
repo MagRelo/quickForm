@@ -11,7 +11,7 @@ angular.module('quickFormApp')
           input_type : 'checkbox',
           template_url: './views/directive-templates/field/checkbox.html',
           options: false,
-          common: true
+          common: false
         },
         {
           display : 'Color',
@@ -24,11 +24,11 @@ angular.module('quickFormApp')
         },
         {
           display : 'Date',
-          display_priority: '50',
+          display_priority: '30',
           template_url: './views/directive-templates/field/date.html',
           input_type : 'date',
           options: false,
-          common: false
+          common: true
 
         },
         {
@@ -37,7 +37,7 @@ angular.module('quickFormApp')
           template_url: './views/directive-templates/field/email.html',
           input_type : 'email',
           options: false,
-          common: true
+          common: false
 
         },
         {
@@ -54,7 +54,7 @@ angular.module('quickFormApp')
           template_url: './views/directive-templates/field/textfield.html',
           input_type : 'number',
           options: false,
-          common: false
+          common: true
         },
         {
           display : 'Password',
@@ -62,7 +62,7 @@ angular.module('quickFormApp')
           template_url: './views/directive-templates/field/password.html',
           input_type : 'password',
           options: false,
-          common: true
+          common: false
         },
         {
           display : 'Radio',
@@ -70,7 +70,7 @@ angular.module('quickFormApp')
           template_url: './views/directive-templates/field/radio.html',
           input_type : 'radio',
           options: true,
-          common: true
+          common: false
 
         },
         {
@@ -121,7 +121,7 @@ angular.module('quickFormApp')
           display : 'Week',
           display_priority: '52',
           template_url: './views/directive-templates/field/textfield.html',
-          value : 'week',
+          input_type : 'week',
           options: false,
           common: false
         },
@@ -131,7 +131,7 @@ angular.module('quickFormApp')
           template_url: './views/directive-templates/field/dropdown.html',
           input_type : 'dropdown',
           options: true,
-          common: true
+          common: false
         }
       ]
     }

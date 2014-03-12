@@ -1,26 +1,22 @@
 'use strict';
 
 angular.module('quickFormApp')
-  .controller('ModelbuilderCtrl', function ($scope, $http, $modal, $compile, inputTypes, outputfactory ) {
+  .controller('ModelbuilderCtrl', function ($scope, $http, $modal, $compile, inputTypes, outputfactory) {
 
-    //designer field types
+    //input types
     $scope.inputTypes = inputTypes.inputTypes;
 
-    //defaults
+    //form builder functions
     $scope.form = {
       name: '',
       fields: []
     };
-    $scope.style = {type:'html'};
-
     var newFieldId = function(){
       if($scope.form.fields.length > 0){
         return $scope.form.fields[$scope.form.fields.length - 1].field_id + 1
       }
       return 1;
     };
-
-    // add form field
     $scope.addNewField = function(type){
 
       var newField = {
@@ -53,12 +49,6 @@ angular.module('quickFormApp')
       });
       return options;
     };
-    $scope.reset = function (){
-      $scope.form.name = '';
-      $scope.form.fields.splice(0, $scope.form.fields.length);
-    };
-
-    //field options
     $scope.addOption = function (field){
 
       if(!field.field_options){
@@ -91,40 +81,14 @@ angular.module('quickFormApp')
         }
       }
     };
-
-    // modal preview form
-    $scope.preview = function(form){
-
-      var previewForm = {};
-      angular.copy(form, previewForm);
-
-      var modalInstance = $modal.open({
-        templateUrl: './views/formPreview.html',
-        controller: function ($scope, $modalInstance, form) {
-
-          $scope.form = form;
-
-          $scope.cancel = function () {
-            $modalInstance.dismiss('cancel');
-          };
-        },
-        resolve: {
-          form: function(){
-            return previewForm;
-          }
-        }
-      });
-
-      modalInstance.result.then(function (selectedItem) {
-        $scope.selected = selectedItem;
-      }, function () {
-        //$log.info('Modal dismissed at: ' + new Date());
-      });
-
+    $scope.reset = function (){
+      $scope.form.name = '';
+      $scope.form.fields.splice(0, $scope.form.fields.length);
     };
 
     //output
     $scope.outputButtons = outputfactory.outputTypes;
+    $scope.style = {type:'html'};
     $scope.codeSource = function(form, style){
       return outputfactory.outputFunction(form, style);
     };

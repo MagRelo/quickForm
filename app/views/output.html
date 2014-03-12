@@ -1,0 +1,19 @@
+
+<h3 class="text-primary">Output
+    <small> boilerplate code</small>
+</h3>
+
+<div class="well mg_section_well">
+
+    <!--Output buttons-->
+    <ul class="list-inline">
+        <li class="text-muted"><span class="h5">Frontend:</span></li>
+        <li><button class="btn btn-primary outputButton" type="button" data-ng-repeat="button in outputButtons.frontend" data-ng-class="{active: button.type == style.type}"  data-ng-click="style.type = button.type">{{button.name}}</button></li>
+        <li class="text-muted"><span class="h5">Backend:</span></li>
+        <li><button class="btn btn-primary outputButton" type="button" data-ng-repeat="button in outputButtons.backend" data-ng-class="{active: button.type == style.type}"  data-ng-click="style.type = button.type">{{button.name}}</button></li>
+    </ul>
+
+    <!--highlight.js directive-->
+    <div class="" hljs data-source="codeSource(form, style.type)"></div>
+
+</div>

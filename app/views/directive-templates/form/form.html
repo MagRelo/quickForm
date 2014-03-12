@@ -1,19 +1,13 @@
-<div class="col-sm-offset-1 col-sm-10 well">
+<form name="elementForm" id="elementForm">
 
-    <form name="elementForm" id="elementForm">
+    <fieldset>
+        <legend>
+            <span class="h4">{{form.name}}</span>
+        </legend>
 
-        <fieldset>
-            <legend>
-                <span class="h2">{{form.name}}</span>
-            </legend>
+        <div data-ng-repeat="field in form.fields">
+            <quick-form-field field="field"></quick-form-field>
+        </div>
 
-            <div data-ng-repeat="field in form.fields">
-                <quick-form-field field="field"></quick-form-field>
-            </div>
-
-        </fieldset>
-    </form>
-
-    <!--Validation-->
-
-</div>
+    </fieldset>
+</form>

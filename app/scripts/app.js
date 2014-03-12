@@ -11,7 +11,7 @@ angular.module('quickFormApp', [
   .config(function ($routeProvider) {
     $routeProvider
       .when('/', {
-        templateUrl: 'views/modelbuilder.html',
+        templateUrl: 'views/main.html',
         controller: 'ModelbuilderCtrl'
       })
       .when('/modelBuilder', {
