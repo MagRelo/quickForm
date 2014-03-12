@@ -37,7 +37,7 @@ angular.module('quickFormApp')
           template_url: './views/directive-templates/field/email.html',
           input_type : 'email',
           options: false,
-          common: false
+          common: true
 
         },
         {

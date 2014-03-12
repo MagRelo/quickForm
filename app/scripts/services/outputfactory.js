@@ -180,7 +180,8 @@ angular.module('quickFormApp')
         return '';
       }
 
-      var begin = '"' + element.name + '": {' + newline
+      var begin = '{' + newline
+        + '"' + element.name + '": {' + newline
         + tab + '"$' + element.name + '": {' + newline
         + tab + tab + '".read": true,' + newline
         + tab + tab + '".write": true,' + newline
@@ -199,7 +200,7 @@ angular.module('quickFormApp')
         return fields.slice(0,fields.length - 2) + newline;
       }
 
-      var end = tab + '}' + newline + '}' + newline;
+      var end = tab + tab + '}' + newline + tab + '}' + newline + '}';
 
       return begin + fieldValidations() + end;
 
