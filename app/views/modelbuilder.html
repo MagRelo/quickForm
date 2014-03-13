@@ -17,8 +17,8 @@
             <ul class="list-inline">
 
                 <!--common-->
-                <li class="" data-ng-repeat="type in inputTypes | filter: {common: true} | orderBy: 'display_priority'">
-                    <button class="btn btn-primary"  data-ng-click="addNewField(type.input_type)" >{{type.display}}</button>
+                <li class="" data-ng-repeat="type in inputTypes | filter: {display_common: true} | orderBy: 'display_priority'">
+                    <button class="btn btn-primary"  data-ng-click="addNewField(type.input_type)" >{{type.display_name}}</button>
                 </li>
 
                 <!--non-common-->
@@ -31,8 +31,8 @@
                     <ul class="dropdown-menu dropdown-menu_fieldTypes">
                         <!--<p><i>the input types below-->
                         <!--<a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/Input#Browser_compatibility" target="_blank">are not implemented in all browsers</a>.</i></p>-->
-                        <li class="fieldTypeButton" ng-repeat="type in inputTypes | filter: {common: false} | orderBy: 'display_priority' ">
-                            <button class="btn btn-block btn-primary"  data-ng-click="addNewField(type.input_type)" >{{type.display}}</button>
+                        <li class="fieldTypeButton" ng-repeat="type in inputTypes | filter: {display_common: false} | orderBy: 'display_priority' ">
+                            <button class="btn btn-block btn-primary"  data-ng-click="addNewField(type.input_type)" >{{type.display_name}}</button>
                         </li>
                     </ul>
 
@@ -148,7 +148,7 @@
 
                </div>
 
-               <div> <button class="btn btn-danger pull-right" type="button" ng-click="reset()">reset form</button></div>
+               <div> <button class="btn btn-danger pull-right" type="button" ng-click="reset()">clear form</button></div>
 
             </div>
 

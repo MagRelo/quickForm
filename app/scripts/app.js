@@ -14,14 +14,6 @@ angular.module('quickFormApp', [
         templateUrl: 'views/main.html',
         controller: 'ModelbuilderCtrl'
       })
-      .when('/modelBuilder', {
-        templateUrl: 'views/modelbuilder.html',
-        controller: 'ModelbuilderCtrl'
-      })
-      .when('/navBar', {
-        templateUrl: 'views/navbar.html',
-        controller: 'NavbarCtrl'
-      })
       .otherwise({
         redirectTo: '/'
       });

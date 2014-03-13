@@ -8,9 +8,43 @@ angular.module('quickFormApp')
 
     //form builder functions
     $scope.form = {
-      name: '',
-      fields: []
+      name: 'Employee',
+      fields:
+        [
+          {field_id: '1',
+          field_title: 'First Name',
+          field_type: 'text',
+          field_value: '',
+          field_required: true
+          },
+          {field_id: '2',
+          field_title: 'Last Name',
+          field_type: 'text',
+          field_value: '',
+          field_required: true
+          },
+          {field_id: '3',
+          field_title: 'Email Address',
+          field_type: 'email',
+          field_value: '',
+          field_required: false
+          },
+          {field_id: '4',
+          field_title: 'Years of experience',
+          field_type: 'number',
+          field_value: '',
+          field_required: false
+          },
+          {field_id: '5',
+          field_title: 'Date of Birth',
+          field_type: 'date',
+          field_value: '',
+          field_required: true
+          }
+        ]
     };
+
+
     var newFieldId = function(){
       if($scope.form.fields.length > 0){
         return $scope.form.fields[$scope.form.fields.length - 1].field_id + 1

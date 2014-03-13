@@ -10,8 +10,13 @@
         <quick-form form="form"></quick-form>
     </div>
 
-    <div class="well" data-ng-show="elementForm.$valid">
+    <!--Validation-->
+    <div class="alert alert-success text-center" data-ng-show="elementForm.$valid">
+        <p>form is valid</p>
+    </div>
 
+    <div class="alert alert-danger text-center" data-ng-show="elementForm.$invalid">
+        <p>form is invalid</p>
     </div>
 
 </div>

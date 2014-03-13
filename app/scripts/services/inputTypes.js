@@ -4,136 +4,291 @@ angular.module('quickFormApp')
   .factory('inputTypes', function () {
 
     return {
+
       inputTypes:[
+
         {
-          display : 'Checkbox',
+          display_name : 'Checkbox',
           display_priority: '40',
-          input_type : 'checkbox',
+          display_common: false,
           template_url: './views/directive-templates/field/checkbox.html',
-          options: false,
-          common: false
+          input_type: 'checkbox',
+          name: '',
+          id: '',
+          value: '',
+          placeholder: '',
+          required: false,
+          pattern: '',
+          attributes: [
+            {
+              type: 'checkbox',
+              name: 'checked'
+            }
+          ]
         },
+
         {
-          display : 'Color',
+          display_name : 'Color',
           display_priority: '80',
-          template_url: './views/directive-templates/field/textfield.html',
-          input_type : 'color',
-          options: false,
-          common: false
-
+          display_common: false,
+          template_url: './views/directive-templates/field/textfield.html', //!!!
+          input_type: 'color',
+          name: '',
+          id: '',
+          value: '',
+          placeholder: '',
+          required: false,
+          pattern: '',
+          attributes: []
         },
+
         {
-          display : 'Date',
+          display_name : 'Date',
           display_priority: '30',
+          display_common: true,
           template_url: './views/directive-templates/field/date.html',
-          input_type : 'date',
-          options: false,
-          common: true
-
+          input_type: 'date',
+          name: '',
+          id: '',
+          value: '',
+          placeholder: '',
+          required: false,
+          pattern: '',
+          attributes: [
+            {type: 'number', name: 'min'},
+            {type: 'number', name: 'max'},
+            {type: 'number', name: 'step'}
+          ]
         },
+
         {
-          display : 'Email',
+          display_name : 'Email',
           display_priority: '20',
+          display_common: true,
           template_url: './views/directive-templates/field/email.html',
-          input_type : 'email',
-          options: false,
-          common: true
-
+          input_type: 'email',
+          name: '',
+          id: '',
+          value: '',
+          placeholder: '',
+          required: false,
+          pattern: '',
+          attributes: [
+            {type: 'number', name: 'maxlength'},
+            {type: 'boolean', name: 'multiple'}
+          ]
         },
+
         {
-          display : 'Month',
+          display_name : 'Month',
           display_priority: '55',
-          template_url: './views/directive-templates/field/date.html',
-          input_type : 'month',
-          options: false,
-          common: false
+          display_common: false,
+          template_url: './views/directive-templates/field/textfield.html', //!!!
+          input_type: 'month',
+          name: '',
+          id: '',
+          value: '',
+          placeholder: '',
+          required: false,
+          pattern: '',
+          attributes: [
+            {type: 'number', name: 'min'},
+            {type: 'number', name: 'max'},
+            {type: 'number', name: 'step'}
+          ]
         },
+
         {
-          display : 'Number',
-          display_priority: '20',
-          template_url: './views/directive-templates/field/textfield.html',
-          input_type : 'number',
-          options: false,
-          common: true
+          display_name : 'Number',
+          display_priority: '55',
+          display_common: false,
+          template_url: './views/directive-templates/field/textfield.html', //!!!
+          input_type: 'number',
+          name: '',
+          id: '',
+          value: '',
+          placeholder: '',
+          required: false,
+          pattern: '',
+          attributes: [
+            {type: 'number', name: 'min'},
+            {type: 'number', name: 'max'},
+            {type: 'number', name: 'step'}
+          ]
         },
+
         {
-          display : 'Password',
+          display_name : 'Password',
           display_priority: '30',
+          display_common: false,
           template_url: './views/directive-templates/field/password.html',
-          input_type : 'password',
-          options: false,
-          common: false
+          input_type: 'password',
+          name: '',
+          id: '',
+          value: '',
+          placeholder: '',
+          required: false,
+          pattern: '',
+          attributes: [
+            {type: 'number', name: 'maxlength'}
+          ]
         },
+
         {
-          display : 'Radio',
+          display_name : 'Radio',
           display_priority: '40',
+          display_common: false,
           template_url: './views/directive-templates/field/radio.html',
-          input_type : 'radio',
-          options: true,
-          common: false
-
+          input_type: 'radio',
+          name: '',
+          id: '',
+          value: '',
+          placeholder: '',
+          required: false,
+          pattern: '',
+          attributes: [],
+          options: {}
         },
+
         {
-          display : 'Range',
+          display_name : 'Range',
           display_priority: '30',
-          template_url: './views/directive-templates/field/textfield.html',
-          input_type : 'range',
-          options: false,
-          common: false
-
+          display_common: false,
+          template_url: './views/directive-templates/field/textfield.html', //!!!
+          input_type: 'range',
+          name: '',
+          id: '',
+          value: '',
+          placeholder: '',
+          required: false,
+          pattern: '',
+          attributes: [
+            {type: 'number', name: 'min'},
+            {type: 'number', name: 'max'},
+            {type: 'number', name: 'step'}
+          ],
+          options: {}
         },
+
         {
-          display : 'Telephone',
+          display_name : 'Telephone',
           display_priority: '30',
-          template_url: './views/directive-templates/field/textfield.html',
-          input_type : 'tel',
-          options: false,
-          common: false
-
+          display_common: false,
+          template_url: './views/directive-templates/field/textfield.html', //!!!
+          input_type: 'tel',
+          name: '',
+          id: '',
+          value: '',
+          placeholder: '',
+          required: false,
+          pattern: '',
+          attributes: [
+            {type: 'number', name: 'maxlength'}
+          ],
+          options: {}
         },
+
+
         {
-          display : 'Text',
+          display_name : 'Text',
           display_priority: '10',
-          input_type : 'text',
+          display_common: true,
           template_url: './views/directive-templates/field/textfield.html',
-          options: false,
-          common: true
-
+          input_type: 'text',
+          name: '',
+          id: '',
+          value: '',
+          placeholder: '',
+          required: false,
+          pattern: '',
+          attributes: [
+            {type: 'number', name: 'maxlength'}
+          ],
+          options: {}
         },
+
         {
-          display : 'Time',
+          display_name : 'Time',
           display_priority: '56',
-          template_url: './views/directive-templates/field/textfield.html',
-          input_type : 'time',
-          options: false,
-          common: false
+          display_common: false,
+          template_url: './views/directive-templates/field/textfield.html',  //!!!
+          input_type: 'text',
+          name: '',
+          id: '',
+          value: '',
+          placeholder: '',
+          required: false,
+          pattern: '',
+          attributes: [
+            {type: 'number', name: 'min'},
+            {type: 'number', name: 'max'},
+            {type: 'number', name: 'step'}
+          ],
+          options: {}
+        },
 
-        },
         {
-          display : 'URL',
-          display_priority : '30',
-          template_url: './views/directive-templates/field/textfield.html',
-          input_type : 'url',
-          options: false,
-          common: false
+          display_name : 'URL',
+          display_priority: '30',
+          display_common: false,
+          template_url: './views/directive-templates/field/textfield.html',  //!!!
+          input_type: 'url',
+          name: '',
+          id: '',
+          value: '',
+          placeholder: '',
+          required: false,
+          pattern: '',
+          attributes: [
+            {type: 'number', name: 'maxlength'}
+          ],
+          options: {}
         },
+
         {
-          display : 'Week',
+          display_name : 'Week',
           display_priority: '52',
-          template_url: './views/directive-templates/field/textfield.html',
-          input_type : 'week',
-          options: false,
-          common: false
+          display_common: false,
+          template_url: './views/directive-templates/field/textfield.html',  //!!!
+          input_type: 'week',
+          name: '',
+          id: '',
+          value: '',
+          placeholder: '',
+          required: false,
+          pattern: '',
+          attributes: [
+            {type: 'number', name: 'min'},
+            {type: 'number', name: 'max'},
+            {type: 'number', name: 'step'}
+          ],
+          options: {}
         },
+
         {
-          display : 'Dropdown List',
+          display_name : 'Dropdown List',
           display_priority: '40',
+          display_common: false,
           template_url: './views/directive-templates/field/dropdown.html',
-          input_type : 'dropdown',
-          options: true,
-          common: false
+          input_type: 'dropdown',
+          name: '',
+          id: '',
+          value: '',
+          placeholder: '',
+          required: false,
+          pattern: '',
+          options: []
         }
       ]
     }
 
   });
+
+
+
+
+//options:
+//maxlength:  text, email, search, password, tel, or url
+//min & max & step: numeric, date-time
+//multiple: email, file
+//

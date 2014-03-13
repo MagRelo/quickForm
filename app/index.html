@@ -10,16 +10,21 @@
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width">
     <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
-    <!-- build:css styles/vendor.css -->
-    <link href='http://fonts.googleapis.com/css?family=Raleway' rel='stylesheet' type='text/css'>
 
+    <!-- build:css styles/vendor.css -->
 
       <!-- bower:css -->
       <link rel="stylesheet" href="bower_components/sass-bootstrap/dist/css/bootstrap.css" />
-      <link rel="stylesheet" href="bower_components/highlightjs/styles/obsidian.css" />
+      <link rel="stylesheet" href="bower_components/highlightjs/styles/default.css" />
       <!-- endbower -->
+
+      <link href='http://fonts.googleapis.com/css?family=Raleway' rel='stylesheet' type='text/css'>
+      <link rel="stylesheet" href="bower_components/highlightjs/styles/obsidian.css" />
+
     <!-- endbuild -->
+
     <!-- build:css({.tmp,app}) styles/main.css -->
+
     <link rel="stylesheet" href="styles/main.css">
     <!-- endbuild -->
   </head>
@@ -32,7 +37,11 @@
 
     <div class="container">
 
-        <div data-ng-include="'views/navbar.html'"></div>
+        <div class="headerBox">
+            <div class="header">
+                <h1 class="text-muted">generate forms & backend models</h1>
+            </div>
+        </div>
 
         <div data-ng-view=""></div>
 
@@ -78,8 +87,8 @@
 
         <script src="scripts/directives/quickform.js"></script>
         <script src="scripts/directives/quickformfield.js"></script>
-        <script src="scripts/controllers/navbar.js"></script>
         <script src="scripts/services/outputfactory.js"></script>
+        <script src="scripts/services/formDataModel.js"></script>
         <!-- endbuild -->
 </body>
 </html>

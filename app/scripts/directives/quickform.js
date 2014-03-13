@@ -18,10 +18,7 @@ angular.module('quickFormApp')
 
       templateUrl: './views/directive-templates/form/form.html',
       restrict: 'E',
-      transclude: true,
-      scope: {
-        form:'='
-      }
+      transclude: true
     };
 
   });

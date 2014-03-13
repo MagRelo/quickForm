@@ -78,14 +78,34 @@ pre{
 
 .mg_section_well{
   background-color: #3C3F42;
-  border-color: $gray-light;
+  border-color: #474747;
 }
 
 .mg_model_well{
-  background-color: #3C3F42;
+  background-color: #282B2E;
   //border: none;
-  border-color: $gray-light;
+  border-color: #474747;
   padding-top: 0;
   margin-top: 20px;
 }
 
+.panel{
+  background-color: #3C3F42;
+  color: $gray-light;
+  border-color: #474747;
+}
+
+.panel-default > .panel-heading {
+  color: $gray-light;
+  background-color: #3C3F42;
+  border-color: #474747;
+}
+
+.panel-default > .panel-heading + .panel-collapse .panel-body {
+  border-top-color: $gray-light;
+}
+
+
+.alert{
+  margin-bottom: 0;
+}

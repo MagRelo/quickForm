@@ -78,7 +78,6 @@ angular.module('quickFormApp')
       scope: {
         field:'='
       },
-      transclude: true,
       link: linker
     };
   });
