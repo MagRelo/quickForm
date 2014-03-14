@@ -3,8 +3,6 @@
     <small> enter form name & add fields</small>
 </h3>
 <div class="well mg_section_well" data-ng-controller="FormbuilderCtrl">
-
-    <!--model name and buttons-->
     <div class="row">
 
         <!--model name-->
@@ -40,6 +38,7 @@
 
             </ul>
         </div>
+
     </div>
 
 
@@ -47,114 +46,113 @@
     <div class="row">
         <div class="col-sm-offset-1 col-sm-10">
 
-            <div>
+            <div class="well mg_model_well">
+                <h3 class="text-muted">{{formData.name}}</h3>
 
-                <div  class="well mg_model_well">
-                    <h3 class="text-muted">{{formData.name}}</h3>
+                <!--fields-->
+                <accordion>
+                    <accordion-group ng-repeat="field in formData.fields">
 
-                    <!--Accordian-->
-                    <accordion>
-                        <accordion-group ng-repeat="field in formData.fields">
+                        <accordion-heading>
 
-                            <accordion-heading>
+                            <button class="btn btn-sm btn-primary pull-right">edit field</button>
+                            <p class="mg_accordian_title">{{field.display_name}}
+                                <small class="pull-right">{{field.input_type}}</small>
+                            </p>
 
-                                <button class="btn btn-sm btn-primary pull-right">edit field</button>
-                                <p class="mg_accordian_title">{{field.display_name}}
-                                    <small class="pull-right">{{field.input_type}}</small>
-                                </p>
+                        </accordion-heading>
 
-                            </accordion-heading>
+                        <div class="accordion-edit">
 
-                            <div class="accordion-edit">
+                            <form name="fieldForm" class="form-horizontal" role="form" novalidate>
 
-                                <form name="fieldForm" class="form-horizontal" role="form" novalidate>
+                                <!--Name-->
+                                <div class="form-group">
+                                    <label class="col-sm-3 control-label" for="field_title">Name</label>
+                                    <div class="col-sm-9">
+                                        <input class="form-control" type="text" id="field_title" ng-model="field.display_name">
+                                    </div>
+                                </div>
 
-                                    <!--Name-->
-                                    <div class="form-group">
-                                        <label class="col-sm-3 control-label" for="field_title">Name</label>
-                                        <div class="col-sm-9">
-                                            <input class="form-control" type="text" id="field_title" ng-model="field.display_name">
+                                <!--Required-->
+                                <div class="form-group">
+                                    <label class="col-sm-3 control-label" for="field.required">Required</label>
+                                    <div class="col-sm-9">
+                                        <div class="checkbox">
+                                            <label>
+                                                <input  type="checkbox" id="field.required" ng-model="field.required" > Required
+                                            </label>
                                         </div>
                                     </div>
+                                </div>
 
-                                    <!--Required-->
-                                    <div class="form-group">
-                                        <label class="col-sm-3 control-label" for="field.required">Required</label>
-                                        <div class="col-sm-9">
-                                            <div class="checkbox">
-                                                <label>
-                                                    <input  type="checkbox" id="field.required" ng-model="field.required" > Required
-                                                </label>
-                                            </div>
-                                        </div>
+                                <!--Default-->
+                                <div class="form-group">
+                                    <label class="col-sm-3 control-label" for="field_value">Default</label>
+                                    <div class="col-sm-9">
+                                        <input class="form-control" type="text" id="field_value" data-ng-model="field.value">
+                                    </div>
+                                </div>
+
+                                <!--Placeholder-->
+                                <div class="form-group" data-ng-show="field.placeholder">
+                                    <label class="col-sm-3 control-label" for="field_placeholder">Placeholder</label>
+                                    <div class="col-sm-9">
+                                        <input class="form-control" type="text" id="field_placeholder" data-ng-model="field.placeholder.text">
+                                    </div>
+                                </div>
+
+                                <!--Pattern-->
+                                <div class="form-group" data-ng-show="field.pattern">
+                                    <label class="col-sm-3 control-label" for="field_pattern">Pattern</label>
+                                    <div class="col-sm-9">
+                                        <input class="form-control" type="text" id="field_pattern" data-ng-model="field.pattern.text">
+                                    </div>
+                                </div>
+
+                                <!--Options-->
+                                <div class="form-group" data-ng-show="field.options">
+
+                                    <div class="col-sm-3">
+                                        <button class="btn btn-primary btn-sm" type="button" data-ng-click="formData.addOption($index, {name: 'option ' + (field.options.length + 1), value: 'option ' + (field.options.length + 1)})">
+                                            <span class="glyphicon-plus"></span>
+                                            Add Option
+                                        </button>
                                     </div>
 
-                                    <!--Placeholder-->
-                                    <div class="form-group">
-                                        <label class="col-sm-3 control-label" for="field_placeholder">Placeholder</label>
-                                        <div class="col-sm-9">
-                                            <input class="form-control" type="text" id="field_placeholder" ng-model="field.placeholder">
-                                        </div>
-                                    </div>
+                                    <div class="col-sm-9">
 
-                                    <!--Default-->
-                                    <div class="form-group">
-                                        <label class="col-sm-3 control-label" for="field_value">Default</label>
-                                        <div class="col-sm-9">
-                                            <input class="form-control" type="text" id="field_value" ng-model="field.value">
-                                        </div>
-                                    </div>
+                                        <ul class="list-unstyled">
+                                            <li class="fieldTypeButton" data-ng-repeat="option in field.options" >
 
-                                    <!--Pattern-->
-                                    <div class="form-group">
-                                        <label class="col-sm-3 control-label" for="field_pattern">Pattern</label>
-                                        <div class="col-sm-9">
-                                            <input class="form-control" type="text" id="field_pattern" ng-model="field.pattern">
-                                        </div>
-                                    </div>
-
-                                    <!--Options-->
-                                    <div class="form-group" data-ng-show="showFieldOptions(field.field_type)">
-
-                                        <div class="col-sm-3">
-                                            <button class="btn btn-primary btn-sm" type="button" data-ng-click="addOption(field)">
-                                                <span class="glyphicon-plus"></span>
-                                                Add Option
-                                            </button>
-                                        </div>
-
-                                        <div class="col-sm-offset-1 col-sm-10 well-sm">
-                                            <ul class="list-unstyled">
-                                                <li data-ng-repeat="option in field.field_options">
-                                                    <div class="input-group">
-                                                        <input class="form-control" type="text" ng-model="option.option_title">
+                                                <div class="input-group">
+                                                    <input class="form-control" type="text" data-ng-model="option.name">
                                                             <span class="input-group-btn">
-                                                                <button class="btn btn-default" ng-click="deleteOption(field, option)">
+                                                                <button class="btn btn-danger" ng-click="formData.deleteOption($parent.$index, $index)">
                                                                     <span class="glyphicon glyphicon-remove"></span>
                                                                 </button>
                                                             </span>
-                                                    </div>
-                                                </li>
-                                            </ul>
-                                        </div>
+                                                </div>
+
+                                            </li>
+                                        </ul>
                                     </div>
-
-                                </form>
-
-                                <div class="">
-                                    <button class="btn btn-danger btn-sm" type="button" ng-click="formData.removeField($index)">delete field</button>
                                 </div>
 
+                            </form>
+
+                            <div class="">
+                                <button class="btn btn-danger btn-sm" type="button" ng-click="formData.removeField($index)">delete field</button>
                             </div>
 
-                        </accordion-group>
-                    </accordion>
+                        </div>
 
-                </div>
-
-                <div> <button class="btn btn-danger pull-right" type="button" ng-click="formData.clearForm()">clear form</button></div>
+                    </accordion-group>
+                </accordion>
 
             </div>
+
+            <div> <button class="btn btn-danger pull-right" type="button" ng-click="formData.clearForm()">clear form</button></div>
 
         </div>
     </div>

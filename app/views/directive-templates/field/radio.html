@@ -7,8 +7,8 @@
     <div class="well well-sm">
         <div data-ng-repeat="option in field.options">
             <label>
-                <input type="radio" data-ng-model="option.value"  data-ng-required="field.required"/>
-                <span data-ng-bind="option.title"></span>
+                <input type="radio" value="{{option.value}}" data-ng-model="field.value"/>
+                <span data-ng-bind="option.name"></span>
             </label>
         </div>
     </div>

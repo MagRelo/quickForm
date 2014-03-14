@@ -5,7 +5,7 @@
 
     <select class="form-control" name="selectLabel" id="selectLabel"
             data-ng-model="field.value"
-            data-ng-options="option.option_id as option.option_title for option in field.field_options"
+            data-ng-options="option.value as option.name for option in field.options"
             data-ng-required="field.required">
     </select>
 
