@@ -2,11 +2,13 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="d835b246-4b0a-43a1-a368-f08243dbb63d" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/views/formbuilder.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/scripts/controllers/formbuilder.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/scripts/services/formdata.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/scripts/controllers/formpreview.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/scripts/controllers/output.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/views/directive-templates/field/color.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/views/directive-templates/field/range.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/views/directive-templates/field/telephone.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/views/directive-templates/field/time.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/views/directive-templates/field/url.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/scripts/services/inputTypes.js" afterPath="$PROJECT_DIR$/app/scripts/services/inputTypes.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/scripts/directives/quickformfield.js" afterPath="$PROJECT_DIR$/app/scripts/directives/quickformfield.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="quickForm.iws" />
@@ -16,7 +18,7 @@
     <file path="/index.html" changelist="d835b246-4b0a-43a1-a368-f08243dbb63d" time="1394766370285" ignored="false" />
     <file path="/modelbuilder.js" changelist="d835b246-4b0a-43a1-a368-f08243dbb63d" time="1394679778033" ignored="false" />
     <file path="/modelbuilder.html" changelist="d835b246-4b0a-43a1-a368-f08243dbb63d" time="1394754869064" ignored="false" />
-    <file path="/Dummy.txt" changelist="d835b246-4b0a-43a1-a368-f08243dbb63d" time="1394768873723" ignored="false" />
+    <file path="/Dummy.txt" changelist="d835b246-4b0a-43a1-a368-f08243dbb63d" time="1394768926846" ignored="false" />
     <file path="/main.scss" changelist="d835b246-4b0a-43a1-a368-f08243dbb63d" time="1394764147338" ignored="false" />
     <file path="/outputfactory.js" changelist="d835b246-4b0a-43a1-a368-f08243dbb63d" time="1394602920761" ignored="false" />
     <file path="/fieldTypes.js" changelist="d835b246-4b0a-43a1-a368-f08243dbb63d" time="1394315188173" ignored="false" />
@@ -45,6 +47,11 @@
     <file path="/password.html" changelist="d835b246-4b0a-43a1-a368-f08243dbb63d" time="1394765538784" ignored="false" />
     <file path="/radio.html" changelist="d835b246-4b0a-43a1-a368-f08243dbb63d" time="1394765656660" ignored="false" />
     <file path="/textarea.html" changelist="d835b246-4b0a-43a1-a368-f08243dbb63d" time="1394765738372" ignored="false" />
+    <file path="/color.html" changelist="d835b246-4b0a-43a1-a368-f08243dbb63d" time="1394768994314" ignored="false" />
+    <file path="/range.html" changelist="d835b246-4b0a-43a1-a368-f08243dbb63d" time="1394769181296" ignored="false" />
+    <file path="/telephone.html" changelist="d835b246-4b0a-43a1-a368-f08243dbb63d" time="1394769164815" ignored="false" />
+    <file path="/time.html" changelist="d835b246-4b0a-43a1-a368-f08243dbb63d" time="1394769219093" ignored="false" />
+    <file path="/url.html" changelist="d835b246-4b0a-43a1-a368-f08243dbb63d" time="1394769253153" ignored="false" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -63,7 +70,38 @@
     <favorites_list name="quickForm" />
   </component>
   <component name="FileEditorManager">
-    <leaf />
+    <leaf>
+      <file leaf-file-name="inputTypes.js" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/scripts/services/inputTypes.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="108" column="0" selection-start="2508" selection-end="2508" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="quickformfield.js" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/app/scripts/directives/quickformfield.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="129" column="42" selection-start="3893" selection-end="3893" vertical-scroll-proportion="0.8626198">
+              <folding>
+                <element signature="e#233#2169#0" expanded="false" />
+                <element signature="e#2468#3593#0" expanded="false" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="url.html" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/views/directive-templates/field/url.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="11" column="70" selection-start="426" selection-end="426" vertical-scroll-proportion="-6.875">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
   </component>
   <component name="FindManager">
     <FindUsagesManager>
@@ -81,13 +119,6 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/app/scripts/directives/quickform.js" />
-        <option value="$PROJECT_DIR$/app/styles/main.scss" />
-        <option value="$PROJECT_DIR$/app/views/directive-templates/field/email.html" />
-        <option value="$PROJECT_DIR$/app/views/directive-templates/field/date.html" />
-        <option value="$PROJECT_DIR$/app/views/directive-templates/field/checkbox.html" />
-        <option value="$PROJECT_DIR$/app/views/directive-templates/field/dropdown.html" />
-        <option value="$PROJECT_DIR$/app/views/directive-templates/field/password.html" />
         <option value="$PROJECT_DIR$/app/views/directive-templates/field/radio.html" />
         <option value="$PROJECT_DIR$/app/views/directive-templates/field/textarea.html" />
         <option value="$PROJECT_DIR$/app/views/main.html" />
@@ -97,6 +128,13 @@
         <option value="$PROJECT_DIR$/app/views/formbuilder.html" />
         <option value="$PROJECT_DIR$/app/scripts/services/formdata.js" />
         <option value="$PROJECT_DIR$/app/scripts/services/outputfactory.js" />
+        <option value="$PROJECT_DIR$/app/scripts/services/inputTypes.js" />
+        <option value="$PROJECT_DIR$/app/views/directive-templates/field/telephone.html" />
+        <option value="$PROJECT_DIR$/app/views/directive-templates/field/color.html" />
+        <option value="$PROJECT_DIR$/app/views/directive-templates/field/range.html" />
+        <option value="$PROJECT_DIR$/app/views/directive-templates/field/time.html" />
+        <option value="$PROJECT_DIR$/app/views/directive-templates/field/url.html" />
+        <option value="$PROJECT_DIR$/app/scripts/directives/quickformfield.js" />
       </list>
     </option>
   </component>
@@ -220,10 +258,6 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="directive-templates" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="form" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -470,7 +504,11 @@
       <created>1394768880135</created>
       <updated>1394768880135</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="add and commit new files for last commit">
+      <created>1394768932061</created>
+      <updated>1394768932061</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -538,7 +576,7 @@
     <option name="WRAP_WHEN_TYPING_REACHES_RIGHT_MARGIN" value="false" />
     <option name="FORCE_NON_EMPTY_COMMENT" value="false" />
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="false" />
-    <option name="LAST_COMMIT_MESSAGE" value="massive refactor. create dataModel service. create controllers for each section." />
+    <option name="LAST_COMMIT_MESSAGE" value="add and commit new files for last commit" />
     <option name="MAKE_NEW_CHANGELIST_ACTIVE" value="false" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="false" />
     <option name="CHECK_FILES_UP_TO_DATE_BEFORE_COMMIT" value="false" />
@@ -561,67 +599,12 @@
     <MESSAGE value="minor styling tweaks" />
     <MESSAGE value="update input types, darken css" />
     <MESSAGE value="massive refactor. create dataModel service. create controllers for each section." />
+    <MESSAGE value="add and commit new files for last commit" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/app/views/directive-templates/field/email.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="11" column="9" selection-start="435" selection-end="435" vertical-scroll-proportion="-6.875">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/directive-templates/field/date.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="13" column="6" selection-start="647" selection-end="647" vertical-scroll-proportion="-8.125">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/directive-templates/field/checkbox.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="12" column="58" selection-start="382" selection-end="382" vertical-scroll-proportion="-7.5">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/directive-templates/field/dropdown.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="11" column="43" selection-start="456" selection-end="456" vertical-scroll-proportion="-6.875">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/directive-templates/field/password.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="6" column="52" selection-start="279" selection-end="279" vertical-scroll-proportion="-3.75">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/directive-templates/field/radio.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="15" column="30" selection-start="478" selection-end="478" vertical-scroll-proportion="-9.375">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/directive-templates/field/textarea.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="7" column="27" selection-start="302" selection-end="302" vertical-scroll-proportion="-4.375">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/main.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="11" column="6" selection-start="339" selection-end="339" vertical-scroll-proportion="-6.875">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/index.html">
       <provider selected="true" editor-type-id="text-editor">
         <state line="45" column="29" selection-start="1750" selection-end="1750" vertical-scroll-proportion="-12.5">
@@ -684,6 +667,65 @@
             <element signature="e#1172#2282#0" expanded="false" />
             <element signature="e#2327#4086#0" expanded="false" />
             <element signature="e#4131#5878#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/directive-templates/field/telephone.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="5" column="72" selection-start="244" selection-end="244" vertical-scroll-proportion="-3.125">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/directive-templates/field/textfield.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="7" column="50" selection-start="333" selection-end="333" vertical-scroll-proportion="-4.375">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/directive-templates/field/color.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="5" column="70" selection-start="242" selection-end="242" vertical-scroll-proportion="-3.125">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/directive-templates/field/range.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="9" column="66" selection-start="422" selection-end="422" vertical-scroll-proportion="-5.625">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/directive-templates/field/time.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="11" column="62" selection-start="428" selection-end="428" vertical-scroll-proportion="-6.875">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/scripts/services/inputTypes.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="108" column="0" selection-start="2508" selection-end="2508" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/directive-templates/field/url.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="11" column="70" selection-start="426" selection-end="426" vertical-scroll-proportion="-6.875">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/scripts/directives/quickformfield.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="129" column="42" selection-start="3893" selection-end="3893" vertical-scroll-proportion="0.8626198">
+          <folding>
+            <element signature="e#233#2169#0" expanded="false" />
+            <element signature="e#2468#3593#0" expanded="false" />
           </folding>
         </state>
       </provider>

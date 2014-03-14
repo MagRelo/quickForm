@@ -59,6 +59,20 @@ angular.module('quickFormApp')
         },
 
         {
+          display_name : 'Dropdown List',
+          display_priority: '40',
+          display_common: false,
+          input_type: 'dropdown',
+          name: '',
+          id: '',
+          value: '',
+          placeholder: '',
+          required: false,
+          pattern: '',
+          options: []
+        },
+
+        {
           display_name : 'Email',
           display_priority: '20',
           display_common: true,
@@ -248,21 +262,9 @@ angular.module('quickFormApp')
             {type: 'number', name: 'step'}
           ],
           options: {}
-        },
-
-        {
-          display_name : 'Dropdown List',
-          display_priority: '40',
-          display_common: false,
-          input_type: 'dropdown',
-          name: '',
-          id: '',
-          value: '',
-          placeholder: '',
-          required: false,
-          pattern: '',
-          options: []
         }
+
+
       ]
     }
 

@@ -9,32 +9,53 @@ angular.module('quickFormApp')
       var inputType = scope.field.input_type;
 
       switch (inputType){
-        case 'text':
-          templateUrl = './views/directive-templates/field/textfield.html';
-          break;
-        case 'date' || 'week' || 'month' :
-          templateUrl = './views/directive-templates/field/date.html';
-          break;
         case 'checkbox':
           templateUrl = './views/directive-templates/field/checkbox.html';
+          break;
+        case 'color':
+          templateUrl = './views/directive-templates/field/color.html';
+          break;
+        case 'date' :
+          templateUrl = './views/directive-templates/field/date.html';
+          break;
+        case 'dropdown' :
+          templateUrl = './views/directive-templates/field/dropdown.html';
           break;
         case 'email':
           templateUrl = './views/directive-templates/field/email.html';
           break;
+        case 'month' :
+          templateUrl = './views/directive-templates/field/date.html';
+          break;
         case 'number':
           templateUrl = './views/directive-templates/field/number.html';
-          break;
-        case 'radio':
-          templateUrl = './views/directive-templates/field/radio.html';
           break;
         case 'password':
           templateUrl = './views/directive-templates/field/password.html';
           break;
+        case 'radio':
+          templateUrl = './views/directive-templates/field/radio.html';
+          break;
+        case 'range':
+          templateUrl = './views/directive-templates/field/range.html';
+          break;
+        case 'tel':
+          templateUrl = './views/directive-templates/field/telephone.html';
+          break;
+        case 'text':
+          templateUrl = './views/directive-templates/field/textfield.html';
+          break;
         case 'textarea':
           templateUrl = './views/directive-templates/field/textarea.html';
           break;
-        case 'dropdown':
-          templateUrl = './views/directive-templates/field/dropdown.html';
+        case 'time':
+          templateUrl = './views/directive-templates/field/time.html';
+          break;
+        case 'url':
+          templateUrl = './views/directive-templates/field/url.html';
+          break;
+        case 'week' :
+          templateUrl = './views/directive-templates/field/date.html';
           break;
         default:
           templateUrl = './views/directive-templates/field/textfield.html';
@@ -95,7 +116,7 @@ angular.module('quickFormApp')
           $scope.format = $scope.formats[0];
 
         }
-        if($scope.field.input_type == 'date'){
+        if($scope.field.input_type == 'date' || $scope.field.input_type == 'month' || $scope.field.input_type == 'week'  ){
           calenderSetup();
         }
 
