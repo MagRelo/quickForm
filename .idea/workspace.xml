@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="d835b246-4b0a-43a1-a368-f08243dbb63d" name="Default" comment="added options for">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/directive-templates/field/dropdown.html" afterPath="$PROJECT_DIR$/app/views/directive-templates/field/dropdown.html" />
+    <list default="true" id="d835b246-4b0a-43a1-a368-f08243dbb63d" name="Default" comment="">
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/directive-templates/field/date.html" afterPath="$PROJECT_DIR$/app/views/directive-templates/field/date.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/formPreview.html" afterPath="$PROJECT_DIR$/app/views/formPreview.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/formbuilder.html" afterPath="$PROJECT_DIR$/app/views/formbuilder.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/scripts/services/formdata.js" afterPath="$PROJECT_DIR$/app/scripts/services/formdata.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/scripts/services/inputTypes.js" afterPath="$PROJECT_DIR$/app/scripts/services/inputTypes.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/index.html" afterPath="$PROJECT_DIR$/app/index.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/styles/main.scss" afterPath="$PROJECT_DIR$/app/styles/main.scss" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/directive-templates/field/radio.html" afterPath="$PROJECT_DIR$/app/views/directive-templates/field/radio.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/output.html" afterPath="$PROJECT_DIR$/app/views/output.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="quickForm.iws" />
@@ -17,19 +17,19 @@
     <file path="/index.html" changelist="d835b246-4b0a-43a1-a368-f08243dbb63d" time="1394766370285" ignored="false" />
     <file path="/modelbuilder.js" changelist="d835b246-4b0a-43a1-a368-f08243dbb63d" time="1394679778033" ignored="false" />
     <file path="/modelbuilder.html" changelist="d835b246-4b0a-43a1-a368-f08243dbb63d" time="1394754869064" ignored="false" />
-    <file path="/Dummy.txt" changelist="d835b246-4b0a-43a1-a368-f08243dbb63d" time="1394774024292" ignored="false" />
-    <file path="/main.scss" changelist="d835b246-4b0a-43a1-a368-f08243dbb63d" time="1394821616901" ignored="false" />
+    <file path="/Dummy.txt" changelist="d835b246-4b0a-43a1-a368-f08243dbb63d" time="1394823732434" ignored="false" />
+    <file path="/main.scss" changelist="d835b246-4b0a-43a1-a368-f08243dbb63d" time="1394838403277" ignored="false" />
     <file path="/outputfactory.js" changelist="d835b246-4b0a-43a1-a368-f08243dbb63d" time="1394602920761" ignored="false" />
     <file path="/fieldTypes.js" changelist="d835b246-4b0a-43a1-a368-f08243dbb63d" time="1394315188173" ignored="false" />
-    <file path="/formPreview.html" changelist="d835b246-4b0a-43a1-a368-f08243dbb63d" time="1394755434125" ignored="false" />
+    <file path="/formPreview.html" changelist="d835b246-4b0a-43a1-a368-f08243dbb63d" time="1394838083778" ignored="false" />
     <file path="/form.html" changelist="d835b246-4b0a-43a1-a368-f08243dbb63d" time="1394394065650" ignored="false" />
     <file path="/inputTypes.js" changelist="d835b246-4b0a-43a1-a368-f08243dbb63d" time="1394820750169" ignored="false" />
     <file path="/quickformfield.js" changelist="d835b246-4b0a-43a1-a368-f08243dbb63d" time="1394742089902" ignored="false" />
-    <file path="/_variables.scss" changelist="d835b246-4b0a-43a1-a368-f08243dbb63d" time="1394587246231" ignored="false" />
+    <file path="/_variables.scss" changelist="d835b246-4b0a-43a1-a368-f08243dbb63d" time="1394837456451" ignored="false" />
     <file path="/navbar.html" changelist="d835b246-4b0a-43a1-a368-f08243dbb63d" time="1394512625582" ignored="false" />
     <file path="/.gitignore" changelist="d835b246-4b0a-43a1-a368-f08243dbb63d" time="1394578087711" ignored="false" />
     <file path="/main.html" changelist="d835b246-4b0a-43a1-a368-f08243dbb63d" time="1394756219580" ignored="false" />
-    <file path="/output.html" changelist="d835b246-4b0a-43a1-a368-f08243dbb63d" time="1394755730382" ignored="false" />
+    <file path="/output.html" changelist="d835b246-4b0a-43a1-a368-f08243dbb63d" time="1394835280297" ignored="false" />
     <file path="/quickform.js" changelist="d835b246-4b0a-43a1-a368-f08243dbb63d" time="1394656192886" ignored="false" />
     <file path="/textfield.html" changelist="d835b246-4b0a-43a1-a368-f08243dbb63d" time="1394757871603" ignored="false" />
     <file path="/formdatamodel.js" changelist="d835b246-4b0a-43a1-a368-f08243dbb63d" time="1394689919521" ignored="false" />
@@ -38,7 +38,7 @@
     <file path="/formdata.js" changelist="d835b246-4b0a-43a1-a368-f08243dbb63d" time="1394819008390" ignored="false" />
     <file path="/formpreview.js" changelist="d835b246-4b0a-43a1-a368-f08243dbb63d" time="1394755419122" ignored="false" />
     <file path="/output.js" changelist="d835b246-4b0a-43a1-a368-f08243dbb63d" time="1394756027896" ignored="false" />
-    <file path="/formbuilder.html" changelist="d835b246-4b0a-43a1-a368-f08243dbb63d" time="1394821100566" ignored="false" />
+    <file path="/formbuilder.html" changelist="d835b246-4b0a-43a1-a368-f08243dbb63d" time="1394838251475" ignored="false" />
     <file path="/number.html" changelist="d835b246-4b0a-43a1-a368-f08243dbb63d" time="1394761719834" ignored="false" />
     <file path="/email.html" changelist="d835b246-4b0a-43a1-a368-f08243dbb63d" time="1394765194750" ignored="false" />
     <file path="/checkbox.html" changelist="d835b246-4b0a-43a1-a368-f08243dbb63d" time="1394765415392" ignored="false" />
@@ -51,6 +51,7 @@
     <file path="/telephone.html" changelist="d835b246-4b0a-43a1-a368-f08243dbb63d" time="1394769164815" ignored="false" />
     <file path="/time.html" changelist="d835b246-4b0a-43a1-a368-f08243dbb63d" time="1394769219093" ignored="false" />
     <file path="/url.html" changelist="d835b246-4b0a-43a1-a368-f08243dbb63d" time="1394769253153" ignored="false" />
+    <file path="/date.html" changelist="d835b246-4b0a-43a1-a368-f08243dbb63d" time="1394838320106" ignored="false" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -96,11 +97,35 @@
       <file leaf-file-name="formbuilder.html" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/views/formbuilder.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="44" column="42" selection-start="1667" selection-end="1667" vertical-scroll-proportion="-20.0">
-              <folding>
-                <element signature="tag#li#1;tag#ul#0;tag#div#1;tag#div#0;tag#div#0" expanded="false" />
-                <element signature="tag#accordion#0;tag#div#0;tag#div#0;tag#div#1;tag#div#0" expanded="false" />
-              </folding>
+            <state line="9" column="21" selection-start="267" selection-end="267" vertical-scroll-proportion="-5.625">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="date.html" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/views/directive-templates/field/date.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="9" column="37" selection-start="530" selection-end="530" vertical-scroll-proportion="-5.625">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="formpreview.js" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/scripts/controllers/formpreview.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="formPreview.html" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/views/formPreview.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="21" column="26" selection-start="554" selection-end="554" vertical-scroll-proportion="-13.125">
+              <folding />
             </state>
           </provider>
         </entry>
@@ -108,10 +133,32 @@
       <file leaf-file-name="main.scss" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/styles/main.scss">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="86" column="50" selection-start="1414" selection-end="1414" vertical-scroll-proportion="0.18530351">
+            <state line="139" column="37" selection-start="2219" selection-end="2219" vertical-scroll-proportion="1.0497513">
               <folding>
-                <element signature="e#557#635#0" expanded="false" />
+                <element signature="e#115#200#0" expanded="false" />
+                <element signature="e#366#418#0" expanded="false" />
+                <element signature="e#453#491#0" expanded="false" />
+                <element signature="e#526#604#0" expanded="false" />
+                <element signature="e#743#830#0" expanded="false" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="output.html" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/views/output.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="10" column="61" selection-start="331" selection-end="331" vertical-scroll-proportion="-6.25">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="index.html" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/index.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="25" column="77" selection-start="1125" selection-end="1125" vertical-scroll-proportion="-8.125">
+              <folding />
             </state>
           </provider>
         </entry>
@@ -134,12 +181,6 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/app/index.html" />
-        <option value="$PROJECT_DIR$/app/scripts/app.js" />
-        <option value="$PROJECT_DIR$/app/scripts/controllers/formpreview.js" />
-        <option value="$PROJECT_DIR$/app/scripts/services/outputfactory.js" />
-        <option value="$PROJECT_DIR$/app/views/directive-templates/field/telephone.html" />
-        <option value="$PROJECT_DIR$/app/views/directive-templates/field/color.html" />
         <option value="$PROJECT_DIR$/app/views/directive-templates/field/range.html" />
         <option value="$PROJECT_DIR$/app/views/directive-templates/field/time.html" />
         <option value="$PROJECT_DIR$/app/views/directive-templates/field/url.html" />
@@ -148,7 +189,13 @@
         <option value="$PROJECT_DIR$/app/views/directive-templates/field/radio.html" />
         <option value="$PROJECT_DIR$/app/scripts/services/formdata.js" />
         <option value="$PROJECT_DIR$/app/scripts/services/inputTypes.js" />
+        <option value="$PROJECT_DIR$/app/bower_components/sass-bootstrap/lib/bootstrap.scss" />
+        <option value="$PROJECT_DIR$/app/views/output.html" />
+        <option value="$PROJECT_DIR$/app/index.html" />
+        <option value="$PROJECT_DIR$/app/bower_components/sass-bootstrap/lib/_variables.scss" />
+        <option value="$PROJECT_DIR$/app/views/formPreview.html" />
         <option value="$PROJECT_DIR$/app/views/formbuilder.html" />
+        <option value="$PROJECT_DIR$/app/views/directive-templates/field/date.html" />
         <option value="$PROJECT_DIR$/app/styles/main.scss" />
       </list>
     </option>
@@ -219,206 +266,6 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="quickForm" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="quickForm" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="quickForm" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="app" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="quickForm" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="quickForm" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="app" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="views" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="quickForm" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="quickForm" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="app" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="views" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="directive-templates" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="quickForm" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="quickForm" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="app" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="views" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="directive-templates" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="field" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="quickForm" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="quickForm" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="app" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="styles" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="quickForm" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="quickForm" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="app" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="scripts" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="quickForm" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="quickForm" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="app" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="scripts" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="services" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="quickForm" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="quickForm" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="app" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="scripts" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="directives" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="quickForm" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="quickForm" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="app" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="scripts" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="controllers" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="quickForm" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="quickForm" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="app" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="bower_components" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -545,7 +392,11 @@
       <created>1394769955830</created>
       <updated>1394769955830</updated>
     </task>
-    <option name="localTasksCounter" value="12" />
+    <task id="LOCAL-00012" summary="updated dropdown and radio">
+      <created>1394823742474</created>
+      <updated>1394823742474</updated>
+    </task>
+    <option name="localTasksCounter" value="13" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -557,7 +408,7 @@
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32721713" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.21877486" sideWeight="0.6727829" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.21877486" sideWeight="0.6727829" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
@@ -613,7 +464,7 @@
     <option name="WRAP_WHEN_TYPING_REACHES_RIGHT_MARGIN" value="false" />
     <option name="FORCE_NON_EMPTY_COMMENT" value="false" />
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="false" />
-    <option name="LAST_COMMIT_MESSAGE" value="filled in missing input templates" />
+    <option name="LAST_COMMIT_MESSAGE" value="updated dropdown and radio" />
     <option name="MAKE_NEW_CHANGELIST_ACTIVE" value="false" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="false" />
     <option name="CHECK_FILES_UP_TO_DATE_BEFORE_COMMIT" value="false" />
@@ -638,57 +489,12 @@
     <MESSAGE value="massive refactor. create dataModel service. create controllers for each section." />
     <MESSAGE value="add and commit new files for last commit" />
     <MESSAGE value="filled in missing input templates" />
+    <MESSAGE value="updated dropdown and radio" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/app/scripts/services/outputfactory.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="1" selection-start="1" selection-end="1" vertical-scroll-proportion="0.0">
-          <folding>
-            <element signature="e#1172#2282#0" expanded="false" />
-            <element signature="e#2327#4086#0" expanded="false" />
-            <element signature="e#4131#5878#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/directive-templates/field/telephone.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="5" column="72" selection-start="244" selection-end="244" vertical-scroll-proportion="-3.125">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/directive-templates/field/textfield.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="7" column="50" selection-start="333" selection-end="333" vertical-scroll-proportion="-4.375">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/directive-templates/field/color.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="5" column="70" selection-start="242" selection-end="242" vertical-scroll-proportion="-3.125">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/directive-templates/field/range.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="9" column="66" selection-start="422" selection-end="422" vertical-scroll-proportion="-5.625">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/directive-templates/field/time.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="11" column="62" selection-start="428" selection-end="428" vertical-scroll-proportion="-6.875">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/views/directive-templates/field/url.html">
       <provider selected="true" editor-type-id="text-editor">
         <state line="11" column="70" selection-start="426" selection-end="426" vertical-scroll-proportion="0.2740864">
@@ -703,20 +509,6 @@
             <element signature="e#233#2169#0" expanded="false" />
             <element signature="e#2468#3593#0" expanded="false" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/formPreview.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/bower_components/sass-bootstrap/lib/_variables.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="-0.095846646">
-          <folding />
         </state>
       </provider>
     </entry>
@@ -753,21 +545,78 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/app/scripts/controllers/formpreview.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/bower_components/sass-bootstrap/lib/_mixins.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="264" column="25" selection-start="7233" selection-end="7233" vertical-scroll-proportion="0.3322034">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/output.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="10" column="61" selection-start="331" selection-end="331" vertical-scroll-proportion="-6.25">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/bower_components/sass-bootstrap/lib/bootstrap.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="29" column="44" selection-start="542" selection-end="542" vertical-scroll-proportion="0.72139305">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/bower_components/sass-bootstrap/lib/_variables.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="152" column="87" selection-start="5224" selection-end="5224" vertical-scroll-proportion="0.43598616">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="25" column="77" selection-start="1125" selection-end="1125" vertical-scroll-proportion="-8.125">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/formPreview.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="21" column="26" selection-start="554" selection-end="554" vertical-scroll-proportion="-13.125">
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/app/views/formbuilder.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="44" column="42" selection-start="1667" selection-end="1667" vertical-scroll-proportion="-20.0">
-          <folding>
-            <element signature="tag#li#1;tag#ul#0;tag#div#1;tag#div#0;tag#div#0" expanded="false" />
-            <element signature="tag#accordion#0;tag#div#0;tag#div#0;tag#div#1;tag#div#0" expanded="false" />
-          </folding>
+        <state line="9" column="21" selection-start="267" selection-end="267" vertical-scroll-proportion="-5.625">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/directive-templates/field/date.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="9" column="37" selection-start="530" selection-end="530" vertical-scroll-proportion="-5.625">
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/styles/main.scss">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="86" column="50" selection-start="1414" selection-end="1414" vertical-scroll-proportion="0.18530351">
+        <state line="139" column="37" selection-start="2219" selection-end="2219" vertical-scroll-proportion="1.0497513">
           <folding>
-            <element signature="e#557#635#0" expanded="false" />
+            <element signature="e#115#200#0" expanded="false" />
+            <element signature="e#366#418#0" expanded="false" />
+            <element signature="e#453#491#0" expanded="false" />
+            <element signature="e#526#604#0" expanded="false" />
+            <element signature="e#743#830#0" expanded="false" />
           </folding>
         </state>
       </provider>

@@ -8,9 +8,9 @@
     <!--Output buttons-->
     <ul class="list-inline">
         <li class="text-muted"><span class="h5">Frontend:</span></li>
-        <li><button class="btn btn-primary outputButton" type="button" data-ng-repeat="button in outputButtons.frontend" data-ng-class="{active: button.type == style.type}"  data-ng-click="style.type = button.type">{{button.name}}</button></li>
+        <li data-ng-repeat="button in outputButtons.frontend"><button class="btn btn-primary outputButton" type="button" data-ng-class="{active: button.type == style.type}"  data-ng-click="style.type = button.type">{{button.name}}</button></li>
         <li class="text-muted"><span class="h5">Backend:</span></li>
-        <li><button class="btn btn-primary outputButton" type="button" data-ng-repeat="button in outputButtons.backend" data-ng-class="{active: button.type == style.type}"  data-ng-click="style.type = button.type">{{button.name}}</button></li>
+        <li data-ng-repeat="button in outputButtons.backend"><button class="btn btn-primary outputButton" type="button"  data-ng-class="{active: button.type == style.type}"  data-ng-click="style.type = button.type">{{button.name}}</button></li>
     </ul>
 
     <!--highlight.js directive-->

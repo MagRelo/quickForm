@@ -3,20 +3,20 @@
     <small> test your form validation</small>
 </h3>
 
-<div class="well mg_section_well" data-ng-controller="FormpreviewCtrl">
+<div class="" data-ng-controller="FormpreviewCtrl">
 
     <!--Form-->
-    <div class="well">
+    <div class="well mg_form_well">
         <quick-form form="form"></quick-form>
     </div>
 
     <!--Validation-->
     <div class="alert alert-success text-center" data-ng-show="elementForm.$valid">
-        <p>form is valid</p>
+        <p>form is valid &#x2713;</p>
     </div>
 
     <div class="alert alert-danger text-center" data-ng-show="elementForm.$invalid">
-        <p>form is invalid</p>
+        <p>form is invalid &#x2717;</p>
     </div>
 
 </div>

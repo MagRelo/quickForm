@@ -13,7 +13,6 @@ $icon-font-path: "/bower_components/sass-bootstrap/fonts/";
 body {
     padding-top: 20px;
     padding-bottom: 20px;
-    background-color: #282B2E;
 }
 
 /* Everything gets side spacing for mobile first views */
@@ -35,15 +34,8 @@ body {
     border-top: 1px solid #e5e5e5;
 }
 
-.container-narrow > hr {
-    margin: 30px 0;
-}
-
 /* Responsive: Portrait tablets and up */
 @media screen and (min-width: 768px) {
-    //.container {
-    //    max-width: 730px;
-    //}
 
     /* Remove the padding we set earlier */
     .header{
@@ -54,63 +46,75 @@ body {
 
 }
 
-
-
 //needed for angular-ui conponents
 .nav, .pagination, .carousel, .panel-title a { cursor: pointer; }
 
-pre{
-  background-color: #282B2E;
-  border: none;
+
+//*** bootstrap overrides ***//
+
+.panel{
+  border-color: #474747;
 }
 
-.fieldTypeButton{
-  margin-bottom: 3px;
+.panel-default > .panel-heading {
+  background-color: $mg-bg-lighter;
+  color: $mg-bg-white;
 }
 
-.dropdown-menu_fieldTypes{
-  padding: 6px;
-  background-color: #666;
-  left: -35px;
+.panel-default > .panel-heading + .panel-collapse .panel-body {
+  border-top-color: $mg-bg-white;
 }
 
-.outputButton{
-  margin-right: 3px;
+label{
+  color: $mg-bg-white;
 }
+
+.alert{
+  margin-bottom: 0;
+  border-width: 3px;
+}
+
+.alert.alert-success{
+  border-color: $brand-success;
+}
+
+.alert.alert-danger{
+  border-color: $brand-danger;
+}
+
+
+//*** common **//
 
 .mg_section_well{
   background-color: #3C3F42;
   border-color: #474747;
 }
 
+.mg_form_well, legend, .panel-default > .panel-heading{
+  border-color: $body-bg;
+}
+
+//*** form builder ***//
+
 .mg_model_well{
-  background-color: #282B2E;
-  //border: none;
-  border-color: #474747;
+  background-color: $body-bg;
   padding-top: 0;
   margin-top: 20px;
   border-radius: 14px;
 }
 
-.panel{
-  background-color: #3C3F42;
-  color: $gray-light;
-  border-color: #474747;
+.fieldTypeButton{
+  margin-bottom: 3px;
+}
+.dropdown-menu_fieldTypes{
+  padding: 6px;
+  background-color: #666;
+  left: -35px;
 }
 
-.panel-default > .panel-heading {
-  color: $gray-light;
-  background-color: #3C3F42;
-  border-color: #474747;
-}
-
-.panel-default > .panel-heading + .panel-collapse .panel-body {
-  border-top-color: $gray-light;
-}
-
-
-.alert{
-  margin-bottom: 0;
+.mg_accordian_title{
+  padding-top: 5px;
+  margin-bottom: 6px;
 }
 
 .mg_accordian_title > small{
@@ -120,13 +124,28 @@ pre{
   margin-right: 20px;
 }
 
-.mg_accordian_title{
-  padding-top: 5px;
-  margin-bottom: 6px;
+.optionSpacer{
+  margin-bottom: 7px;
 }
 
-//.form-control{
-//  background-color: #3C3F42;
-//  border-color: $gray-light;
-//  color: $gray-light;
-//}
+.btn-mg {
+  color: $mg-bg-white;
+  background-color: $body-bg;
+  border-color: $mg-bg-lightest
+}
+
+//*** form preview ***//
+
+//*** output ***//
+
+//wrap around code
+pre{
+  background-color: $body-bg;
+  border: none;
+}
+
+
+
+
+
+

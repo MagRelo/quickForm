@@ -7,13 +7,13 @@
 
         <!--model name-->
         <div class="col-sm-4">
-            <h5 class="text-muted">give your form a name:</h5>
+            <h5>form name:</h5>
             <input type="text" class="form-control" id="form-name" name="form-name" ng-model="formData.name" autofocus>
         </div>
 
         <!--input type buttons-->
         <div class="col-sm-8">
-            <h5 class="text-muted">add fields:</h5>
+            <h5>add fields:</h5>
             <ul class="list-inline">
 
                 <!--common-->
@@ -47,7 +47,7 @@
         <div class="col-sm-offset-1 col-sm-10">
 
             <div class="well mg_model_well">
-                <h3 class="text-muted">{{formData.name}}</h3>
+                <h3>{{formData.name}}</h3>
 
                 <!--fields-->
                 <accordion>
@@ -121,17 +121,17 @@
                                     </div>
 
                                     <div class="col-sm-9">
-
                                         <ul class="list-unstyled">
-                                            <li class="fieldTypeButton" data-ng-repeat="option in field.options" >
+
+                                            <li class="optionSpacer" data-ng-repeat="option in field.options" >
 
                                                 <div class="input-group">
                                                     <input class="form-control" type="text" data-ng-model="option.name">
-                                                            <span class="input-group-btn">
-                                                                <button class="btn btn-danger" ng-click="formData.deleteOption($parent.$index, $index)">
-                                                                    <span class="glyphicon glyphicon-remove"></span>
-                                                                </button>
-                                                            </span>
+                                                    <span class="input-group-btn">
+                                                        <button class="btn btn-danger" data-ng-click="formData.deleteOption($parent.$index, $index)">
+                                                            <span class="glyphicon glyphicon-remove"></span>
+                                                        </button>
+                                                    </span>
                                                 </div>
 
                                             </li>
