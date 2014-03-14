@@ -11,7 +11,6 @@ angular.module('quickFormApp')
           display_name : 'Checkbox',
           display_priority: '40',
           display_common: false,
-          template_url: './views/directive-templates/field/checkbox.html',
           input_type: 'checkbox',
           name: '',
           id: '',
@@ -31,7 +30,6 @@ angular.module('quickFormApp')
           display_name : 'Color',
           display_priority: '80',
           display_common: false,
-          template_url: './views/directive-templates/field/textfield.html', //!!!
           input_type: 'color',
           name: '',
           id: '',
@@ -46,7 +44,6 @@ angular.module('quickFormApp')
           display_name : 'Date',
           display_priority: '30',
           display_common: true,
-          template_url: './views/directive-templates/field/date.html',
           input_type: 'date',
           name: '',
           id: '',
@@ -65,7 +62,6 @@ angular.module('quickFormApp')
           display_name : 'Email',
           display_priority: '20',
           display_common: true,
-          template_url: './views/directive-templates/field/email.html',
           input_type: 'email',
           name: '',
           id: '',
@@ -83,7 +79,6 @@ angular.module('quickFormApp')
           display_name : 'Month',
           display_priority: '55',
           display_common: false,
-          template_url: './views/directive-templates/field/textfield.html', //!!!
           input_type: 'month',
           name: '',
           id: '',
@@ -101,8 +96,7 @@ angular.module('quickFormApp')
         {
           display_name : 'Number',
           display_priority: '55',
-          display_common: false,
-          template_url: './views/directive-templates/field/textfield.html', //!!!
+          display_common: 'true',
           input_type: 'number',
           name: '',
           id: '',
@@ -121,7 +115,6 @@ angular.module('quickFormApp')
           display_name : 'Password',
           display_priority: '30',
           display_common: false,
-          template_url: './views/directive-templates/field/password.html',
           input_type: 'password',
           name: '',
           id: '',
@@ -138,7 +131,6 @@ angular.module('quickFormApp')
           display_name : 'Radio',
           display_priority: '40',
           display_common: false,
-          template_url: './views/directive-templates/field/radio.html',
           input_type: 'radio',
           name: '',
           id: '',
@@ -154,7 +146,6 @@ angular.module('quickFormApp')
           display_name : 'Range',
           display_priority: '30',
           display_common: false,
-          template_url: './views/directive-templates/field/textfield.html', //!!!
           input_type: 'range',
           name: '',
           id: '',
@@ -172,9 +163,8 @@ angular.module('quickFormApp')
 
         {
           display_name : 'Telephone',
-          display_priority: '30',
+          display_priority: '40',
           display_common: false,
-          template_url: './views/directive-templates/field/textfield.html', //!!!
           input_type: 'tel',
           name: '',
           id: '',
@@ -188,12 +178,10 @@ angular.module('quickFormApp')
           options: {}
         },
 
-
         {
           display_name : 'Text',
           display_priority: '10',
           display_common: true,
-          template_url: './views/directive-templates/field/textfield.html',
           input_type: 'text',
           name: '',
           id: '',
@@ -211,8 +199,7 @@ angular.module('quickFormApp')
           display_name : 'Time',
           display_priority: '56',
           display_common: false,
-          template_url: './views/directive-templates/field/textfield.html',  //!!!
-          input_type: 'text',
+          input_type: 'time',
           name: '',
           id: '',
           value: '',
@@ -231,7 +218,6 @@ angular.module('quickFormApp')
           display_name : 'URL',
           display_priority: '30',
           display_common: false,
-          template_url: './views/directive-templates/field/textfield.html',  //!!!
           input_type: 'url',
           name: '',
           id: '',
@@ -249,7 +235,6 @@ angular.module('quickFormApp')
           display_name : 'Week',
           display_priority: '52',
           display_common: false,
-          template_url: './views/directive-templates/field/textfield.html',  //!!!
           input_type: 'week',
           name: '',
           id: '',
@@ -269,7 +254,6 @@ angular.module('quickFormApp')
           display_name : 'Dropdown List',
           display_priority: '40',
           display_common: false,
-          template_url: './views/directive-templates/field/dropdown.html',
           input_type: 'dropdown',
           name: '',
           id: '',
@@ -285,10 +269,3 @@ angular.module('quickFormApp')
   });
 
 
-
-
-//options:
-//maxlength:  text, email, search, password, tel, or url
-//min & max & step: numeric, date-time
-//multiple: email, file
-//

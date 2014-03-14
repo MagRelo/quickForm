@@ -9,12 +9,22 @@ angular.module('quickFormApp', [
   'hljs'
 ])
   .config(function ($routeProvider) {
+
     $routeProvider
       .when('/', {
-        templateUrl: 'views/main.html',
-        controller: 'ModelbuilderCtrl'
+        templateUrl: 'views/main.html'
+      })
+      .when('/formbuilder', {
+        templateUrl: 'views/formbuilder.html'
+      })
+      .when('/formpreview', {
+        templateUrl: 'views/formpreview.html'
+      })
+      .when('/output', {
+        templateUrl: 'views/output.html'
       })
       .otherwise({
         redirectTo: '/'
       });
+
   });

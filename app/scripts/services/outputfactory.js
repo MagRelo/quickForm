@@ -1,7 +1,7 @@
-'use strict';
+ 'use strict';
 
 angular.module('quickFormApp')
-  .factory('outputfactory', function () {
+  .factory('outputFactory', function () {
 
     var newline = String.fromCharCode(13);
     var tab = '  ';

@@ -1,12 +1,12 @@
 <div class="form-group">
-    <label for="selectLabel">{{field.field_title}}
-        <small class="text-muted" data-ng-show="field.field_required" >(required)</small>
-        <small class="text-muted text-success" data-ng-show="eventAddForm.eventtype.$valid">  <span class="glyphicon glyphicon-ok"></span></small>
+    <label for="selectLabel">{{field.display_name}}
+        <small class="text-muted" data-ng-show="field.required" >(required)</small>
     </label>
 
-    <select class="form-control" name="selectLabel" id="selectLabel" ng-model="field.field_value"
-            ng-options="option.option_id as option.option_title for option in field.field_options"
-            ng-required="field.field_required">
+    <select class="form-control" name="selectLabel" id="selectLabel"
+            data-ng-model="field.value"
+            data-ng-options="option.option_id as option.option_title for option in field.field_options"
+            data-ng-required="field.required">
     </select>
 
 </div>

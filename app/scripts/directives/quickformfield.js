@@ -1,17 +1,45 @@
 'use strict';
 
 angular.module('quickFormApp')
-  .directive('quickFormField', function ($http, $compile, inputTypes) {
+  .directive('quickFormField', function ($http, $compile) {
 
     var linker = function(scope, element) {
 
-      //get field template url
       var templateUrl = '';
-      angular.forEach(inputTypes.inputTypes, function(input){
-        if(scope.field.field_type == input.input_type){
-          templateUrl =  input.template_url;
-        }
-      });
+      var inputType = scope.field.input_type;
+
+      switch (inputType){
+        case 'text':
+          templateUrl = './views/directive-templates/field/textfield.html';
+          break;
+        case 'date' || 'week' || 'month' :
+          templateUrl = './views/directive-templates/field/date.html';
+          break;
+        case 'checkbox':
+          templateUrl = './views/directive-templates/field/checkbox.html';
+          break;
+        case 'email':
+          templateUrl = './views/directive-templates/field/email.html';
+          break;
+        case 'number':
+          templateUrl = './views/directive-templates/field/number.html';
+          break;
+        case 'radio':
+          templateUrl = './views/directive-templates/field/radio.html';
+          break;
+        case 'password':
+          templateUrl = './views/directive-templates/field/password.html';
+          break;
+        case 'textarea':
+          templateUrl = './views/directive-templates/field/textarea.html';
+          break;
+        case 'dropdown':
+          templateUrl = './views/directive-templates/field/dropdown.html';
+          break;
+        default:
+          templateUrl = './views/directive-templates/field/textfield.html';
+          break
+      }
 
       //get field template
       $http.get(templateUrl).success(function(data) {
@@ -24,7 +52,7 @@ angular.module('quickFormApp')
     return {
       controller: function($scope)
       {
-
+        //angular-ui calendar setup
         function calenderSetup(){
           //Date
           $scope.today = function() {
@@ -67,8 +95,7 @@ angular.module('quickFormApp')
           $scope.format = $scope.formats[0];
 
         }
-
-        if($scope.field.field_type == 'date'){
+        if($scope.field.input_type == 'date'){
           calenderSetup();
         }
 
