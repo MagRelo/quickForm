@@ -24,7 +24,7 @@ body {
 
 /* Custom page header */
 .header {
-    border-bottom: 1px solid #888;
+    border-bottom: 1px solid $mg-bg-white;
 }
 
 /* Custom page footer */
@@ -87,11 +87,11 @@ label{
 
 .mg_section_well{
   background-color: #3C3F42;
-  border-color: #474747;
+  border-color: $mg-mid;
 }
 
 .mg_form_well, legend, .panel-default > .panel-heading{
-  border-color: $body-bg;
+  border-color: $mg-mid;
 }
 
 //*** form builder ***//
@@ -145,7 +145,7 @@ pre{
 }
 
 
-
-
-
+small{
+  color: $mg-mid;
+}
 

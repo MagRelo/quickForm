@@ -18,7 +18,7 @@
 
                 <!--common-->
                 <li class="" data-ng-repeat="type in inputTypes | filter: {display_common: true} | orderBy: 'display_priority'">
-                    <button class="btn btn-primary"  data-ng-click="formData.addField(type)" >{{type.display_name}}</button>
+                    <button class="btn btn-info"  data-ng-click="formData.addField(type)" >{{type.display_name}}</button>
                 </li>
 
                 <!--non-common-->
@@ -30,7 +30,7 @@
 
                     <ul class="dropdown-menu dropdown-menu_fieldTypes">
                         <li class="fieldTypeButton" ng-repeat="type in inputTypes | filter: {display_common: false} | orderBy: 'display_priority' ">
-                            <button class="btn btn-block btn-primary"  data-ng-click="formData.addField(type)" >{{type.display_name}}</button>
+                            <button class="btn btn-block btn-info"  data-ng-click="formData.addField(type)" >{{type.display_name}}</button>
                         </li>
                     </ul>
 
@@ -55,7 +55,7 @@
 
                         <accordion-heading>
 
-                            <button class="btn btn-sm btn-primary pull-right">edit field</button>
+                            <button class="btn btn-sm btn-info pull-right">edit field</button>
                             <p class="mg_accordian_title">{{field.display_name}}
                                 <small class="pull-right">{{field.input_type}}</small>
                             </p>
