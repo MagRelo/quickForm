@@ -6,9 +6,8 @@ angular.module('quickFormApp')
     var linker = function(scope, element) {
 
       var templateUrl = '';
-      var inputType = scope.field.input_type;
 
-      switch (inputType){
+      switch (scope.field.input_type){
         case 'checkbox':
           templateUrl = './views/directive-templates/field/checkbox.html';
           break;
@@ -68,6 +67,8 @@ angular.module('quickFormApp')
         $compile(element.contents())(scope);
       });
 
+      //prevents FOUC flicker - pre-render???
+      element.html('');
     };
 
     return {

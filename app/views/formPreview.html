@@ -7,7 +7,19 @@
 
     <!--Form-->
     <div class="well mg_form_well">
-        <quick-form form="form"></quick-form>
+        <form name="elementForm" id="elementForm">
+
+            <fieldset>
+                <legend>
+                    <span class="h4">{{form.name}}</span>
+                </legend>
+
+                <div data-ng-repeat="field in form.fields">
+                    <quick-form-field field="field"></quick-form-field>
+                </div>
+
+            </fieldset>
+        </form>
     </div>
 
     <div class="text-center">

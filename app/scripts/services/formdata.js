@@ -2,8 +2,8 @@
 
 angular.module('quickFormApp')
   .service('formData', function formData() {
-    // AngularJS will instantiate a singleton by calling "new" on this function
 
+    //
     this.name = "Contact",
     this.fields = [
     {

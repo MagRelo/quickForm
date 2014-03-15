@@ -51,7 +51,7 @@ body {
 
   .mg_preview_well{
     border: dashed 2px $mg-mid;
-    padding: 28px 20px 8px 20px;
+    padding: 28px 32px 8px 32px;
     border-radius: 14px;
   }
 
@@ -73,7 +73,7 @@ body {
 }
 
 .panel-default > .panel-heading + .panel-collapse .panel-body {
-  border-top-color: $mg-bg-white;
+  border-top-color: $mg-mid;
 }
 
 label{
