@@ -5,61 +5,7 @@ angular.module('quickFormApp')
 
     var linker = function(scope, element) {
 
-      var templateUrl = '';
-
-      switch (scope.field.input_type){
-        case 'checkbox':
-          templateUrl = './views/directive-templates/field/checkbox.html';
-          break;
-        case 'color':
-          templateUrl = './views/directive-templates/field/color.html';
-          break;
-        case 'date' :
-          templateUrl = './views/directive-templates/field/date.html';
-          break;
-        case 'dropdown' :
-          templateUrl = './views/directive-templates/field/dropdown.html';
-          break;
-        case 'email':
-          templateUrl = './views/directive-templates/field/email.html';
-          break;
-        case 'month' :
-          templateUrl = './views/directive-templates/field/date.html';
-          break;
-        case 'number':
-          templateUrl = './views/directive-templates/field/number.html';
-          break;
-        case 'password':
-          templateUrl = './views/directive-templates/field/password.html';
-          break;
-        case 'radio':
-          templateUrl = './views/directive-templates/field/radio.html';
-          break;
-        case 'range':
-          templateUrl = './views/directive-templates/field/range.html';
-          break;
-        case 'tel':
-          templateUrl = './views/directive-templates/field/telephone.html';
-          break;
-        case 'text':
-          templateUrl = './views/directive-templates/field/textfield.html';
-          break;
-        case 'textarea':
-          templateUrl = './views/directive-templates/field/textarea.html';
-          break;
-        case 'time':
-          templateUrl = './views/directive-templates/field/time.html';
-          break;
-        case 'url':
-          templateUrl = './views/directive-templates/field/url.html';
-          break;
-        case 'week' :
-          templateUrl = './views/directive-templates/field/date.html';
-          break;
-        default:
-          templateUrl = './views/directive-templates/field/textfield.html';
-          break
-      }
+      var templateUrl = './views/directive-templates/field/' + scope.field.input_type + '.html';
 
       //get field template
       $http.get(templateUrl).success(function(data) {

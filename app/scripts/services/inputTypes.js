@@ -248,6 +248,26 @@ angular.module('quickFormApp')
         },
 
         {
+          display_name : 'Text Area',
+          display_priority: '10',
+          display_common: false,
+          input_type: 'textarea',
+          name: '',
+          id: '',
+          value: '',
+          placeholder: {
+            text: ''
+          },
+          required: false,
+          pattern: {
+            text: '', regex: ''
+          },
+          attributes: [
+            {type: 'number', name: 'maxlength'}
+          ]
+        },
+
+        {
           display_name : 'Time',
           display_priority: '56',
           display_common: false,
