@@ -4,7 +4,6 @@
     <list default="true" id="d835b246-4b0a-43a1-a368-f08243dbb63d" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/formPreview.html" afterPath="$PROJECT_DIR$/app/views/formPreview.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/formbuilder.html" afterPath="$PROJECT_DIR$/app/views/formbuilder.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/scripts/services/formdata.js" afterPath="$PROJECT_DIR$/app/scripts/services/formdata.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/styles/main.scss" afterPath="$PROJECT_DIR$/app/styles/main.scss" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/output.html" afterPath="$PROJECT_DIR$/app/views/output.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
@@ -16,11 +15,11 @@
     <file path="/index.html" changelist="d835b246-4b0a-43a1-a368-f08243dbb63d" time="1394766370285" ignored="false" />
     <file path="/modelbuilder.js" changelist="d835b246-4b0a-43a1-a368-f08243dbb63d" time="1394679778033" ignored="false" />
     <file path="/modelbuilder.html" changelist="d835b246-4b0a-43a1-a368-f08243dbb63d" time="1394754869064" ignored="false" />
-    <file path="/Dummy.txt" changelist="d835b246-4b0a-43a1-a368-f08243dbb63d" time="1394838505119" ignored="false" />
-    <file path="/main.scss" changelist="d835b246-4b0a-43a1-a368-f08243dbb63d" time="1394842136455" ignored="false" />
+    <file path="/Dummy.txt" changelist="d835b246-4b0a-43a1-a368-f08243dbb63d" time="1394843004500" ignored="false" />
+    <file path="/main.scss" changelist="d835b246-4b0a-43a1-a368-f08243dbb63d" time="1394846822632" ignored="false" />
     <file path="/outputfactory.js" changelist="d835b246-4b0a-43a1-a368-f08243dbb63d" time="1394602920761" ignored="false" />
     <file path="/fieldTypes.js" changelist="d835b246-4b0a-43a1-a368-f08243dbb63d" time="1394315188173" ignored="false" />
-    <file path="/formPreview.html" changelist="d835b246-4b0a-43a1-a368-f08243dbb63d" time="1394841838243" ignored="false" />
+    <file path="/formPreview.html" changelist="d835b246-4b0a-43a1-a368-f08243dbb63d" time="1394845221300" ignored="false" />
     <file path="/form.html" changelist="d835b246-4b0a-43a1-a368-f08243dbb63d" time="1394394065650" ignored="false" />
     <file path="/inputTypes.js" changelist="d835b246-4b0a-43a1-a368-f08243dbb63d" time="1394820750169" ignored="false" />
     <file path="/quickformfield.js" changelist="d835b246-4b0a-43a1-a368-f08243dbb63d" time="1394742089902" ignored="false" />
@@ -28,7 +27,7 @@
     <file path="/navbar.html" changelist="d835b246-4b0a-43a1-a368-f08243dbb63d" time="1394512625582" ignored="false" />
     <file path="/.gitignore" changelist="d835b246-4b0a-43a1-a368-f08243dbb63d" time="1394578087711" ignored="false" />
     <file path="/main.html" changelist="d835b246-4b0a-43a1-a368-f08243dbb63d" time="1394756219580" ignored="false" />
-    <file path="/output.html" changelist="d835b246-4b0a-43a1-a368-f08243dbb63d" time="1394842897390" ignored="false" />
+    <file path="/output.html" changelist="d835b246-4b0a-43a1-a368-f08243dbb63d" time="1394846837878" ignored="false" />
     <file path="/quickform.js" changelist="d835b246-4b0a-43a1-a368-f08243dbb63d" time="1394656192886" ignored="false" />
     <file path="/textfield.html" changelist="d835b246-4b0a-43a1-a368-f08243dbb63d" time="1394757871603" ignored="false" />
     <file path="/formdatamodel.js" changelist="d835b246-4b0a-43a1-a368-f08243dbb63d" time="1394689919521" ignored="false" />
@@ -37,7 +36,7 @@
     <file path="/formdata.js" changelist="d835b246-4b0a-43a1-a368-f08243dbb63d" time="1394819008390" ignored="false" />
     <file path="/formpreview.js" changelist="d835b246-4b0a-43a1-a368-f08243dbb63d" time="1394755419122" ignored="false" />
     <file path="/output.js" changelist="d835b246-4b0a-43a1-a368-f08243dbb63d" time="1394756027896" ignored="false" />
-    <file path="/formbuilder.html" changelist="d835b246-4b0a-43a1-a368-f08243dbb63d" time="1394842876291" ignored="false" />
+    <file path="/formbuilder.html" changelist="d835b246-4b0a-43a1-a368-f08243dbb63d" time="1394844606822" ignored="false" />
     <file path="/number.html" changelist="d835b246-4b0a-43a1-a368-f08243dbb63d" time="1394761719834" ignored="false" />
     <file path="/email.html" changelist="d835b246-4b0a-43a1-a368-f08243dbb63d" time="1394765194750" ignored="false" />
     <file path="/checkbox.html" changelist="d835b246-4b0a-43a1-a368-f08243dbb63d" time="1394765415392" ignored="false" />
@@ -73,7 +72,7 @@
       <file leaf-file-name="formPreview.html" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/views/formPreview.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="23" column="41" selection-start="597" selection-end="597" vertical-scroll-proportion="-14.375">
+            <state line="12" column="16" selection-start="275" selection-end="275" vertical-scroll-proportion="-7.5">
               <folding />
             </state>
           </provider>
@@ -82,7 +81,7 @@
       <file leaf-file-name="main.scss" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/styles/main.scss">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="150" column="0" selection-start="2328" selection-end="2328" vertical-scroll-proportion="0.0">
+            <state line="156" column="18" selection-start="2513" selection-end="2513" vertical-scroll-proportion="0.0">
               <folding>
                 <element signature="e#115#200#0" expanded="false" />
                 <element signature="e#366#418#0" expanded="false" />
@@ -117,7 +116,7 @@
       <file leaf-file-name="formbuilder.html" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/views/formbuilder.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="57" column="62" selection-start="2013" selection-end="2013" vertical-scroll-proportion="-35.625">
+            <state line="1" column="29" selection-start="30" selection-end="30" vertical-scroll-proportion="24.375">
               <folding />
             </state>
           </provider>
@@ -126,7 +125,7 @@
       <file leaf-file-name="output.html" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/views/output.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="19" column="19" selection-start="943" selection-end="943" vertical-scroll-proportion="0.48387095">
+            <state line="21" column="30" selection-start="987" selection-end="987" vertical-scroll-proportion="0.53480476">
               <folding />
             </state>
           </provider>
@@ -160,11 +159,11 @@
         <option value="$PROJECT_DIR$/app/bower_components/sass-bootstrap/lib/bootstrap.scss" />
         <option value="$PROJECT_DIR$/app/index.html" />
         <option value="$PROJECT_DIR$/app/views/directive-templates/field/date.html" />
-        <option value="$PROJECT_DIR$/app/views/formPreview.html" />
-        <option value="$PROJECT_DIR$/app/styles/main.scss" />
         <option value="$PROJECT_DIR$/app/scripts/services/formdata.js" />
         <option value="$PROJECT_DIR$/app/bower_components/sass-bootstrap/lib/_variables.scss" />
         <option value="$PROJECT_DIR$/app/views/formbuilder.html" />
+        <option value="$PROJECT_DIR$/app/views/formPreview.html" />
+        <option value="$PROJECT_DIR$/app/styles/main.scss" />
         <option value="$PROJECT_DIR$/app/views/output.html" />
       </list>
     </option>
@@ -463,7 +462,11 @@
       <created>1394838514781</created>
       <updated>1394838514781</updated>
     </task>
-    <option name="localTasksCounter" value="14" />
+    <task id="LOCAL-00014" summary="final minor css tweaks">
+      <created>1394843019088</created>
+      <updated>1394843019088</updated>
+    </task>
+    <option name="localTasksCounter" value="15" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -475,7 +478,7 @@
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32721713" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.21877486" sideWeight="0.6727829" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.21877486" sideWeight="0.6727829" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
@@ -531,7 +534,7 @@
     <option name="WRAP_WHEN_TYPING_REACHES_RIGHT_MARGIN" value="false" />
     <option name="FORCE_NON_EMPTY_COMMENT" value="false" />
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="false" />
-    <option name="LAST_COMMIT_MESSAGE" value="massive css battle, little gained" />
+    <option name="LAST_COMMIT_MESSAGE" value="final minor css tweaks" />
     <option name="MAKE_NEW_CHANGELIST_ACTIVE" value="false" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="false" />
     <option name="CHECK_FILES_UP_TO_DATE_BEFORE_COMMIT" value="false" />
@@ -558,6 +561,7 @@
     <MESSAGE value="filled in missing input templates" />
     <MESSAGE value="updated dropdown and radio" />
     <MESSAGE value="massive css battle, little gained" />
+    <MESSAGE value="final minor css tweaks" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
@@ -636,23 +640,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/formPreview.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="23" column="41" selection-start="597" selection-end="597" vertical-scroll-proportion="-14.375">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/styles/main.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="150" column="0" selection-start="2328" selection-end="2328" vertical-scroll-proportion="0.0">
-          <folding>
-            <element signature="e#115#200#0" expanded="false" />
-            <element signature="e#366#418#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/scripts/services/formdata.js">
       <provider selected="true" editor-type-id="text-editor">
         <state line="120" column="65" selection-start="2439" selection-end="2439" vertical-scroll-proportion="0.0">
@@ -665,6 +652,20 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/formbuilder.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="1" column="29" selection-start="30" selection-end="30" vertical-scroll-proportion="24.375">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/formPreview.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="12" column="16" selection-start="275" selection-end="275" vertical-scroll-proportion="-7.5">
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/app/bower_components/sass-bootstrap/lib/_variables.scss">
       <provider selected="true" editor-type-id="text-editor">
         <state line="34" column="71" selection-start="986" selection-end="986" vertical-scroll-proportion="0.0">
@@ -672,16 +673,19 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/formbuilder.html">
+    <entry file="file://$PROJECT_DIR$/app/styles/main.scss">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="57" column="62" selection-start="2013" selection-end="2013" vertical-scroll-proportion="-35.625">
-          <folding />
+        <state line="156" column="18" selection-start="2513" selection-end="2513" vertical-scroll-proportion="0.0">
+          <folding>
+            <element signature="e#115#200#0" expanded="false" />
+            <element signature="e#366#418#0" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/views/output.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="19" column="19" selection-start="943" selection-end="943" vertical-scroll-proportion="0.48387095">
+        <state line="21" column="30" selection-start="987" selection-end="987" vertical-scroll-proportion="0.53480476">
           <folding />
         </state>
       </provider>

@@ -27,6 +27,11 @@ body {
     border-bottom: 1px solid $mg-bg-white;
 }
 
+.mg_preview_well{
+  border: none;
+  padding: none;
+}
+
 /* Custom page footer */
 .footer {
     padding-top: 19px;
@@ -43,6 +48,12 @@ body {
         padding-right: 0;
         margin-bottom: 20px;
     }
+
+  .mg_preview_well{
+    border: dashed 2px $mg-mid;
+    padding: 28px 20px 8px 20px;
+    border-radius: 14px;
+  }
 
 }
 
@@ -90,7 +101,7 @@ label{
   border-color: $mg-mid;
 }
 
-.mg_form_well, legend, .panel-default > .panel-heading{
+.mg_form_well, legend, .panel-default > .panel-heading, .mg_model_well, .mg_output_well{
   border-color: $mg-mid;
 }
 
@@ -100,7 +111,7 @@ label{
   background-color: $body-bg;
   padding-top: 0;
   margin-top: 20px;
-  border-radius: 14px;
+  //border-radius: 14px;
 }
 
 .fieldTypeButton{
@@ -131,10 +142,11 @@ label{
 .btn-mg {
   color: $mg-bg-white;
   background-color: $body-bg;
-  border-color: $mg-bg-lightest
+  border-color: $mg-mid;
 }
 
 //*** form preview ***//
+
 
 //*** output ***//
 
@@ -142,10 +154,14 @@ label{
 pre{
   background-color: $body-bg;
   border: none;
+  margin-bottom: 0;
 }
 
+.mg_output_well{
+  padding: 0;
+}
 
 small{
-  color: $mg-mid;
+  color: $mg-bg-white;
 }
 
