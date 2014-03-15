@@ -2,10 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="d835b246-4b0a-43a1-a368-f08243dbb63d" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/formPreview.html" afterPath="$PROJECT_DIR$/app/views/formPreview.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/formbuilder.html" afterPath="$PROJECT_DIR$/app/views/formbuilder.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/styles/main.scss" afterPath="$PROJECT_DIR$/app/styles/main.scss" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/output.html" afterPath="$PROJECT_DIR$/app/views/output.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/scripts/services/outputfactory.js" afterPath="$PROJECT_DIR$/app/scripts/services/outputfactory.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="quickForm.iws" />
@@ -15,7 +12,7 @@
     <file path="/index.html" changelist="d835b246-4b0a-43a1-a368-f08243dbb63d" time="1394766370285" ignored="false" />
     <file path="/modelbuilder.js" changelist="d835b246-4b0a-43a1-a368-f08243dbb63d" time="1394679778033" ignored="false" />
     <file path="/modelbuilder.html" changelist="d835b246-4b0a-43a1-a368-f08243dbb63d" time="1394754869064" ignored="false" />
-    <file path="/Dummy.txt" changelist="d835b246-4b0a-43a1-a368-f08243dbb63d" time="1394843004500" ignored="false" />
+    <file path="/Dummy.txt" changelist="d835b246-4b0a-43a1-a368-f08243dbb63d" time="1394846899882" ignored="false" />
     <file path="/main.scss" changelist="d835b246-4b0a-43a1-a368-f08243dbb63d" time="1394846822632" ignored="false" />
     <file path="/outputfactory.js" changelist="d835b246-4b0a-43a1-a368-f08243dbb63d" time="1394602920761" ignored="false" />
     <file path="/fieldTypes.js" changelist="d835b246-4b0a-43a1-a368-f08243dbb63d" time="1394315188173" ignored="false" />
@@ -125,7 +122,7 @@
       <file leaf-file-name="output.html" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/views/output.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="21" column="30" selection-start="987" selection-end="987" vertical-scroll-proportion="0.53480476">
+            <state line="21" column="29" selection-start="987" selection-end="987" vertical-scroll-proportion="0.53480476">
               <folding />
             </state>
           </provider>
@@ -149,7 +146,6 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/app/views/directive-templates/field/range.html" />
         <option value="$PROJECT_DIR$/app/views/directive-templates/field/time.html" />
         <option value="$PROJECT_DIR$/app/views/directive-templates/field/url.html" />
         <option value="$PROJECT_DIR$/app/scripts/directives/quickformfield.js" />
@@ -165,6 +161,7 @@
         <option value="$PROJECT_DIR$/app/views/formPreview.html" />
         <option value="$PROJECT_DIR$/app/styles/main.scss" />
         <option value="$PROJECT_DIR$/app/views/output.html" />
+        <option value="$PROJECT_DIR$/app/scripts/services/outputfactory.js" />
       </list>
     </option>
   </component>
@@ -466,7 +463,11 @@
       <created>1394843019088</created>
       <updated>1394843019088</updated>
     </task>
-    <option name="localTasksCounter" value="15" />
+    <task id="LOCAL-00015" summary="final minor css tweaks, pt.2&#10;">
+      <created>1394846905187</created>
+      <updated>1394846905187</updated>
+    </task>
+    <option name="localTasksCounter" value="16" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -478,7 +479,7 @@
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32721713" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.21877486" sideWeight="0.6727829" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.21877486" sideWeight="0.6727829" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
@@ -534,7 +535,7 @@
     <option name="WRAP_WHEN_TYPING_REACHES_RIGHT_MARGIN" value="false" />
     <option name="FORCE_NON_EMPTY_COMMENT" value="false" />
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="false" />
-    <option name="LAST_COMMIT_MESSAGE" value="final minor css tweaks" />
+    <option name="LAST_COMMIT_MESSAGE" value="final minor css tweaks, pt.2&#10;" />
     <option name="MAKE_NEW_CHANGELIST_ACTIVE" value="false" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="false" />
     <option name="CHECK_FILES_UP_TO_DATE_BEFORE_COMMIT" value="false" />
@@ -562,18 +563,12 @@
     <MESSAGE value="updated dropdown and radio" />
     <MESSAGE value="massive css battle, little gained" />
     <MESSAGE value="final minor css tweaks" />
+    <MESSAGE value="final minor css tweaks, pt.2&#10;" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/app/views/directive-templates/field/url.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="11" column="70" selection-start="426" selection-end="426" vertical-scroll-proportion="0.2740864">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/scripts/directives/quickformfield.js">
       <provider selected="true" editor-type-id="text-editor">
         <state line="129" column="42" selection-start="3893" selection-end="3893" vertical-scroll-proportion="0.0">
@@ -683,9 +678,16 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/app/scripts/services/outputfactory.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="31" column="106" selection-start="885" selection-end="885" vertical-scroll-proportion="0.1680261">
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/app/views/output.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="21" column="30" selection-start="987" selection-end="987" vertical-scroll-proportion="0.53480476">
+        <state line="21" column="29" selection-start="987" selection-end="987" vertical-scroll-proportion="0.53480476">
           <folding />
         </state>
       </provider>

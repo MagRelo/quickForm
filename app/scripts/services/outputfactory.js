@@ -6,23 +6,23 @@ angular.module('quickFormApp')
     var newline = String.fromCharCode(13);
     var tab = '  ';
 
-    var htmlOutput = function(element){
+    var htmlOutput = function(form){
 
-      var formBegin = '<form name="' + element.name + 'Form">' +
+      var formBegin = '<form name="' + form.name + 'Form">' +
         newline + newline +
-        tab + '<legend>' + element.name + '</legend>'
+        tab + '<legend>' + form.name + '</legend>'
         + newline + newline;
 
-      var fields = function(element){
+      var fields = function(form){
         var fieldsRaw = '';
 
-        for(var i = 0; i< element.fields.length; i++){
+        for(var i = 0; i< form.fields.length; i++){
 
           //label
-          fieldsRaw += tab + '<label for="'+  element.fields[i].field_id + '">' + element.fields[i].field_title + '</label>' + newline;
+          fieldsRaw += tab + '<label for="'+  form.fields[i].id + '">' + form.fields[i].display_name + '</label>' + newline;
 
           //input
-          fieldsRaw += tab + '<input type="' + element.fields[i].field_type + '" id="' + element.fields[i].field_id + '"' + (element.fields[i].field_required ? ' required':'') + '>' + newline;
+          fieldsRaw += tab + '<input type="' + form.fields[i].input_type + '" id="' + form.fields[i].id + '"' + (form.fields[i].required ? ' required':'') + '>' + newline;
 
           fieldsRaw += newline;
 
@@ -36,28 +36,28 @@ angular.module('quickFormApp')
 
       var formEnd = '</form>';
 
-      return formBegin + fields(element) + button + formEnd;
+      return formBegin + fields(form) + button + formEnd;
     };
 
-    var angularOutput = function(element){
+    var angularOutput = function(form){
 
-      var formBegin = '<form name="' + element.name + 'Form" data-ng-submit="submit' + element.name + '('+ element.name +')" novalidate>' +
+      var formBegin = '<form name="' + form.name + 'Form" data-ng-submit="submit' + form.name + '('+ form.name +')" novalidate>' +
         newline + newline +
-        tab + '<legend>' + element.name + '</legend>'
+        tab + '<legend>' + form.name + '</legend>'
         + newline + newline;
 
       var formEnd = '</form>';
 
-      var fields = function(element){
+      var fields = function(form){
         var fieldsRaw = '';
 
-        for(var i = 0; i< element.fields.length; i++){
+        for(var i = 0; i< form.fields.length; i++){
 
           //label
-          fieldsRaw += tab + '<label for="'+  element.fields[i].field_id + '">' + element.fields[i].field_title + '</label>' + newline;
+          fieldsRaw += tab + '<label for="'+  form.fields[i].id + '">' + form.fields[i].display_name + '</label>' + newline;
 
           //input
-          fieldsRaw += tab + '<input type="' + element.fields[i].field_type + '" id="' + element.fields[i].field_id + '"' + ' data-ng-model="' + element.name + '.' +  element.fields[i].field_title.replace(/ /g, '') + '"' + (element.fields[i].field_required ? ' required':'') + '>' + newline;
+          fieldsRaw += tab + '<input type="' + form.fields[i].input_type + '" id="' + form.fields[i].id + '"' + ' data-ng-model="' + form.name + '.' +  form.fields[i].display_name.replace(/ /g, '') + '"' + (form.fields[i].required ? ' required':'') + '>' + newline;
 
           fieldsRaw += newline;
 
@@ -69,10 +69,10 @@ angular.module('quickFormApp')
 
       var button = tab + '<button type="submit">Submit</button>' + newline + newline;
 
-      return formBegin + fields(element) + button + formEnd;
+      return formBegin + fields(form) + button + formEnd;
     };
 
-    var mongooseOutput = function(element){
+    var mongooseOutput = function(form){
 
       function mgRequired(required){
         if(required){
@@ -111,17 +111,17 @@ angular.module('quickFormApp')
         + "var mongoose = require('mongoose')," + newline
         + "Schema = mongoose.Schema;" + newline + newline
         + "/**" + newline
-        + "* " + element.name + " Schema" + newline
+        + "* " + form.name + " Schema" + newline
         + "*/" + newline
-        + " var " + element.name + "Schema = new Schema({" + newline;
+        + " var " + form.name + "Schema = new Schema({" + newline;
 
       var model = function(){
         var modelRaw = '';
-        for(var i = 0; i< element.fields.length; i++){
+        for(var i = 0; i< form.fields.length; i++){
 
-          modelRaw += tab + element.fields[i].field_title + ": " + '{type: '
-            + mgDataType(element.fields[i].field_type)
-            + mgRequired(element.fields[i].field_required)
+          modelRaw += tab + form.fields[i].display_name + ": " + '{type: '
+            + mgDataType(form.fields[i].input_type)
+            + mgRequired(form.fields[i].required)
             + '}' + "," + newline
           }
 
@@ -133,20 +133,20 @@ angular.module('quickFormApp')
         + "*  Validations" + newline
         + "*/" + newline + newline;
 
-      var initialize = "mongoose.model('" + element.name + "', " + element.name + "Schema);";
+      var initialize = "mongoose.model('" + form.name + "', " + form.name + "Schema);";
 
       return fileBegin + model() + validations + initialize
     };
 
-    var firebaseOutput = function(element){
+    var firebaseOutput = function(form){
 
       function fbRequiredFieldsString(){
 
         var fields = '';
-        element.fields.forEach(function(field){
+        form.fields.forEach(function(field){
 
-          if(field.field_required){
-            fields += "'" + field.field_title.replace(/\s+/g, '') + "',";
+          if(field.required){
+            fields += "'" + field.display_name.replace(/\s+/g, '') + "',";
           }
 
         });
@@ -181,8 +181,8 @@ angular.module('quickFormApp')
       }
 
       var begin = '{' + newline
-        + '"' + element.name + '": {' + newline
-        + tab + '"$' + element.name + '": {' + newline
+        + '"' + form.name + '": {' + newline
+        + tab + '"$' + form.name + '": {' + newline
         + tab + tab + '".read": true,' + newline
         + tab + tab + '".write": true,' + newline
         + tab + tab + '".validate": "newData.hasChildren([' + fbRequiredFieldsString() + '])",' + newline;
@@ -191,9 +191,9 @@ angular.module('quickFormApp')
       function fieldValidations(){
         var fields = '';
 
-        element.fields.forEach(function(field){
-          fields += tab + tab + '"' + field.field_title +  '": {' + newline
-            + tab + tab + tab + '".validate": "' + fbDataType(field.field_type) + fbRequired(field.field_required) + '"},' + newline;
+        form.fields.forEach(function(field){
+          fields += tab + tab + '"' + field.display_name +  '": {' + newline
+            + tab + tab + tab + '".validate": "' + fbDataType(field.input_type) + fbRequired(field.required) + '"},' + newline;
         });
 
         //slice off last comma
@@ -219,16 +219,16 @@ angular.module('quickFormApp')
         ]
       },
 
-      outputFunction: function (element, style) {
+      outputFunction: function (form, style) {
         switch(style){
           case 'html':
-            return htmlOutput(element);
+            return htmlOutput(form);
           case 'angular':
-            return angularOutput(element);
+            return angularOutput(form);
           case 'mongoose':
-            return mongooseOutput(element);
+            return mongooseOutput(form);
           case 'firebase':
-            return firebaseOutput(element);
+            return firebaseOutput(form);
         }
 
         return 'no output'
