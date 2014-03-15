@@ -1,5 +1,5 @@
 
-<h3 class="text-primary">Live Preview
+<h3 class="text-primary">Form Preview
     <small> test your form</small>
 </h3>
 
@@ -22,7 +22,7 @@
         </form>
     </div>
 
-    <div class="text-center">
+    <div class="text-center" data-ng-show="form.fields.length > 0">
         <!--Validation-->
         <div data-ng-show="elementForm.$valid">
             <h4 class="text-success">form is valid &#x2713;</h4>

@@ -2,41 +2,48 @@
 <h3 class="text-primary">Form Builder
     <small> create your form</small>
 </h3>
+
 <div class="well mg_section_well" data-ng-controller="FormbuilderCtrl">
     <div class="row">
 
         <!--model name-->
         <div class="col-sm-4">
-            <h4 class="text-muted">Form name</h4>
-            <input type="text" class="form-control" id="form-name" name="form-name" ng-model="formData.name" autofocus>
+            <div class="form-group">
+                <label for="form-name">Form name</label>
+                <input type="text" class="form-control" id="form-name" name="form-name" ng-model="formData.name" autofocus>
+            </div>
         </div>
 
         <!--input type buttons-->
         <div class="col-sm-8">
-            <h4 class="text-muted">Add fields</h4>
-            <ul class="list-inline">
+            <div class="form-group">
+                <label>Add fields</label>
 
-                <!--common-->
-                <li class="" data-ng-repeat="type in inputTypes | filter: {display_common: true} | orderBy: 'display_priority'">
-                    <button class="btn btn-info"  data-ng-click="formData.addField(type)" >{{type.display_name}}</button>
-                </li>
+                <ul class="list-inline">
 
-                <!--non-common-->
-                <li class="dropdown">
+                    <!--common-->
+                    <li class="" data-ng-repeat="type in inputTypes | filter: {display_common: true} | orderBy: 'display_priority'">
+                        <button class="btn btn-info"  data-ng-click="formData.addField(type)" >{{type.display_name}}</button>
+                    </li>
 
-                    <button class="btn btn-info dropdown-toggle">More
-                        <span class="glyphicon glyphicon-chevron-down"></span>
-                    </button>
+                    <!--non-common-->
+                    <li class="dropdown">
 
-                    <ul class="dropdown-menu dropdown-menu_fieldTypes">
-                        <li class="fieldTypeButton" ng-repeat="type in inputTypes | filter: {display_common: false} | orderBy: 'display_priority' ">
-                            <button class="btn btn-block btn-info"  data-ng-click="formData.addField(type)" >{{type.display_name}}</button>
-                        </li>
-                    </ul>
+                        <button class="btn btn-info dropdown-toggle">More
+                            <span class="glyphicon glyphicon-chevron-down"></span>
+                        </button>
 
-                </li>
+                        <ul class="dropdown-menu dropdown-menu_fieldTypes">
+                            <li class="fieldTypeButton" ng-repeat="type in inputTypes | filter: {display_common: false} | orderBy: 'display_priority' ">
+                                <button class="btn btn-block btn-info"  data-ng-click="formData.addField(type)" >{{type.display_name}}</button>
+                            </li>
+                        </ul>
 
-            </ul>
+                    </li>
+
+                </ul>
+            </div>
+
         </div>
 
     </div>
@@ -47,6 +54,8 @@
         <div class="col-sm-offset-1 col-sm-10">
 
             <div class="well mg_model_well">
+
+                <!--form title-->
                 <h3>{{formData.name}}</h3>
 
                 <!--fields-->
@@ -141,9 +150,7 @@
 
                             </form>
 
-                            <div class="">
-                                <button class="btn btn-danger btn-sm" type="button" ng-click="formData.removeField($index)">delete field</button>
-                            </div>
+                            <button class="btn btn-danger btn-sm" type="button" ng-click="formData.removeField($index)">delete field</button>
 
                         </div>
 

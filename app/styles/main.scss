@@ -63,45 +63,35 @@ body {
 
 //*** bootstrap overrides ***//
 
-.panel{
-  border-color: #474747;
-}
 
-.panel-default > .panel-heading {
-  background-color: $mg-bg-lighter;
-  color: $mg-bg-white;
-}
 
-.panel-default > .panel-heading + .panel-collapse .panel-body {
-  border-top-color: $mg-mid;
-}
 
 label{
   color: $mg-bg-white;
 }
 
-.alert{
-  margin-bottom: 0;
-  border-width: 3px;
-}
-
-.alert.alert-success{
-  border-color: $brand-success;
-}
-
-.alert.alert-danger{
-  border-color: $brand-danger;
-}
-
 
 //*** common **//
 
-.mg_section_well{
-  background-color: #3C3F42;
+small{
+  color: $mg-bg-white;
+}
+
+//date button
+.btn-mg {
+  color: $mg-bg-white;
+  background-color: $body-bg;
   border-color: $mg-mid;
 }
 
-.mg_form_well, legend, .panel-default > .panel-heading, .mg_model_well, .mg_output_well{
+.mg_section_well{
+  background-color: $mg-bg-lighter;
+}
+
+.mg_section_well,
+.mg_form_well,
+.mg_model_well,
+.mg_output_well, legend, .panel, .panel-default > .panel-heading {
   border-color: $mg-mid;
 }
 
@@ -110,8 +100,7 @@ label{
 .mg_model_well{
   background-color: $body-bg;
   padding-top: 0;
-  margin-top: 20px;
-  //border-radius: 14px;
+  margin-top: 14px;
 }
 
 .fieldTypeButton{
@@ -119,8 +108,18 @@ label{
 }
 .dropdown-menu_fieldTypes{
   padding: 6px;
-  background-color: #666;
+  background-color: $mg-mid;
   left: -35px;
+}
+
+//accordian panel
+.panel-default > .panel-heading {
+  background-color: $mg-bg-lighter;
+  color: $mg-bg-white;
+}
+
+.panel-default > .panel-heading + .panel-collapse .panel-body {
+  border-top-color: $mg-mid;
 }
 
 .mg_accordian_title{
@@ -139,12 +138,6 @@ label{
   margin-bottom: 7px;
 }
 
-.btn-mg {
-  color: $mg-bg-white;
-  background-color: $body-bg;
-  border-color: $mg-mid;
-}
-
 //*** form preview ***//
 
 
@@ -161,7 +154,5 @@ pre{
   padding: 0;
 }
 
-small{
-  color: $mg-bg-white;
-}
+
 

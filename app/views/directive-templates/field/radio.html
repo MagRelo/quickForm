@@ -4,11 +4,11 @@
         <small class="text-muted" data-ng-show="field.required" >(required)</small>
     </label>
 
-    <div class="well well-sm">
+    <div class="well well-sm mg_form_well">
         <div data-ng-repeat="option in field.options">
             <label>
                 <input type="radio" value="{{option.value}}" data-ng-model="field.value"/>
-                <span data-ng-bind="option.name"></span>
+                <small data-ng-bind="option.name"></small>
             </label>
         </div>
     </div>
