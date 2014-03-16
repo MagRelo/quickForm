@@ -1,13 +1,13 @@
 <div class="form-group">
 
     <label>{{field.display_name}}
-        <small class="text-muted" data-ng-show="field.required" >(required)</small>
+        <small class="text-muted" data-ng-show="field.required">(required)</small>
     </label>
 
     <div class="well well-sm mg_form_well">
         <div data-ng-repeat="option in field.options">
             <label>
-                <input type="radio" value="{{option.value}}" data-ng-model="field.value"/>
+                <input type="radio" value="{{option.value}}" data-ng-model="field.value" data-ng-required="field.required"/>
                 <small data-ng-bind="option.name"></small>
             </label>
         </div>

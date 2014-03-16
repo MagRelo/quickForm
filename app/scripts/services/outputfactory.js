@@ -6,9 +6,17 @@ angular.module('quickFormApp')
     var newline = String.fromCharCode(13);
     var tab = '  ';
 
+    function noSpace(inputString){
+      return inputString.replace(/ /g, '');
+    }
+
+    function underScore(inputString){
+      return inputString.replace(/ /g, '_');
+    }
+
     var htmlOutput = function(form){
 
-      var formBegin = '<form name="' + form.name + 'Form">' +
+      var formBegin = '<form name="' + underScore(form.name) + 'Form">' +
         newline + newline +
         tab + '<legend>' + form.name + '</legend>'
         + newline + newline;
@@ -41,7 +49,7 @@ angular.module('quickFormApp')
 
     var angularOutput = function(form){
 
-      var formBegin = '<form name="' + form.name + 'Form" data-ng-submit="submit' + form.name + '('+ form.name +')" novalidate>' +
+      var formBegin = '<form name="' + underScore(form.name) + 'Form" data-ng-submit="submit' + underScore(form.name) + '('+ underScore(form.name)+')" novalidate>' +
         newline + newline +
         tab + '<legend>' + form.name + '</legend>'
         + newline + newline;
@@ -57,7 +65,7 @@ angular.module('quickFormApp')
           fieldsRaw += tab + '<label for="'+  form.fields[i].id + '">' + form.fields[i].display_name + '</label>' + newline;
 
           //input
-          fieldsRaw += tab + '<input type="' + form.fields[i].input_type + '" id="' + form.fields[i].id + '"' + ' data-ng-model="' + form.name + '.' +  form.fields[i].display_name.replace(/ /g, '') + '"' + (form.fields[i].required ? ' required':'') + '>' + newline;
+          fieldsRaw += tab + '<input type="' + form.fields[i].input_type + '" id="' + form.fields[i].id + '"' + ' data-ng-model="' + underScore(form.name) + '.' +  underScore(form.fields[i].display_name) + '"' + (form.fields[i].required ? ' required':'') + '>' + newline;
 
           fieldsRaw += newline;
 
@@ -113,13 +121,13 @@ angular.module('quickFormApp')
         + "/**" + newline
         + "* " + form.name + " Schema" + newline
         + "*/" + newline
-        + " var " + form.name + "Schema = new Schema({" + newline;
+        + " var " + underScore(form.name) + "Schema = new Schema({" + newline;
 
       var model = function(){
         var modelRaw = '';
         for(var i = 0; i< form.fields.length; i++){
 
-          modelRaw += tab + form.fields[i].display_name + ": " + '{type: '
+          modelRaw += tab + underScore(form.fields[i].display_name) + ": " + '{type: '
             + mgDataType(form.fields[i].input_type)
             + mgRequired(form.fields[i].required)
             + '}' + "," + newline
@@ -133,7 +141,7 @@ angular.module('quickFormApp')
         + "*  Validations" + newline
         + "*/" + newline + newline;
 
-      var initialize = "mongoose.model('" + form.name + "', " + form.name + "Schema);";
+      var initialize = "mongoose.model('" + underScore(form.name) + "', " + underScore(form.name) + "Schema);";
 
       return fileBegin + model() + validations + initialize
     };
@@ -146,7 +154,7 @@ angular.module('quickFormApp')
         form.fields.forEach(function(field){
 
           if(field.required){
-            fields += "'" + field.display_name.replace(/\s+/g, '') + "',";
+            fields += "'" + underScore(field.display_name) + "',";
           }
 
         });
@@ -181,8 +189,8 @@ angular.module('quickFormApp')
       }
 
       var begin = '{' + newline
-        + '"' + form.name + '": {' + newline
-        + tab + '"$' + form.name + '": {' + newline
+        + '"' + underScore(form.name) + '": {' + newline
+        + tab + '"$' + underScore(form.name) + '": {' + newline
         + tab + tab + '".read": true,' + newline
         + tab + tab + '".write": true,' + newline
         + tab + tab + '".validate": "newData.hasChildren([' + fbRequiredFieldsString() + '])",' + newline;
@@ -192,7 +200,7 @@ angular.module('quickFormApp')
         var fields = '';
 
         form.fields.forEach(function(field){
-          fields += tab + tab + '"' + field.display_name +  '": {' + newline
+          fields += tab + tab + '"' + underScore(field.display_name) +  '": {' + newline
             + tab + tab + tab + '".validate": "' + fbDataType(field.input_type) + fbRequired(field.required) + '"},' + newline;
         });
 
@@ -214,8 +222,8 @@ angular.module('quickFormApp')
           {name: 'angular', type: 'angular'}
         ],
         backend: [
-          {name: 'mongoose', type: 'mongoose'},
-          {name: 'firebase', type: 'firebase'}
+          {name: 'mongoose schema', type: 'mongoose'},
+          {name: 'firebase security', type: 'firebase'}
         ]
       },
 
