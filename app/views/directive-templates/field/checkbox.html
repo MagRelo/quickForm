@@ -1,13 +1,4 @@
-
-<div class="form-group">
-    <label for="field.id">{{field.display_name}}
-        <small class="text-muted" data-ng-show="field.required" >(required)</small>
-    </label>
-
-    <input type="checkbox" id="field.id"
-           data-ng-model="field.field_value"
-           data-ng-true-value="1"
-           data-ng-false-value="0"
-           data-ng-required="field.required"/>
-
-</div>
+<input type="checkbox" id="field.id" name="{{field.name}}"
+       data-ng-model="field.field_value"
+       data-ng-true-value="1"
+       data-ng-false-value="0"/>

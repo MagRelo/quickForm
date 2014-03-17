@@ -1,14 +1,6 @@
-<div class="form-group">
-
-    <label for="field.id">{{field.display_name}}
-        <small class="text-muted" data-ng-show="field.required" >(required)</small>
-    </label>
-
-    <p class="input-group">
-        <input type="text" id="field.id" class="form-control" datepicker-popup="{{format}}" ng-model="field.value" is-open="opened" datepicker-options="dateOptions" date-disabled="disabled(date, mode)" ng-required="field.required" close-text="Close" />
+<p class="input-group">
+    <input type="text" id="field.id" name="{{field.name}}" class="form-control" datepicker-popup="{{format}}" ng-model="field.value" is-open="opened" datepicker-options="dateOptions" date-disabled="disabled(date, mode)" ng-required="field.required" close-text="Close" />
         <span class="input-group-btn">
             <button class="btn btn-mg" ng-click="open($event)"><i class="glyphicon glyphicon-calendar"></i></button>
         </span>
-    </p>
-
-</div>
+</p>

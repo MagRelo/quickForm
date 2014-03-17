@@ -70,9 +70,6 @@ angular.module('quickFormApp')
       },
       template: '<div>{{field}}</div>',
       restrict: 'E',
-      scope: {
-        field:'='
-      },
       link: linker
     };
   });

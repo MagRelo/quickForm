@@ -1,8 +1,6 @@
-
-<div class="form-group">
-    <label for="field.id">{{field.display_name}}
-        <small class="text-muted" data-ng-show="field.required" >(required)</small>
-    </label>
-
-    <textarea rows="3" class="form-control" id="field.id" data-ng-model="field.value" data-ng-required="field.required"></textarea>
-</div>
+<textarea rows="3" class="form-control"
+          id="{{field.id}}"
+          name="{{field.name}}"
+          data-ng-model="field.value"
+          data-ng-required="field.required">
+</textarea>

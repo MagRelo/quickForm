@@ -15,7 +15,6 @@ angular.module('quickFormApp')
           name: '',
           id: '',
           value: '',
-          required: false,
           checked: {
             value: false
           }

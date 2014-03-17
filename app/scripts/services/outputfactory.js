@@ -34,7 +34,7 @@ angular.module('quickFormApp')
         return 'for="' + field.id + '"';
       }
       function inputAttrs(field){
-        var attrs = 'id="' + field.id + '"'
+        var attrs = 'id="' + field.id + '" '
           + (field.placeholder ? field.placeholder.value !== '' ? ' placeholder="' + field.placeholder.value + '" ' :'':'')
           + (field.checked ? 'checked = ' + field.checked.value + ' ' :'')
           + (field.min ? field.min.value !== '' ? ' min="' + field.min.value + '" ' :'':'')
@@ -280,9 +280,6 @@ angular.module('quickFormApp')
       ],
 
       outputFunction: function (form, outputType, cssStyle, jsStyle) {
-
-
-//        return htmlOutput(form, cssStyle, jsStyle);
 
         switch(outputType){
           case 'html':

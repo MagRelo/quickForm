@@ -140,6 +140,7 @@ angular.module('quickFormApp')
 
       //get unique index
       fieldObject.id = this.uniqueFieldId(this.fields.length + 1);
+      fieldObject.name = fieldObject.display_name.replace(/ /g, '_') + fieldObject.id;
 
       //add to field array
       this.fields.push(fieldObject);

@@ -14,23 +14,44 @@
                     <span class="h4">{{form.name}}</span>
                 </legend>
 
-                <div data-ng-repeat="field in form.fields">
-                    <quick-form-field field="field"></quick-form-field>
+                <div  class="form-group" data-ng-repeat="field in form.fields">
+                    <label for="{{field.id}}">{{field.display_name}}
+
+                        <!--invalid-->
+                        <small class="text-danger" data-ng-show="elementForm.{{field.name}}.$invalid && elementForm.{{field.name}}.$dirty">
+                            <span class="glyphicon glyphicon-remove"></span>
+                        </small>
+
+                        <!--required-->
+                        <small class="text-danger" data-ng-show="elementForm.{{field.name}}.$error.required">
+                            (required)
+                        </small>
+
+                        <!--valid-->
+                        <small class="text-success" data-ng-show="elementForm.{{field.name}}.$valid && elementForm.{{field.name}}.$dirty">
+                            <span class="glyphicon glyphicon-ok"></span>
+                        </small>
+
+                    </label>
+
+                    <quick-form-field></quick-form-field>
                 </div>
 
             </fieldset>
         </form>
     </div>
 
-    <div class="text-center" data-ng-show="form.fields.length > 0">
-        <!--Validation-->
-        <div data-ng-show="elementForm.$valid">
-            <h4 class="text-success">form is valid &#x2713;</h4>
-        </div>
+    <!--<div class="text-center" data-ng-show="form.fields.length > 0">-->
+        <!--&lt;!&ndash;Validation&ndash;&gt;-->
+        <!--<div data-ng-show="elementForm.$valid">-->
+            <!--<h4 class="text-success">form is valid &#x2713;</h4>-->
+        <!--</div>-->
 
-        <div data-ng-show="elementForm.$invalid">
-            <h4 class="text-danger">form is incomplete &#x2717;</h4>
-        </div>
-    </div>
+        <!--<div data-ng-show="elementForm.$invalid">-->
+            <!--<h4 class="text-danger">form is incomplete &#x2717;</h4>-->
+        <!--</div>-->
+    <!--</div>-->
 
 </div>
+
+<!--field="field" isValid="elementForm.{{field.name}}.$valid"-->

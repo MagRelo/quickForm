@@ -1,12 +1,7 @@
-<div class="form-group">
-    <label for="selectLabel">{{field.display_name}}
-        <small class="text-muted" data-ng-show="field.required" >(required)</small>
-    </label>
-
-    <select class="form-control" name="selectLabel" id="selectLabel"
-            data-ng-model="field.value"
-            data-ng-options="option.value as option.name for option in field.options"
-            data-ng-required="field.required">
-    </select>
-
-</div>
+<select class="form-control"
+        name="{{field.name}}"
+        id="{{field.id}}"
+        data-ng-model="field.value"
+        data-ng-options="option.value as option.name for option in field.options"
+        data-ng-required="field.required">
+</select>
