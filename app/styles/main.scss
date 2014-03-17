@@ -51,7 +51,7 @@ body {
 
   .mg_preview_well{
     border: dashed 2px #999999;
-    padding: 28px 32px 8px 32px;
+    padding: 30px 30px 8px 30px;
     border-radius: 14px;
   }
 
@@ -78,10 +78,17 @@ small{
 }
 
 //date button
-.btn-mg {
+
+.btn-mg{
+  background-color: $mg-mid;
   color: $mg-bg-white;
-  background-color: $body-bg;
   border-color: $mg-mid;
+}
+
+.btn-mg:hover {
+  color: $mg-bg-white;
+  background-color: $brand-danger;
+  border-color: $brand-danger;
 }
 
 .mg_section_well{
@@ -137,6 +144,7 @@ small{
 .optionSpacer{
   margin-bottom: 7px;
 }
+
 
 //*** form preview ***//
 

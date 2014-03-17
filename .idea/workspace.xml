@@ -2,9 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="d835b246-4b0a-43a1-a368-f08243dbb63d" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/views/directive-templates/field/month.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/views/directive-templates/field/week.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/formPreview.html" afterPath="$PROJECT_DIR$/app/views/formPreview.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/formbuilder.html" afterPath="$PROJECT_DIR$/app/views/formbuilder.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/styles/main.scss" afterPath="$PROJECT_DIR$/app/styles/main.scss" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="quickForm.iws" />
@@ -14,8 +13,8 @@
     <file path="/index.html" changelist="d835b246-4b0a-43a1-a368-f08243dbb63d" time="1394766370285" ignored="false" />
     <file path="/modelbuilder.js" changelist="d835b246-4b0a-43a1-a368-f08243dbb63d" time="1394679778033" ignored="false" />
     <file path="/modelbuilder.html" changelist="d835b246-4b0a-43a1-a368-f08243dbb63d" time="1394754869064" ignored="false" />
-    <file path="/Dummy.txt" changelist="d835b246-4b0a-43a1-a368-f08243dbb63d" time="1395014736338" ignored="false" />
-    <file path="/main.scss" changelist="d835b246-4b0a-43a1-a368-f08243dbb63d" time="1395014290188" ignored="false" />
+    <file path="/Dummy.txt" changelist="d835b246-4b0a-43a1-a368-f08243dbb63d" time="1395018899521" ignored="false" />
+    <file path="/main.scss" changelist="d835b246-4b0a-43a1-a368-f08243dbb63d" time="1395022066031" ignored="false" />
     <file path="/outputfactory.js" changelist="d835b246-4b0a-43a1-a368-f08243dbb63d" time="1395011635795" ignored="false" />
     <file path="/fieldTypes.js" changelist="d835b246-4b0a-43a1-a368-f08243dbb63d" time="1394315188173" ignored="false" />
     <file path="/formPreview.html" changelist="d835b246-4b0a-43a1-a368-f08243dbb63d" time="1395014788564" ignored="false" />
@@ -35,7 +34,7 @@
     <file path="/formdata.js" changelist="d835b246-4b0a-43a1-a368-f08243dbb63d" time="1394874188294" ignored="false" />
     <file path="/formpreview.js" changelist="d835b246-4b0a-43a1-a368-f08243dbb63d" time="1394755419122" ignored="false" />
     <file path="/output.js" changelist="d835b246-4b0a-43a1-a368-f08243dbb63d" time="1394756027896" ignored="false" />
-    <file path="/formbuilder.html" changelist="d835b246-4b0a-43a1-a368-f08243dbb63d" time="1395014660263" ignored="false" />
+    <file path="/formbuilder.html" changelist="d835b246-4b0a-43a1-a368-f08243dbb63d" time="1395026199194" ignored="false" />
     <file path="/number.html" changelist="d835b246-4b0a-43a1-a368-f08243dbb63d" time="1394761719834" ignored="false" />
     <file path="/email.html" changelist="d835b246-4b0a-43a1-a368-f08243dbb63d" time="1394765194750" ignored="false" />
     <file path="/checkbox.html" changelist="d835b246-4b0a-43a1-a368-f08243dbb63d" time="1394765415392" ignored="false" />
@@ -68,36 +67,22 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="inputTypes.js" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/scripts/services/inputTypes.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="18" column="36" selection-start="374" selection-end="374" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="formbuilder.html" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="formbuilder.html" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/views/formbuilder.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="136" column="101" selection-start="6589" selection-end="6589" vertical-scroll-proportion="-17.375">
+            <state line="174" column="30" selection-start="8865" selection-end="8865" vertical-scroll-proportion="0.72665536">
               <folding>
                 <element signature="tag#li#0;tag#ul#0;tag#div#0;tag#div#1;tag#div#0;tag#div#0" expanded="false" />
                 <element signature="tag#li#1;tag#ul#0;tag#div#0;tag#div#1;tag#div#0;tag#div#0" expanded="false" />
+                <element signature="tag#div#0;tag#form#0;tag#div#0;tag#accordion-group#0;tag#accordion#0;tag#div#0;tag#div#0;tag#div#1;tag#div#0" expanded="false" />
+                <element signature="tag#div#1;tag#form#0;tag#div#0;tag#accordion-group#0;tag#accordion#0;tag#div#0;tag#div#0;tag#div#1;tag#div#0" expanded="false" />
                 <element signature="tag#div#2;tag#form#0;tag#div#0;tag#accordion-group#0;tag#accordion#0;tag#div#0;tag#div#0;tag#div#1;tag#div#0" expanded="false" />
                 <element signature="tag#div#3;tag#form#0;tag#div#0;tag#accordion-group#0;tag#accordion#0;tag#div#0;tag#div#0;tag#div#1;tag#div#0" expanded="false" />
                 <element signature="tag#div#4;tag#form#0;tag#div#0;tag#accordion-group#0;tag#accordion#0;tag#div#0;tag#div#0;tag#div#1;tag#div#0" expanded="false" />
+                <element signature="tag#div#5;tag#form#0;tag#div#0;tag#accordion-group#0;tag#accordion#0;tag#div#0;tag#div#0;tag#div#1;tag#div#0" expanded="false" />
+                <element signature="tag#div#6;tag#form#0;tag#div#0;tag#accordion-group#0;tag#accordion#0;tag#div#0;tag#div#0;tag#div#1;tag#div#0" expanded="false" />
                 <element signature="tag#div#7;tag#form#0;tag#div#0;tag#accordion-group#0;tag#accordion#0;tag#div#0;tag#div#0;tag#div#1;tag#div#0" expanded="false" />
               </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="formPreview.html" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/views/formPreview.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="31" column="54" selection-start="921" selection-end="921" vertical-scroll-proportion="-19.375">
-              <folding />
             </state>
           </provider>
         </entry>
@@ -105,38 +90,11 @@
       <file leaf-file-name="main.scss" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/styles/main.scss">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="86" column="56" selection-start="1359" selection-end="1359" vertical-scroll-proportion="0.0">
+            <state line="87" column="7" selection-start="1348" selection-end="1348" vertical-scroll-proportion="-11.44">
               <folding>
                 <element signature="e#115#200#0" expanded="false" />
                 <element signature="e#366#418#0" expanded="false" />
               </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="month.html" pinned="false" current="true" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/app/views/directive-templates/field/month.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="13" column="42" selection-start="642" selection-end="642" vertical-scroll-proportion="0.33106962">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="week.html" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/views/directive-templates/field/week.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="13" column="6" selection-start="642" selection-end="642" vertical-scroll-proportion="-8.125">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="date.html" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/views/directive-templates/field/date.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="13" column="55" selection-start="0" selection-end="642" vertical-scroll-proportion="-8.125">
-              <folding />
             </state>
           </provider>
         </entry>
@@ -159,7 +117,6 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/app/views/directive-templates/field/email.html" />
         <option value="$PROJECT_DIR$/app/views/directive-templates/field/number.html" />
         <option value="$PROJECT_DIR$/app/views/directive-templates/field/password.html" />
         <option value="$PROJECT_DIR$/app/views/main.html" />
@@ -169,12 +126,13 @@
         <option value="$PROJECT_DIR$/app/scripts/services/formdata.js" />
         <option value="$PROJECT_DIR$/app/scripts/services/outputfactory.js" />
         <option value="$PROJECT_DIR$/app/views/directive-templates/field/radio.html" />
-        <option value="$PROJECT_DIR$/app/styles/main.scss" />
         <option value="$PROJECT_DIR$/app/scripts/services/inputTypes.js" />
-        <option value="$PROJECT_DIR$/app/views/formbuilder.html" />
         <option value="$PROJECT_DIR$/app/views/formPreview.html" />
         <option value="$PROJECT_DIR$/app/views/directive-templates/field/week.html" />
         <option value="$PROJECT_DIR$/app/views/directive-templates/field/month.html" />
+        <option value="$PROJECT_DIR$/app/bower_components/sass-bootstrap/lib/_variables.scss" />
+        <option value="$PROJECT_DIR$/app/styles/main.scss" />
+        <option value="$PROJECT_DIR$/app/views/formbuilder.html" />
       </list>
     </option>
   </component>
@@ -277,32 +235,6 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="views" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="quickForm" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="quickForm" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="app" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="views" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="directive-templates" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="field" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -505,7 +437,11 @@
       <created>1395014744970</created>
       <updated>1395014744970</updated>
     </task>
-    <option name="localTasksCounter" value="22" />
+    <task id="LOCAL-00022" summary="added 'month' and 'week' templates">
+      <created>1395018906413</created>
+      <updated>1395018906413</updated>
+    </task>
+    <option name="localTasksCounter" value="23" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -517,7 +453,7 @@
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32721713" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.21877486" sideWeight="0.6727829" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.21877486" sideWeight="0.6727829" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
@@ -573,7 +509,7 @@
     <option name="WRAP_WHEN_TYPING_REACHES_RIGHT_MARGIN" value="false" />
     <option name="FORCE_NON_EMPTY_COMMENT" value="false" />
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="false" />
-    <option name="LAST_COMMIT_MESSAGE" value="add min, max, maxlength attributes. updated inputTypes" />
+    <option name="LAST_COMMIT_MESSAGE" value="added 'month' and 'week' templates" />
     <option name="MAKE_NEW_CHANGELIST_ACTIVE" value="false" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="false" />
     <option name="CHECK_FILES_UP_TO_DATE_BEFORE_COMMIT" value="false" />
@@ -608,6 +544,7 @@
     <MESSAGE value="unique ids" />
     <MESSAGE value="add trim and underscore to outputFactory, fix 'required' with radio elements" />
     <MESSAGE value="add min, max, maxlength attributes. updated inputTypes" />
+    <MESSAGE value="added 'month' and 'week' templates" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
@@ -616,13 +553,6 @@
     <entry file="file://$PROJECT_DIR$/app/index.html">
       <provider selected="true" editor-type-id="text-editor">
         <state line="85" column="60" selection-start="3607" selection-end="3607" vertical-scroll-proportion="-15.791667">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/output.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="21" column="0" selection-start="987" selection-end="987" vertical-scroll-proportion="-13.125">
           <folding />
         </state>
       </provider>
@@ -646,13 +576,6 @@
     <entry file="file://$PROJECT_DIR$/app/scripts/controllers/formbuilder.js">
       <provider selected="true" editor-type-id="text-editor">
         <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/bower_components/sass-bootstrap/lib/_variables.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="5" column="0" selection-start="89" selection-end="103" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
@@ -700,30 +623,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/formbuilder.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="136" column="101" selection-start="6589" selection-end="6589" vertical-scroll-proportion="-17.375">
-          <folding>
-            <element signature="tag#li#0;tag#ul#0;tag#div#0;tag#div#1;tag#div#0;tag#div#0" expanded="false" />
-            <element signature="tag#li#1;tag#ul#0;tag#div#0;tag#div#1;tag#div#0;tag#div#0" expanded="false" />
-            <element signature="tag#div#2;tag#form#0;tag#div#0;tag#accordion-group#0;tag#accordion#0;tag#div#0;tag#div#0;tag#div#1;tag#div#0" expanded="false" />
-            <element signature="tag#div#3;tag#form#0;tag#div#0;tag#accordion-group#0;tag#accordion#0;tag#div#0;tag#div#0;tag#div#1;tag#div#0" expanded="false" />
-            <element signature="tag#div#4;tag#form#0;tag#div#0;tag#accordion-group#0;tag#accordion#0;tag#div#0;tag#div#0;tag#div#1;tag#div#0" expanded="false" />
-            <element signature="tag#div#7;tag#form#0;tag#div#0;tag#accordion-group#0;tag#accordion#0;tag#div#0;tag#div#0;tag#div#1;tag#div#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/styles/main.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="86" column="56" selection-start="1359" selection-end="1359" vertical-scroll-proportion="0.0">
-          <folding>
-            <element signature="e#115#200#0" expanded="false" />
-            <element signature="e#366#418#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/views/formPreview.html">
       <provider selected="true" editor-type-id="text-editor">
         <state line="31" column="54" selection-start="921" selection-end="921" vertical-scroll-proportion="-19.375">
@@ -733,22 +632,64 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/views/directive-templates/field/date.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="13" column="55" selection-start="0" selection-end="642" vertical-scroll-proportion="-8.125">
+        <state line="13" column="55" selection-start="0" selection-end="642" vertical-scroll-proportion="0.33106962">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/views/directive-templates/field/week.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="13" column="6" selection-start="642" selection-end="642" vertical-scroll-proportion="-8.125">
+        <state line="13" column="6" selection-start="642" selection-end="642" vertical-scroll-proportion="0.33106962">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/views/directive-templates/field/month.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="13" column="42" selection-start="642" selection-end="642" vertical-scroll-proportion="0.33106962">
+        <state line="13" column="42" selection-start="642" selection-end="642" vertical-scroll-proportion="-8.125">
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/bower_components/sass-bootstrap/lib/_variables.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="36" column="89" selection-start="996" selection-end="996" vertical-scroll-proportion="0.76677316">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/styles/main.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="87" column="7" selection-start="1348" selection-end="1348" vertical-scroll-proportion="-11.44">
+          <folding>
+            <element signature="e#115#200#0" expanded="false" />
+            <element signature="e#366#418#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/output.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="21" column="27" selection-start="987" selection-end="987" vertical-scroll-proportion="0.53480476">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/formbuilder.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="174" column="30" selection-start="8865" selection-end="8865" vertical-scroll-proportion="0.72665536">
+          <folding>
+            <element signature="tag#li#0;tag#ul#0;tag#div#0;tag#div#1;tag#div#0;tag#div#0" expanded="false" />
+            <element signature="tag#li#1;tag#ul#0;tag#div#0;tag#div#1;tag#div#0;tag#div#0" expanded="false" />
+            <element signature="tag#div#0;tag#form#0;tag#div#0;tag#accordion-group#0;tag#accordion#0;tag#div#0;tag#div#0;tag#div#1;tag#div#0" expanded="false" />
+            <element signature="tag#div#1;tag#form#0;tag#div#0;tag#accordion-group#0;tag#accordion#0;tag#div#0;tag#div#0;tag#div#1;tag#div#0" expanded="false" />
+            <element signature="tag#div#2;tag#form#0;tag#div#0;tag#accordion-group#0;tag#accordion#0;tag#div#0;tag#div#0;tag#div#1;tag#div#0" expanded="false" />
+            <element signature="tag#div#3;tag#form#0;tag#div#0;tag#accordion-group#0;tag#accordion#0;tag#div#0;tag#div#0;tag#div#1;tag#div#0" expanded="false" />
+            <element signature="tag#div#4;tag#form#0;tag#div#0;tag#accordion-group#0;tag#accordion#0;tag#div#0;tag#div#0;tag#div#1;tag#div#0" expanded="false" />
+            <element signature="tag#div#5;tag#form#0;tag#div#0;tag#accordion-group#0;tag#accordion#0;tag#div#0;tag#div#0;tag#div#1;tag#div#0" expanded="false" />
+            <element signature="tag#div#6;tag#form#0;tag#div#0;tag#accordion-group#0;tag#accordion#0;tag#div#0;tag#div#0;tag#div#1;tag#div#0" expanded="false" />
+            <element signature="tag#div#7;tag#form#0;tag#div#0;tag#accordion-group#0;tag#accordion#0;tag#div#0;tag#div#0;tag#div#1;tag#div#0" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
