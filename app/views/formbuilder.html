@@ -119,6 +119,27 @@
                                     </div>
                                 </div>
 
+                                <!--Min/Max-->
+                                <div class="form-group" data-ng-show="field.min">
+                                    <label class="col-sm-3 control-label" for="field_min">Limit</label>
+                                    <label class="col-sm-2 control-label" for="field_min">Min</label>
+                                    <div class="col-sm-3">
+                                        <input class="form-control" type="text" id="field_min" data-ng-model="field.min.text">
+                                    </div>
+                                    <label class="col-sm-1 control-label" for="field_max">Max</label>
+                                    <div class="col-sm-3">
+                                        <input class="form-control" type="text" id="field_max" data-ng-model="field.max.text">
+                                    </div>
+                                </div>
+
+                                <!--max length-->
+                                <div class="form-group" data-ng-show="field.maxlength">
+                                    <label class="col-sm-3 control-label" for="field_maxlength">Max length</label>
+                                    <div class="col-sm-9">
+                                        <input class="form-control" type="text" id="field_maxlength" data-ng-model="field.maxlength.value">
+                                    </div>
+                                </div>
+
                                 <!--Options-->
                                 <div class="form-group" data-ng-show="field.options">
 

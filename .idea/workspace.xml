@@ -2,8 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="d835b246-4b0a-43a1-a368-f08243dbb63d" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/scripts/services/outputfactory.js" afterPath="$PROJECT_DIR$/app/scripts/services/outputfactory.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/directive-templates/field/radio.html" afterPath="$PROJECT_DIR$/app/views/directive-templates/field/radio.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/formbuilder.html" afterPath="$PROJECT_DIR$/app/views/formbuilder.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/scripts/services/inputTypes.js" afterPath="$PROJECT_DIR$/app/scripts/services/inputTypes.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/styles/main.scss" afterPath="$PROJECT_DIR$/app/styles/main.scss" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="quickForm.iws" />
@@ -13,13 +14,13 @@
     <file path="/index.html" changelist="d835b246-4b0a-43a1-a368-f08243dbb63d" time="1394766370285" ignored="false" />
     <file path="/modelbuilder.js" changelist="d835b246-4b0a-43a1-a368-f08243dbb63d" time="1394679778033" ignored="false" />
     <file path="/modelbuilder.html" changelist="d835b246-4b0a-43a1-a368-f08243dbb63d" time="1394754869064" ignored="false" />
-    <file path="/Dummy.txt" changelist="d835b246-4b0a-43a1-a368-f08243dbb63d" time="1394874749010" ignored="false" />
-    <file path="/main.scss" changelist="d835b246-4b0a-43a1-a368-f08243dbb63d" time="1394871535815" ignored="false" />
+    <file path="/Dummy.txt" changelist="d835b246-4b0a-43a1-a368-f08243dbb63d" time="1395012632359" ignored="false" />
+    <file path="/main.scss" changelist="d835b246-4b0a-43a1-a368-f08243dbb63d" time="1395014290188" ignored="false" />
     <file path="/outputfactory.js" changelist="d835b246-4b0a-43a1-a368-f08243dbb63d" time="1395011635795" ignored="false" />
     <file path="/fieldTypes.js" changelist="d835b246-4b0a-43a1-a368-f08243dbb63d" time="1394315188173" ignored="false" />
     <file path="/formPreview.html" changelist="d835b246-4b0a-43a1-a368-f08243dbb63d" time="1394871757448" ignored="false" />
     <file path="/form.html" changelist="d835b246-4b0a-43a1-a368-f08243dbb63d" time="1394394065650" ignored="false" />
-    <file path="/inputTypes.js" changelist="d835b246-4b0a-43a1-a368-f08243dbb63d" time="1394858541305" ignored="false" />
+    <file path="/inputTypes.js" changelist="d835b246-4b0a-43a1-a368-f08243dbb63d" time="1395014572213" ignored="false" />
     <file path="/quickformfield.js" changelist="d835b246-4b0a-43a1-a368-f08243dbb63d" time="1394851664078" ignored="false" />
     <file path="/_variables.scss" changelist="d835b246-4b0a-43a1-a368-f08243dbb63d" time="1394839906002" ignored="false" />
     <file path="/navbar.html" changelist="d835b246-4b0a-43a1-a368-f08243dbb63d" time="1394512625582" ignored="false" />
@@ -34,7 +35,7 @@
     <file path="/formdata.js" changelist="d835b246-4b0a-43a1-a368-f08243dbb63d" time="1394874188294" ignored="false" />
     <file path="/formpreview.js" changelist="d835b246-4b0a-43a1-a368-f08243dbb63d" time="1394755419122" ignored="false" />
     <file path="/output.js" changelist="d835b246-4b0a-43a1-a368-f08243dbb63d" time="1394756027896" ignored="false" />
-    <file path="/formbuilder.html" changelist="d835b246-4b0a-43a1-a368-f08243dbb63d" time="1394870791184" ignored="false" />
+    <file path="/formbuilder.html" changelist="d835b246-4b0a-43a1-a368-f08243dbb63d" time="1395014660263" ignored="false" />
     <file path="/number.html" changelist="d835b246-4b0a-43a1-a368-f08243dbb63d" time="1394761719834" ignored="false" />
     <file path="/email.html" changelist="d835b246-4b0a-43a1-a368-f08243dbb63d" time="1394765194750" ignored="false" />
     <file path="/checkbox.html" changelist="d835b246-4b0a-43a1-a368-f08243dbb63d" time="1394765415392" ignored="false" />
@@ -67,44 +68,27 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="formdata.js" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/scripts/services/formdata.js">
+      <file leaf-file-name="inputTypes.js" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/scripts/services/inputTypes.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="127" column="64" selection-start="2649" selection-end="2649" vertical-scroll-proportion="0.0">
-              <folding>
-                <element signature="e#153#2297#0" expanded="false" />
-                <element signature="e#2332#2511#0" expanded="false" />
-                <element signature="e#2555#2648#0" expanded="false" />
-                <element signature="e#2682#2735#0" expanded="false" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="outputfactory.js" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/scripts/services/outputfactory.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="225" column="35" selection-start="6300" selection-end="6300" vertical-scroll-proportion="-13.64">
-              <folding>
-                <element signature="e#365#1266#0" expanded="false" />
-                <element signature="e#1307#2400#0" expanded="false" />
-                <element signature="e#2442#4220#0" expanded="false" />
-                <element signature="e#2480#2575#0" expanded="false" />
-                <element signature="e#2612#3154#0" expanded="false" />
-                <element signature="e#4262#6015#0" expanded="false" />
-                <element signature="e#4304#4611#0" expanded="false" />
-                <element signature="e#4644#4936#0" expanded="false" />
-                <element signature="e#4973#5077#0" expanded="false" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="radio.html" pinned="false" current="true" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/app/views/directive-templates/field/radio.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="15" column="43" selection-start="514" selection-end="514" vertical-scroll-proportion="0.37375414">
+            <state line="18" column="36" selection-start="374" selection-end="374" vertical-scroll-proportion="0.0">
               <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="formbuilder.html" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/app/views/formbuilder.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="136" column="101" selection-start="6589" selection-end="6589" vertical-scroll-proportion="0.7079796">
+              <folding>
+                <element signature="tag#li#0;tag#ul#0;tag#div#0;tag#div#1;tag#div#0;tag#div#0" expanded="false" />
+                <element signature="tag#li#1;tag#ul#0;tag#div#0;tag#div#1;tag#div#0;tag#div#0" expanded="false" />
+                <element signature="tag#div#2;tag#form#0;tag#div#0;tag#accordion-group#0;tag#accordion#0;tag#div#0;tag#div#0;tag#div#1;tag#div#0" expanded="false" />
+                <element signature="tag#div#3;tag#form#0;tag#div#0;tag#accordion-group#0;tag#accordion#0;tag#div#0;tag#div#0;tag#div#1;tag#div#0" expanded="false" />
+                <element signature="tag#div#4;tag#form#0;tag#div#0;tag#accordion-group#0;tag#accordion#0;tag#div#0;tag#div#0;tag#div#1;tag#div#0" expanded="false" />
+                <element signature="tag#div#7;tag#form#0;tag#div#0;tag#accordion-group#0;tag#accordion#0;tag#div#0;tag#div#0;tag#div#1;tag#div#0" expanded="false" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -112,41 +96,10 @@
       <file leaf-file-name="main.scss" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/styles/main.scss">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="90" column="86" selection-start="1416" selection-end="1416" vertical-scroll-proportion="0.0">
+            <state line="52" column="48" selection-start="945" selection-end="945" vertical-scroll-proportion="0.0">
               <folding>
                 <element signature="e#115#200#0" expanded="false" />
                 <element signature="e#366#418#0" expanded="false" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="_variables.scss" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/bower_components/sass-bootstrap/lib/_variables.scss">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="5" column="0" selection-start="89" selection-end="103" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="formPreview.html" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/views/formPreview.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="24" column="47" selection-start="641" selection-end="641" vertical-scroll-proportion="-15.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="formbuilder.html" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/views/formbuilder.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="4" column="0" selection-start="82" selection-end="82" vertical-scroll-proportion="13.125">
-              <folding>
-                <element signature="tag#li#0;tag#ul#0;tag#div#0;tag#div#1;tag#div#0;tag#div#0" expanded="false" />
-                <element signature="tag#li#1;tag#ul#0;tag#div#0;tag#div#1;tag#div#0;tag#div#0" expanded="false" />
-                <element signature="tag#form#0;tag#div#0;tag#accordion-group#0;tag#accordion#0;tag#div#0;tag#div#0;tag#div#1;tag#div#0" expanded="false" />
               </folding>
             </state>
           </provider>
@@ -178,14 +131,14 @@
         <option value="$PROJECT_DIR$/app/views/main.html" />
         <option value="$PROJECT_DIR$/app/index.html" />
         <option value="$PROJECT_DIR$/app/views/directive-templates/field/textarea.html" />
-        <option value="$PROJECT_DIR$/app/scripts/services/inputTypes.js" />
         <option value="$PROJECT_DIR$/app/scripts/directives/quickformfield.js" />
-        <option value="$PROJECT_DIR$/app/views/formbuilder.html" />
-        <option value="$PROJECT_DIR$/app/styles/main.scss" />
         <option value="$PROJECT_DIR$/app/views/formPreview.html" />
         <option value="$PROJECT_DIR$/app/scripts/services/formdata.js" />
         <option value="$PROJECT_DIR$/app/scripts/services/outputfactory.js" />
         <option value="$PROJECT_DIR$/app/views/directive-templates/field/radio.html" />
+        <option value="$PROJECT_DIR$/app/styles/main.scss" />
+        <option value="$PROJECT_DIR$/app/scripts/services/inputTypes.js" />
+        <option value="$PROJECT_DIR$/app/views/formbuilder.html" />
       </list>
     </option>
   </component>
@@ -305,7 +258,7 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="scripts" />
+              <option name="myItemId" value="styles" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -324,10 +277,6 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="scripts" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="services" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -486,7 +435,11 @@
       <created>1394874755801</created>
       <updated>1394874755802</updated>
     </task>
-    <option name="localTasksCounter" value="20" />
+    <task id="LOCAL-00020" summary="add trim and underscore to outputFactory, fix 'required' with radio elements">
+      <created>1395012638802</created>
+      <updated>1395012638802</updated>
+    </task>
+    <option name="localTasksCounter" value="21" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -554,7 +507,7 @@
     <option name="WRAP_WHEN_TYPING_REACHES_RIGHT_MARGIN" value="false" />
     <option name="FORCE_NON_EMPTY_COMMENT" value="false" />
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="false" />
-    <option name="LAST_COMMIT_MESSAGE" value="unique ids" />
+    <option name="LAST_COMMIT_MESSAGE" value="add trim and underscore to outputFactory, fix 'required' with radio elements" />
     <option name="MAKE_NEW_CHANGELIST_ACTIVE" value="false" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="false" />
     <option name="CHECK_FILES_UP_TO_DATE_BEFORE_COMMIT" value="false" />
@@ -587,6 +540,7 @@
     <MESSAGE value="delete form directive, now field only." />
     <MESSAGE value="refactor field directive, add text area input to inputTypes service" />
     <MESSAGE value="unique ids" />
+    <MESSAGE value="add trim and underscore to outputFactory, fix 'required' with radio elements" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
@@ -616,13 +570,6 @@
     <entry file="file://$PROJECT_DIR$/app/index.html">
       <provider selected="true" editor-type-id="text-editor">
         <state line="85" column="60" selection-start="3607" selection-end="3607" vertical-scroll-proportion="-15.791667">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/scripts/services/inputTypes.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="252" column="31" selection-start="5910" selection-end="5910" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
@@ -657,31 +604,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/formbuilder.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="4" column="0" selection-start="82" selection-end="82" vertical-scroll-proportion="13.125">
-          <folding>
-            <element signature="tag#li#0;tag#ul#0;tag#div#0;tag#div#1;tag#div#0;tag#div#0" expanded="false" />
-            <element signature="tag#li#1;tag#ul#0;tag#div#0;tag#div#1;tag#div#0;tag#div#0" expanded="false" />
-            <element signature="tag#form#0;tag#div#0;tag#accordion-group#0;tag#accordion#0;tag#div#0;tag#div#0;tag#div#1;tag#div#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/bower_components/sass-bootstrap/lib/_variables.scss">
       <provider selected="true" editor-type-id="text-editor">
         <state line="5" column="0" selection-start="89" selection-end="103" vertical-scroll-proportion="0.0">
           <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/styles/main.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="90" column="86" selection-start="1416" selection-end="1416" vertical-scroll-proportion="0.0">
-          <folding>
-            <element signature="e#115#200#0" expanded="false" />
-            <element signature="e#366#418#0" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -723,8 +649,39 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/views/directive-templates/field/radio.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="15" column="43" selection-start="514" selection-end="514" vertical-scroll-proportion="0.37375414">
+        <state line="15" column="16" selection-start="514" selection-end="514" vertical-scroll-proportion="-9.375">
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/styles/main.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="52" column="48" selection-start="945" selection-end="945" vertical-scroll-proportion="0.0">
+          <folding>
+            <element signature="e#115#200#0" expanded="false" />
+            <element signature="e#366#418#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/scripts/services/inputTypes.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="18" column="36" selection-start="374" selection-end="374" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/formbuilder.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="136" column="101" selection-start="6589" selection-end="6589" vertical-scroll-proportion="0.7079796">
+          <folding>
+            <element signature="tag#li#0;tag#ul#0;tag#div#0;tag#div#1;tag#div#0;tag#div#0" expanded="false" />
+            <element signature="tag#li#1;tag#ul#0;tag#div#0;tag#div#1;tag#div#0;tag#div#0" expanded="false" />
+            <element signature="tag#div#2;tag#form#0;tag#div#0;tag#accordion-group#0;tag#accordion#0;tag#div#0;tag#div#0;tag#div#1;tag#div#0" expanded="false" />
+            <element signature="tag#div#3;tag#form#0;tag#div#0;tag#accordion-group#0;tag#accordion#0;tag#div#0;tag#div#0;tag#div#1;tag#div#0" expanded="false" />
+            <element signature="tag#div#4;tag#form#0;tag#div#0;tag#accordion-group#0;tag#accordion#0;tag#div#0;tag#div#0;tag#div#1;tag#div#0" expanded="false" />
+            <element signature="tag#div#7;tag#form#0;tag#div#0;tag#accordion-group#0;tag#accordion#0;tag#div#0;tag#div#0;tag#div#1;tag#div#0" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>

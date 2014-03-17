@@ -16,12 +16,9 @@ angular.module('quickFormApp')
           id: '',
           value: '',
           required: false,
-          attributes: [
-            {
-              type: 'checkbox',
-              name: 'checked'
-            }
-          ]
+          checked: {
+            value: false
+          }
         },
 
         {
@@ -32,14 +29,7 @@ angular.module('quickFormApp')
           name: '',
           id: '',
           value: '',
-          placeholder: {
-            text: ''
-          },
-          required: false,
-          pattern: {
-            text: '', regex: ''
-          },
-          attributes: []
+          required: false
         },
 
         {
@@ -50,18 +40,13 @@ angular.module('quickFormApp')
           name: '',
           id: '',
           value: '',
-          placeholder: {
+          min: {
             text: ''
           },
-          required: false,
-          pattern: {
-            text: '', regex: ''
+          max: {
+            text: ''
           },
-          attributes: [
-            {type: 'number', name: 'min'},
-            {type: 'number', name: 'max'},
-            {type: 'number', name: 'step'}
-          ]
+          required: false
         },
 
         {
@@ -72,9 +57,6 @@ angular.module('quickFormApp')
           name: '',
           id: '',
           value: '',
-          placeholder: {
-            text: ''
-          },
           required: false,
           options: [
             {name: 'option 1', value: 'option 1'},
@@ -98,10 +80,12 @@ angular.module('quickFormApp')
           pattern: {
             text: '', regex: ''
           },
-          attributes: [
-            {type: 'number', name: 'maxlength'},
-            {type: 'boolean', name: 'multiple'}
-          ]
+          maxlength: {
+            value: ''
+          },
+          multiple: {
+            value: true
+          }
         },
 
         {
@@ -112,18 +96,13 @@ angular.module('quickFormApp')
           name: '',
           id: '',
           value: '',
-          placeholder: {
+          min: {
             text: ''
           },
-          required: false,
-          pattern: {
-            text: '', regex: ''
+          max: {
+            text: ''
           },
-          attributes: [
-            {type: 'number', name: 'min'},
-            {type: 'number', name: 'max'},
-            {type: 'number', name: 'step'}
-          ]
+          required: false
         },
 
         {
@@ -134,18 +113,13 @@ angular.module('quickFormApp')
           name: '',
           id: '',
           value: '',
-          placeholder: {
+          min: {
             text: ''
           },
-          required: false,
-          pattern: {
-            text: '', regex: ''
+          max: {
+            text: ''
           },
-          attributes: [
-            {type: 'number', name: 'min'},
-            {type: 'number', name: 'max'},
-            {type: 'number', name: 'step'}
-          ]
+          required: false
         },
 
         {
@@ -156,16 +130,10 @@ angular.module('quickFormApp')
           name: '',
           id: '',
           value: '',
-          placeholder: {
-            text: ''
-          },
           required: false,
-          pattern: {
-            text: '', regex: ''
-          },
-          attributes: [
-            {type: 'number', name: 'maxlength'}
-          ]
+          maxlength: {
+            value: ''
+          }
         },
 
         {
@@ -177,7 +145,6 @@ angular.module('quickFormApp')
           id: '',
           value: '',
           required: false,
-          attributes: [],
           options: [
             {name: 'option 1', value: 'option 1'},
             {name: 'option 2', value: 'option 2'},
@@ -193,18 +160,13 @@ angular.module('quickFormApp')
           name: '',
           id: '',
           value: '',
-          placeholder: {
+          min: {
             text: ''
           },
-          required: false,
-          pattern: {
-            text: '', regex: ''
+          max: {
+            text: ''
           },
-          attributes: [
-            {type: 'number', name: 'min'},
-            {type: 'number', name: 'max'},
-            {type: 'number', name: 'step'}
-          ]
+          required: false
         },
 
         {
@@ -222,9 +184,9 @@ angular.module('quickFormApp')
           pattern: {
             text: '', regex: ''
           },
-          attributes: [
-            {type: 'number', name: 'maxlength'}
-          ]
+          maxlength: {
+            value: ''
+          }
         },
 
         {
@@ -242,9 +204,9 @@ angular.module('quickFormApp')
           pattern: {
             text: '', regex: ''
           },
-          attributes: [
-            {type: 'number', name: 'maxlength'}
-          ]
+          maxlength: {
+            value: ''
+          }
         },
 
         {
@@ -255,16 +217,7 @@ angular.module('quickFormApp')
           name: '',
           id: '',
           value: '',
-          placeholder: {
-            text: ''
-          },
-          required: false,
-          pattern: {
-            text: '', regex: ''
-          },
-          attributes: [
-            {type: 'number', name: 'maxlength'}
-          ]
+          required: false
         },
 
         {
@@ -275,18 +228,13 @@ angular.module('quickFormApp')
           name: '',
           id: '',
           value: '',
-          placeholder: {
+          min: {
             text: ''
           },
-          required: false,
-          pattern: {
-            text: '', regex: ''
+          max: {
+            text: ''
           },
-          attributes: [
-            {type: 'number', name: 'min'},
-            {type: 'number', name: 'max'},
-            {type: 'number', name: 'step'}
-          ]
+          required: false
         },
 
         {
@@ -304,9 +252,9 @@ angular.module('quickFormApp')
           pattern: {
             text: '', regex: ''
           },
-          attributes: [
-            {type: 'number', name: 'maxlength'}
-          ]
+          maxlength: {
+            value: ''
+          }
         },
 
         {
@@ -317,18 +265,13 @@ angular.module('quickFormApp')
           name: '',
           id: '',
           value: '',
-          placeholder: {
+          min: {
             text: ''
           },
-          required: false,
-          pattern: {
-            text: '', regex: ''
+          max: {
+            text: ''
           },
-          attributes: [
-            {type: 'number', name: 'min'},
-            {type: 'number', name: 'max'},
-            {type: 'number', name: 'step'}
-          ]
+          required: false
         }
 
 
