@@ -3,32 +3,43 @@
 angular.module('quickFormApp')
   .factory('outputFactory', function () {
 
-    var newline = String.fromCharCode(13);
-    var tab = '  ';
-
     function underScore(inputString){
       return inputString.replace(/ /g, '_');
     }
+    var newline = String.fromCharCode(13);
+    var tab = '  ';
 
-    var htmlOutput = function(form){
+    var htmlOutput = function(form, cssStyle, jsStyle){
 
-      function labelClass(field){
-        return 'class="" '
+      function labelClass(){
+        if(cssStyle == 'bootstrap'){
+          return 'class="control-label" '
+        }
+        return ''
       }
+      function inputClass(){
+        if(cssStyle == 'bootstrap'){
+          return 'class="form-control" '
+        }
+        return ''
+      }
+      function fieldGroupClass(){
+        if(cssStyle == 'bootstrap'){
+          return ' class="form-group"'
+        }
+        return ''
+      }
+
       function labelAttrs(field){
-        return 'id="' + field.id + '"';
-      }
-
-      function inputClass(field){
-        return 'class="" '
+        return 'for="' + field.id + '"';
       }
       function inputAttrs(field){
         var attrs = 'id="' + field.id + '"'
-          + (field.placeholder ? ' placeholder="' + field.placeholder.value + '" ' :'')
+          + (field.placeholder ? field.placeholder.value !== '' ? ' placeholder="' + field.placeholder.value + '" ' :'':'')
           + (field.checked ? 'checked = ' + field.checked.value + ' ' :'')
-          + (field.min ? ' min="' + field.min.value + '" ' :'')
-          + (field.max ? ' max="' + field.max.value + '" ' :'')
-          + (field.maxlength ? ' maxlength="' + field.maxlength.value + '" ' :'')
+          + (field.min ? field.min.value !== '' ? ' min="' + field.min.value + '" ' :'':'')
+          + (field.max ? field.max.value !== '' ? ' max="' + field.max.value + '" ' :'':'')
+          + (field.maxlength ? field.maxlength.value !== '' ? ' maxlength="' + field.maxlength.value + '" ' :'':'')
           + (field.required ? 'required ':'')
           ;
 
@@ -36,7 +47,7 @@ angular.module('quickFormApp')
       }
 
       function labelElement(field){
-        return '<label ' + labelClass(field) + labelAttrs(field) + '>' +  field.display_name + '</label>'
+        return '<label ' + labelClass() + labelAttrs(field) + '>' +  field.display_name + '</label>'
       }
       function inputElement(field){
         return '<input type="' + field.input_type + '" ' + inputClass(field) + inputAttrs(field) + '>'
@@ -48,7 +59,7 @@ angular.module('quickFormApp')
         angular.forEach(fields, function(field){
 
           //wrapper open
-          fieldsString += tab + '<div>' + newline;
+          fieldsString += tab + '<div' + fieldGroupClass() + '>' + newline;
 
           //label
           fieldsString += tab + tab + labelElement(field) + newline;
@@ -252,23 +263,30 @@ angular.module('quickFormApp')
 
     // Public API here
     return {
-      outputTypes: {
-        frontend: [
-          {name: 'html', type: 'html'},
-          {name: 'angular', type: 'angular'}
-        ],
-        backend: [
-          {name: 'mongoose schema', type: 'mongoose'},
-          {name: 'firebase security', type: 'firebase'}
-        ]
-      },
+      outputOptions: [
 
-      outputFunction: function (form, style) {
-        switch(style){
+        {name: 'html',
+        options: [
+          {name: 'bootstrap', value: false},
+          {name: 'angular', value: false}]
+        }
+        ,
+        {name: 'mongoose',
+          options: []
+        },
+        {name: 'firebase',
+          options: []
+        }
+      ],
+
+      outputFunction: function (form, outputType, cssStyle, jsStyle) {
+
+
+//        return htmlOutput(form, cssStyle, jsStyle);
+
+        switch(outputType){
           case 'html':
-            return htmlOutput(form);
-          case 'angular':
-            return angularOutput(form);
+            return htmlOutput(form, cssStyle, jsStyle);
           case 'mongoose':
             return mongooseOutput(form);
           case 'firebase':

@@ -23,6 +23,10 @@ angular.module('quickFormApp', [
       .when('/output', {
         templateUrl: 'views/output.html'
       })
+      .when('/newForm', {
+        templateUrl: 'views/newform.html',
+        controller: 'NewformCtrl'
+      })
       .otherwise({
         redirectTo: '/'
       });

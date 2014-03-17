@@ -7,15 +7,27 @@
 
     <!--Output buttons-->
     <ul class="list-inline">
-        <li class="text-muted"><span class="h4">Frontend:</span></li>
-        <li data-ng-repeat="button in outputButtons.frontend"><button class="btn btn-info outputButton" type="button" data-ng-class="{active: button.type == style.type}"  data-ng-click="style.type = button.type">{{button.name}}</button></li>
-        <li class="text-muted"><span class="h4">Backend:</span></li>
-        <li data-ng-repeat="button in outputButtons.backend"><button class="btn btn-info outputButton" type="button"  data-ng-class="{active: button.type == style.type}"  data-ng-click="style.type = button.type">{{button.name}}</button></li>
+        <li>
+            <button class="btn btn-primary" data-ng-click="outputType = 'html'" data-ng-class="{active: outputType == 'html'}" >html</button>
+            <label class="labelSpacer">
+                <input class="" type="checkbox" data-ng-model="cssStyle" data-ng-true-value="bootstrap" data-ng-false-value="" > bootstrap
+            </label>
+            <label class="labelSpacer">
+                <input class="" type="checkbox" data-ng-model="jsStyle" data-ng-true-value="angular" data-ng-false-value="" > angular.js
+            </label>
+        </li>
+        <li>
+            <button class="btn btn-primary" data-ng-click="outputType = 'mongoose'" data-ng-class="{active: outputType == 'mongoose'}"  >mongoose</button>
+        </li>
+        <li>
+            <button class="btn btn-primary" data-ng-click="outputType = 'firebase'" data-ng-class="{active: outputType == 'angular'}" >firebase</button>
+        </li>
+
     </ul>
 
     <!--highlight.js directive-->
     <div class="well mg_output_well">
-        <div hljs data-source="codeSource(style.type)"></div>
+        <div hljs data-source="codeSource()"></div>
     </div>
 
 </div>
