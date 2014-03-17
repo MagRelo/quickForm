@@ -41,10 +41,10 @@ angular.module('quickFormApp')
           id: '',
           value: '',
           min: {
-            text: ''
+            value: ''
           },
           max: {
-            text: ''
+            value: ''
           },
           required: false
         },
@@ -74,11 +74,11 @@ angular.module('quickFormApp')
           id: '',
           value: '',
           placeholder: {
-            text: ''
+            value: ''
           },
           required: false,
           pattern: {
-            text: '', regex: ''
+            value: '', regex: ''
           },
           maxlength: {
             value: ''
@@ -97,10 +97,10 @@ angular.module('quickFormApp')
           id: '',
           value: '',
           min: {
-            text: ''
+            value: ''
           },
           max: {
-            text: ''
+            value: ''
           },
           required: false
         },
@@ -114,10 +114,10 @@ angular.module('quickFormApp')
           id: '',
           value: '',
           min: {
-            text: ''
+            value: ''
           },
           max: {
-            text: ''
+            value: ''
           },
           required: false
         },
@@ -161,10 +161,10 @@ angular.module('quickFormApp')
           id: '',
           value: '',
           min: {
-            text: ''
+            value: ''
           },
           max: {
-            text: ''
+            value: ''
           },
           required: false
         },
@@ -178,11 +178,11 @@ angular.module('quickFormApp')
           id: '',
           value: '',
           placeholder: {
-            text: ''
+            value: ''
           },
           required: false,
           pattern: {
-            text: '', regex: ''
+            value: '', regex: ''
           },
           maxlength: {
             value: ''
@@ -198,11 +198,11 @@ angular.module('quickFormApp')
           id: '',
           value: '',
           placeholder: {
-            text: ''
+            value: ''
           },
           required: false,
           pattern: {
-            text: '', regex: ''
+            value: '', regex: ''
           },
           maxlength: {
             value: ''
@@ -229,10 +229,10 @@ angular.module('quickFormApp')
           id: '',
           value: '',
           min: {
-            text: ''
+            value: ''
           },
           max: {
-            text: ''
+            value: ''
           },
           required: false
         },
@@ -246,11 +246,11 @@ angular.module('quickFormApp')
           id: '',
           value: '',
           placeholder: {
-            text: ''
+            value: ''
           },
           required: false,
           pattern: {
-            text: '', regex: ''
+            value: '', regex: ''
           },
           maxlength: {
             value: ''
@@ -266,10 +266,10 @@ angular.module('quickFormApp')
           id: '',
           value: '',
           min: {
-            text: ''
+            value: ''
           },
           max: {
-            text: ''
+            value: ''
           },
           required: false
         }

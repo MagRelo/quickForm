@@ -164,3 +164,38 @@ pre{
 
 
 
+//highlight.js
+//.hljs-string,
+//.hljs-title,
+//.hljs-constant,
+//.hljs-parent,
+//.hljs-tag .hljs-value,
+//.hljs-rules .hljs-value,
+//.hljs-rules .hljs-value .hljs-number,
+//.hljs-preprocessor,
+//.hljs-pragma,
+//.haml .hljs-symbol,
+//.ruby .hljs-symbol,
+//.ruby .hljs-symbol .hljs-string,
+//.hljs-aggregate,
+//.hljs-template_tag,
+//.django .hljs-variable,
+//.smalltalk .hljs-class,
+//.hljs-addition,
+//.hljs-flow,
+//.hljs-stream,
+//.bash .hljs-variable,
+//.apache .hljs-tag,
+//.apache .hljs-cbracket,
+//.tex .hljs-command,
+//.tex .hljs-special,
+//.erlang_repl .hljs-function_or_atom,
+//.asciidoc .hljs-header,
+//.markdown .hljs-header,
+//.coffeescript .hljs-attribute {
+//  color: #B95050;
+//}
+
+.hljs-tag .hljs-value{
+  color: #B95050;
+}

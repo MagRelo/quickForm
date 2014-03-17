@@ -6,45 +6,81 @@ angular.module('quickFormApp')
     var newline = String.fromCharCode(13);
     var tab = '  ';
 
-    function noSpace(inputString){
-      return inputString.replace(/ /g, '');
-    }
-
     function underScore(inputString){
       return inputString.replace(/ /g, '_');
     }
 
     var htmlOutput = function(form){
 
-      var formBegin = '<form name="' + underScore(form.name) + 'Form">' +
-        newline + newline +
-        tab + '<legend>' + form.name + '</legend>'
-        + newline + newline;
+      function labelClass(field){
+        return 'class="" '
+      }
+      function labelAttrs(field){
+        return 'id="' + field.id + '"';
+      }
 
-      var fields = function(form){
-        var fieldsRaw = '';
+      function inputClass(field){
+        return 'class="" '
+      }
+      function inputAttrs(field){
+        var attrs = 'id="' + field.id + '"'
+          + (field.placeholder ? ' placeholder="' + field.placeholder.value + '" ' :'')
+          + (field.checked ? 'checked = ' + field.checked.value + ' ' :'')
+          + (field.min ? ' min="' + field.min.value + '" ' :'')
+          + (field.max ? ' max="' + field.max.value + '" ' :'')
+          + (field.maxlength ? ' maxlength="' + field.maxlength.value + '" ' :'')
+          + (field.required ? 'required ':'')
+          ;
 
-        for(var i = 0; i< form.fields.length; i++){
+        return attrs.trim();
+      }
+
+      function labelElement(field){
+        return '<label ' + labelClass(field) + labelAttrs(field) + '>' +  field.display_name + '</label>'
+      }
+      function inputElement(field){
+        return '<input type="' + field.input_type + '" ' + inputClass(field) + inputAttrs(field) + '>'
+      }
+
+      function fieldSet(fields){
+
+        var fieldsString = '';
+        angular.forEach(fields, function(field){
+
+          //wrapper open
+          fieldsString += tab + '<div>' + newline;
 
           //label
-          fieldsRaw += tab + '<label for="'+  form.fields[i].id + '">' + form.fields[i].display_name + '</label>' + newline;
+          fieldsString += tab + tab + labelElement(field) + newline;
 
           //input
-          fieldsRaw += tab + '<input type="' + form.fields[i].input_type + '" id="' + form.fields[i].id + '"' + (form.fields[i].required ? ' required':'') + '>' + newline;
+          fieldsString += tab + tab + inputElement(field) + newline;
 
-          fieldsRaw += newline;
+          //wrapper close
+          fieldsString += tab + '</div>' + newline;
 
-        }
+          //white space
+          fieldsString += newline;
 
-        return fieldsRaw;
+        });
 
-      };
+        return fieldsString;
+      }
 
-      var button = tab + '<button type="submit">Submit</button>' + newline + newline;
+      return '<form name="' + underScore(form.name) + 'Form">' + newline + newline
 
-      var formEnd = '</form>';
+        //legend
+        + tab + '<legend>' + form.name + '</legend>' + newline + newline
 
-      return formBegin + fields(form) + button + formEnd;
+        //fields
+        + fieldSet(form.fields)
+
+        //button
+        + tab + '<button type="submit">Submit</button>' + newline + newline
+
+        //close form
+        + '</form>'
+
     };
 
     var angularOutput = function(form){
