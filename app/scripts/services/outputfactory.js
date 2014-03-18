@@ -135,35 +135,51 @@ angular.module('quickFormApp')
       }
 
       var fileBegin =  "'use strict';" + newline
-        + "var mongoose = require('mongoose')," + newline
+        + "var mongoose = require('mongoose');" + newline
         + "Schema = mongoose.Schema;" + newline + newline
         + "/**" + newline
         + "* " + form.name + " Schema" + newline
         + "*/" + newline
-        + " var " + underScore(form.name) + "Schema = new Schema({" + newline;
+
 
       var model = function(){
-        var modelRaw = '';
+        var modelString = "var " + underScore(form.name) + "Schema = new Schema({" + newline;
         for(var i = 0; i< form.fields.length; i++){
 
-          modelRaw += tab + underScore(form.fields[i].display_name) + ": " + '{type: '
+          modelString += tab + underScore(form.fields[i].display_name) + ": " + '{type: '
             + mgDataType(form.fields[i].input_type)
             + mgRequired(form.fields[i].required)
             + '}' + "," + newline
           }
 
-        modelRaw += "});" + newline + newline;
-        return modelRaw
+        modelString += "});" + newline + newline;
+        return modelString
       };
 
-      var validations = "/**" + newline
+      var validationsComment = "/**" + newline
         + "*  Validations" + newline
-        + "*/" + newline + newline;
+        + "*/" + newline;
 
+      var validations = function(){
+        var validationString = '';
+
+
+        for(var i = 0; i< form.fields.length; i++){
+          validationString += underScore(form.name) + "Schema" + '.schema.path("' + underScore(form.fields[i].display_name) + '").validate(function (value) {' + newline
+            + tab + '//insert validation here' + newline
+            + '}, "Invalid message");' + newline + newline
+        }
+
+        return validationString
+      };
+
+      var initializeComment = "/**" + newline
+        + "*  Initialize" + newline
+        + "*/" + newline;
 
       var initialize = "mongoose.model('" + underScore(form.name) + "', " + underScore(form.name) + "Schema);";
 
-      return fileBegin + model() + validations + initialize
+      return fileBegin + model() + validationsComment + validations(); // + initializeComment + initialize
     };
 
     var firebaseOutput = function(form){

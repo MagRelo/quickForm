@@ -10,7 +10,7 @@ angular.module('quickFormApp')
       //defaults
       $scope.outputType = 'html';
       $scope.cssStyle = '';
-      $scope.jsStyle = '';
+      $scope.jsStyle = 'angular';
 
       //default style
       $scope.codeSource = function(){
