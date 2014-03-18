@@ -6,109 +6,100 @@ angular.module('quickFormApp')
   .service('formData', function formData() {
 
     //default
-    this.name = "Contact",
+    this.name = "New Contact";
     this.fields = [
-      {
-        "display_name": "Name",
-        "display_priority": "10",
-        "display_common": true,
-        "input_type": "text",
-        "name": "",
-        "id": "",
-        "value": "",
-        "placeholder": {
-          "text": ""
-        },
-        "required": true,
-        "pattern": {
-          "text": "",
-          "regex": ""
-        },
-        "attributes": [
-          {
-            "type": "number",
-            "name": "maxlength"
-          }
-        ]
-      },
-      {
-        "display_name": "Email",
-        "display_priority": "20",
-        "display_common": true,
-        "input_type": "email",
-        "name": "",
-        "id": "",
-        "value": "",
-        "placeholder": {
-          "text": ""
-        },
-        "required": false,
-        "pattern": {
-          "text": "",
-          "regex": ""
-        },
-        "attributes": [
-          {
-            "type": "number",
-            "name": "maxlength"
+        {
+          "display_name": "Name",
+          "display_priority": "10",
+          "display_common": true,
+          "input_type": "text",
+          "name": "1_Text",
+          "id": 1,
+          "value": "",
+          "placeholder": {
+            "value": ""
           },
-          {
-            "type": "boolean",
-            "name": "multiple"
-          }
-        ],
-      },
-      {
-        "display_name": "Telephone",
-        "display_priority": "40",
-        "display_common": false,
-        "input_type": "tel",
-        "name": "",
-        "id": "",
-        "value": "",
-        "placeholder": {
-          "text": ""
-        },
-        "required": false,
-        "pattern": {
-          "text": "",
-          "regex": ""
-        },
-        "attributes": [
-          {
-            "type": "number",
-            "name": "maxlength"
-          }
-        ]
-      },
-      {
-        "display_name": "Contact Type",
-        "display_priority": "40",
-        "display_common": false,
-        "input_type": "radio",
-        "name": "",
-        "id": "",
-        "value": "",
-        "placeholder": {
-          "text": ""
-        },
-        "required": true,
-        "options": [
-          {
-            "name": "Customer",
-            "value": "option 1"
+          "required": true,
+          "pattern": {
+            "value": "",
+            "regex": ""
           },
-          {
-            "name": "Supplier",
-            "value": "option 2"
-          },
-          {
-            "name": "Employee",
-            "value": "option 3"
+          "maxlength": {
+            "value": ""
           }
-        ]
-      }
-  ];
+        },
+        {
+          "display_name": "Telephone Number",
+          "display_priority": "40",
+          "display_common": false,
+          "input_type": "tel",
+          "name": "2_Telephone",
+          "id": 2,
+          "value": "",
+          "placeholder": {
+            "value": ""
+          },
+          "required": false,
+          "pattern": {
+            "value": "",
+            "regex": ""
+          },
+          "maxlength": {
+            "value": ""
+          }
+        },
+        {
+          "display_name": "Email Address",
+          "display_priority": "20",
+          "display_common": true,
+          "input_type": "email",
+          "name": "3_Email",
+          "id": 3,
+          "value": "",
+          "placeholder": {
+            "value": ""
+          },
+          "required": false,
+          "pattern": {
+            "value": "",
+            "regex": ""
+          },
+          "maxlength": {
+            "value": ""
+          },
+          "multiple": {
+            "value": true
+          }
+        },
+        {
+          "display_name": "Contact Type",
+          "display_priority": "40",
+          "display_common": false,
+          "input_type": "dropdown",
+          "name": "4_Dropdown_List",
+          "id": 4,
+          "value": "",
+          "required": true,
+          "options": [
+            {
+              "name": "Customer",
+              "value": "option 1",
+              "$$hashKey": "02J"
+            },
+            {
+              "name": "Supplier",
+              "value": "option 2",
+              "$$hashKey": "02K"
+            },
+            {
+              "name": "Employee",
+              "value": "option 3",
+              "$$hashKey": "02L"
+            }
+          ]
+        }
+      ];
+
 
     this.idExists = function(id){
       var exists = false;

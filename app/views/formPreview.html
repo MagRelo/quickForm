@@ -23,12 +23,12 @@
                             (required)
                         </small>
                         <!--invalid-->
-                        <span class="text-danger" data-ng-show="elementForm.{{field.name}}.$invalid && elementForm.{{field.name}}.$dirty">
+                        <span class="text-danger validationSpacer" data-ng-show="elementForm.{{field.name}}.$invalid && elementForm.{{field.name}}.$dirty">
                             <span class="glyphicon glyphicon-remove"></span>
                         </span>
 
                         <!--valid-->
-                        <span class="text-success" data-ng-show="elementForm.{{field.name}}.$valid && elementForm.{{field.name}}.$dirty && elementForm.{{field.name}}.$modelValue !== '' ">
+                        <span class="text-success validationSpacer" data-ng-show="elementForm.{{field.name}}.$valid && elementForm.{{field.name}}.$dirty && elementForm.{{field.name}}.$modelValue !== '' ">
                             <span class="glyphicon glyphicon-ok"></span>
                         </span>
                     </label>

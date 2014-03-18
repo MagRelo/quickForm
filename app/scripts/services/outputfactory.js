@@ -11,23 +11,36 @@ angular.module('quickFormApp')
 
     var htmlOutput = function(form, cssStyle, jsStyle){
 
+      function angularFormAttr(form){
+        if(jsStyle == 'angular'){
+          return ' data-ng-submit="submit' + underScore(form.name) + '(' + underScore(form.name) + ')" ';
+        }
+       return ''
+      }
+      function angularInputAttr(field){
+        if(jsStyle == 'angular'){
+          return 'data-ng-model="' + underScore(form.name) + '.' + underScore(field.display_name) + '" ';
+        }
+        return '';
+      }
+
       function labelClass(){
         if(cssStyle == 'bootstrap'){
-          return 'class="control-label" '
+          return 'class="control-label" ';
         }
         return ''
       }
       function inputClass(){
         if(cssStyle == 'bootstrap'){
-          return 'class="form-control" '
+          return 'class="form-control" ';
         }
         return ''
       }
       function fieldGroupClass(){
         if(cssStyle == 'bootstrap'){
-          return ' class="form-group"'
+          return ' class="form-group"';
         }
-        return ''
+        return '';
       }
 
       function labelAttrs(field){
@@ -42,6 +55,9 @@ angular.module('quickFormApp')
           + (field.max ? field.max.value !== '' ? ' max="' + field.max.value + '" ' :'':'')
           + (field.maxlength ? field.maxlength.value !== '' ? ' maxlength="' + field.maxlength.value + '" ' :'':'')
           + (field.required ? 'required ':'')
+
+          //angular stuff
+          + angularInputAttr(field)
           ;
 
         return attrs.trim();
@@ -51,7 +67,7 @@ angular.module('quickFormApp')
         return '<label ' + labelClass() + labelAttrs(field) + '>' +  field.display_name + '</label>'
       }
       function inputElement(field){
-        return '<input type="' + field.input_type + '" ' + inputClass() + inputAttrs(field) + '>'
+        return '<input '+ inputClass() + 'type="' + field.input_type + '" '  + inputAttrs(field) + '>'
       }
 
       function fieldSet(fields){
@@ -79,53 +95,16 @@ angular.module('quickFormApp')
         return fieldsString;
       }
 
-      return '<form name="' + underScore(form.name) + 'Form">' + newline + newline
-
+      return '<form role="form" name="' + underScore(form.name) + 'Form"' + angularFormAttr(form) + '>' + newline + newline
         //legend
         + tab + '<legend>' + form.name + '</legend>' + newline + newline
-
         //fields
         + fieldSet(form.fields)
-
         //button
         + tab + '<button type="submit">Submit</button>' + newline + newline
-
         //close form
         + '</form>'
 
-    };
-
-    var angularOutput = function(form){
-
-      var formBegin = '<form name="' + underScore(form.name) + 'Form" data-ng-submit="submit' + underScore(form.name) + '('+ underScore(form.name)+')" novalidate>' +
-        newline + newline +
-        tab + '<legend>' + form.name + '</legend>'
-        + newline + newline;
-
-      var formEnd = '</form>';
-
-      var fields = function(form){
-        var fieldsRaw = '';
-
-        for(var i = 0; i< form.fields.length; i++){
-
-          //label
-          fieldsRaw += tab + '<label for="'+  form.fields[i].id + '">' + form.fields[i].display_name + '</label>' + newline;
-
-          //input
-          fieldsRaw += tab + '<input type="' + form.fields[i].input_type + '" id="' + form.fields[i].id + '"' + ' data-ng-model="' + underScore(form.name) + '.' +  underScore(form.fields[i].display_name) + '"' + (form.fields[i].required ? ' required':'') + '>' + newline;
-
-          fieldsRaw += newline;
-
-        }
-
-        return fieldsRaw;
-
-      };
-
-      var button = tab + '<button type="submit">Submit</button>' + newline + newline;
-
-      return formBegin + fields(form) + button + formEnd;
     };
 
     var mongooseOutput = function(form){
@@ -139,10 +118,6 @@ angular.module('quickFormApp')
 
       function mgDataType(dataType){
 
-        //String
-        if(dataType == 'text' || dataType == 'textarea' || dataType == 'email' || dataType == 'radio' || dataType == 'dropdown'){
-          return 'String'
-        }
         //Number
         if(dataType == 'number'){
           return 'Number'
@@ -156,11 +131,7 @@ angular.module('quickFormApp')
           return 'Date'
         }
 
-        //Buffer
-        //Mixed
-        //ObjectID
-        //Array
-        return 'n/a'
+        return 'String'
       }
 
       var fileBegin =  "'use strict';" + newline
@@ -188,6 +159,7 @@ angular.module('quickFormApp')
       var validations = "/**" + newline
         + "*  Validations" + newline
         + "*/" + newline + newline;
+
 
       var initialize = "mongoose.model('" + underScore(form.name) + "', " + underScore(form.name) + "Schema);";
 
@@ -267,10 +239,10 @@ angular.module('quickFormApp')
       outputOptions: [
 
         {name: 'html',
-        options: [
-          {name: 'bootstrap', value: false},
-          {name: 'angular', value: false}]
-        }
+          options: [
+            {name: 'bootstrap', value: false},
+            {name: 'angular', value: false}]
+          }
         ,
         {name: 'mongoose',
           options: []
