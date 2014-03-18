@@ -49,11 +49,13 @@ angular.module('quickFormApp')
       function inputAttrs(field){
         var attrs = 'id="' + field.id + '" '
           + 'name="' + field.name + '" '
+          + (field.value ? field.value !== '' ? ' value="' + field.value + '" ' :'':'')
           + (field.placeholder ? field.placeholder.value !== '' ? ' placeholder="' + field.placeholder.value + '" ' :'':'')
           + (field.checked ? 'checked = ' + field.checked.value + ' ' :'')
           + (field.min ? field.min.value !== '' ? ' min="' + field.min.value + '" ' :'':'')
           + (field.max ? field.max.value !== '' ? ' max="' + field.max.value + '" ' :'':'')
           + (field.maxlength ? field.maxlength.value !== '' ? ' maxlength="' + field.maxlength.value + '" ' :'':'')
+          + (field.pattern ? field.pattern.value !== '' ? ' pattern="' + field.pattern.value + '" ' :'':'')
           + (field.required ? 'required ':'')
 
           //angular stuff

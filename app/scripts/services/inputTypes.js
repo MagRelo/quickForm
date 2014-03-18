@@ -9,7 +9,7 @@ angular.module('quickFormApp')
 
         {
           display_name : 'Checkbox',
-          display_priority: '40',
+          display_priority: '30',
           display_common: false,
           input_type: 'checkbox',
           name: '',
@@ -33,7 +33,7 @@ angular.module('quickFormApp')
 
         {
           display_name : 'Date',
-          display_priority: '30',
+          display_priority: '20',
           display_common: true,
           input_type: 'date',
           name: '',
@@ -66,7 +66,7 @@ angular.module('quickFormApp')
 
         {
           display_name : 'Email',
-          display_priority: '20',
+          display_priority: '40',
           display_common: true,
           input_type: 'email',
           name: '',
@@ -89,7 +89,7 @@ angular.module('quickFormApp')
 
         {
           display_name : 'Month',
-          display_priority: '55',
+          display_priority: '75',
           display_common: false,
           input_type: 'month',
           name: '',
@@ -106,8 +106,8 @@ angular.module('quickFormApp')
 
         {
           display_name : 'Number',
-          display_priority: '55',
-          display_common: 'true',
+          display_priority: '30',
+          display_common: true,
           input_type: 'number',
           name: '',
           id: '',
@@ -123,7 +123,7 @@ angular.module('quickFormApp')
 
         {
           display_name : 'Password',
-          display_priority: '30',
+          display_priority: '40',
           display_common: false,
           input_type: 'password',
           name: '',
@@ -136,8 +136,8 @@ angular.module('quickFormApp')
         },
 
         {
-          display_name : 'Radio',
-          display_priority: '40',
+          display_name : 'Radio group',
+          display_priority: '90',
           display_common: false,
           input_type: 'radio',
           name: '',
@@ -153,7 +153,7 @@ angular.module('quickFormApp')
 
         {
           display_name : 'Range',
-          display_priority: '30',
+          display_priority: '60',
           display_common: false,
           input_type: 'range',
           name: '',
@@ -170,7 +170,7 @@ angular.module('quickFormApp')
 
         {
           display_name : 'Telephone',
-          display_priority: '40',
+          display_priority: '20',
           display_common: false,
           input_type: 'tel',
           name: '',
@@ -210,7 +210,7 @@ angular.module('quickFormApp')
 
         {
           display_name : 'Text Area',
-          display_priority: '10',
+          display_priority: '90',
           display_common: false,
           input_type: 'textarea',
           name: '',
@@ -221,7 +221,7 @@ angular.module('quickFormApp')
 
         {
           display_name : 'Time',
-          display_priority: '56',
+          display_priority: '76',
           display_common: false,
           input_type: 'time',
           name: '',
@@ -238,7 +238,7 @@ angular.module('quickFormApp')
 
         {
           display_name : 'URL',
-          display_priority: '30',
+          display_priority: '50',
           display_common: false,
           input_type: 'url',
           name: '',
@@ -258,7 +258,7 @@ angular.module('quickFormApp')
 
         {
           display_name : 'Week',
-          display_priority: '52',
+          display_priority: '72',
           display_common: false,
           input_type: 'week',
           name: '',
