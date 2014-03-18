@@ -77,6 +77,10 @@ small{
   color: $mg-bg-white;
 }
 
+.text-primary{
+  color: #3D9AE4
+}
+
 //date button
 
 .btn-mg{
@@ -85,7 +89,7 @@ small{
   border-color: $mg-mid;
 }
 
-.btn-mg:hover {
+.btn-mg.mg-delete:hover {
   color: $mg-bg-white;
   background-color: $brand-danger;
   border-color: $brand-danger;
