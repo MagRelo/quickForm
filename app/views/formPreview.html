@@ -15,43 +15,31 @@
                 </legend>
 
                 <div  class="form-group" data-ng-repeat="field in form.fields">
+
+                    <!--field label-->
                     <label for="{{field.id}}">{{field.display_name}}
-
-                        <!--invalid-->
-                        <small class="text-danger" data-ng-show="elementForm.{{field.name}}.$invalid && elementForm.{{field.name}}.$dirty">
-                            <span class="glyphicon glyphicon-remove"></span>
-                        </small>
-
                         <!--required-->
-                        <small class="text-danger" data-ng-show="elementForm.{{field.name}}.$error.required">
+                        <small class="text-muted" data-ng-show="elementForm.{{field.name}}.$error.required">
                             (required)
                         </small>
+                        <!--invalid-->
+                        <span class="text-danger" data-ng-show="elementForm.{{field.name}}.$invalid && elementForm.{{field.name}}.$dirty">
+                            <span class="glyphicon glyphicon-remove"></span>
+                        </span>
 
                         <!--valid-->
-                        <small class="text-success" data-ng-show="elementForm.{{field.name}}.$valid && elementForm.{{field.name}}.$dirty">
+                        <span class="text-success" data-ng-show="elementForm.{{field.name}}.$valid && elementForm.{{field.name}}.$dirty && elementForm.{{field.name}}.$modelValue !== '' ">
                             <span class="glyphicon glyphicon-ok"></span>
-                        </small>
-
+                        </span>
                     </label>
 
+                    <!--field-->
                     <quick-form-field></quick-form-field>
+
                 </div>
 
             </fieldset>
         </form>
     </div>
 
-    <!--<div class="text-center" data-ng-show="form.fields.length > 0">-->
-        <!--&lt;!&ndash;Validation&ndash;&gt;-->
-        <!--<div data-ng-show="elementForm.$valid">-->
-            <!--<h4 class="text-success">form is valid &#x2713;</h4>-->
-        <!--</div>-->
-
-        <!--<div data-ng-show="elementForm.$invalid">-->
-            <!--<h4 class="text-danger">form is incomplete &#x2717;</h4>-->
-        <!--</div>-->
-    <!--</div>-->
-
 </div>
-
-<!--field="field" isValid="elementForm.{{field.name}}.$valid"-->

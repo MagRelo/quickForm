@@ -2,29 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="d835b246-4b0a-43a1-a368-f08243dbb63d" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/scripts/app.js" afterPath="$PROJECT_DIR$/app/scripts/app.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/directive-templates/field/checkbox.html" afterPath="$PROJECT_DIR$/app/views/directive-templates/field/checkbox.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/directive-templates/field/color.html" afterPath="$PROJECT_DIR$/app/views/directive-templates/field/color.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/directive-templates/field/date.html" afterPath="$PROJECT_DIR$/app/views/directive-templates/field/date.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/directive-templates/field/dropdown.html" afterPath="$PROJECT_DIR$/app/views/directive-templates/field/dropdown.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/directive-templates/field/email.html" afterPath="$PROJECT_DIR$/app/views/directive-templates/field/email.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/formPreview.html" afterPath="$PROJECT_DIR$/app/views/formPreview.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/scripts/services/formdata.js" afterPath="$PROJECT_DIR$/app/scripts/services/formdata.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/scripts/services/inputTypes.js" afterPath="$PROJECT_DIR$/app/scripts/services/inputTypes.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/styles/main.scss" afterPath="$PROJECT_DIR$/app/styles/main.scss" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/directive-templates/field/month.html" afterPath="$PROJECT_DIR$/app/views/directive-templates/field/month.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/directive-templates/field/number.html" afterPath="$PROJECT_DIR$/app/views/directive-templates/field/number.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/scripts/services/outputfactory.js" afterPath="$PROJECT_DIR$/app/scripts/services/outputfactory.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/directive-templates/field/password.html" afterPath="$PROJECT_DIR$/app/views/directive-templates/field/password.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/scripts/directives/quickformfield.js" afterPath="$PROJECT_DIR$/app/scripts/directives/quickformfield.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/directive-templates/field/radio.html" afterPath="$PROJECT_DIR$/app/views/directive-templates/field/radio.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/directive-templates/field/range.html" afterPath="$PROJECT_DIR$/app/views/directive-templates/field/range.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/directive-templates/field/tel.html" afterPath="$PROJECT_DIR$/app/views/directive-templates/field/tel.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/directive-templates/field/text.html" afterPath="$PROJECT_DIR$/app/views/directive-templates/field/text.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/directive-templates/field/textarea.html" afterPath="$PROJECT_DIR$/app/views/directive-templates/field/textarea.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/directive-templates/field/time.html" afterPath="$PROJECT_DIR$/app/views/directive-templates/field/time.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/directive-templates/field/url.html" afterPath="$PROJECT_DIR$/app/views/directive-templates/field/url.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/directive-templates/field/week.html" afterPath="$PROJECT_DIR$/app/views/directive-templates/field/week.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="quickForm.iws" />
@@ -34,11 +14,11 @@
     <file path="/index.html" changelist="d835b246-4b0a-43a1-a368-f08243dbb63d" time="1394766370285" ignored="false" />
     <file path="/modelbuilder.js" changelist="d835b246-4b0a-43a1-a368-f08243dbb63d" time="1394679778033" ignored="false" />
     <file path="/modelbuilder.html" changelist="d835b246-4b0a-43a1-a368-f08243dbb63d" time="1394754869064" ignored="false" />
-    <file path="/Dummy.txt" changelist="d835b246-4b0a-43a1-a368-f08243dbb63d" time="1395087010822" ignored="false" />
+    <file path="/Dummy.txt" changelist="d835b246-4b0a-43a1-a368-f08243dbb63d" time="1395099025100" ignored="false" />
     <file path="/main.scss" changelist="d835b246-4b0a-43a1-a368-f08243dbb63d" time="1395086899117" ignored="false" />
-    <file path="/outputfactory.js" changelist="d835b246-4b0a-43a1-a368-f08243dbb63d" time="1395086124727" ignored="false" />
+    <file path="/outputfactory.js" changelist="d835b246-4b0a-43a1-a368-f08243dbb63d" time="1395101570625" ignored="false" />
     <file path="/fieldTypes.js" changelist="d835b246-4b0a-43a1-a368-f08243dbb63d" time="1394315188173" ignored="false" />
-    <file path="/formPreview.html" changelist="d835b246-4b0a-43a1-a368-f08243dbb63d" time="1395096758382" ignored="false" />
+    <file path="/formPreview.html" changelist="d835b246-4b0a-43a1-a368-f08243dbb63d" time="1395103989338" ignored="false" />
     <file path="/form.html" changelist="d835b246-4b0a-43a1-a368-f08243dbb63d" time="1394394065650" ignored="false" />
     <file path="/inputTypes.js" changelist="d835b246-4b0a-43a1-a368-f08243dbb63d" time="1395028971011" ignored="false" />
     <file path="/quickformfield.js" changelist="d835b246-4b0a-43a1-a368-f08243dbb63d" time="1395091458930" ignored="false" />
@@ -92,97 +72,42 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="inputTypes.js" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/scripts/services/inputTypes.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="16" column="36" selection-start="326" selection-end="326" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="outputfactory.js" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/scripts/services/outputfactory.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="290" column="65" selection-start="8149" selection-end="8149" vertical-scroll-proportion="1.0945274">
+            <state line="30" column="39" selection-start="732" selection-end="732" vertical-scroll-proportion="0.3115016">
               <folding>
                 <element signature="e#126#178#0" expanded="false" />
-                <element signature="e#297#2734#0" expanded="false" />
-                <element signature="e#2775#3868#0" expanded="false" />
-                <element signature="e#3910#5688#0" expanded="false" />
-                <element signature="e#5730#7483#0" expanded="false" />
+                <element signature="e#327#443#0" expanded="false" />
+                <element signature="e#471#586#0" expanded="false" />
+                <element signature="e#619#732#0" expanded="false" />
+                <element signature="e#766#816#0" expanded="false" />
+                <element signature="e#849#1531#0" expanded="false" />
+                <element signature="e#2811#3904#0" expanded="false" />
+                <element signature="e#3946#5724#0" expanded="false" />
+                <element signature="e#5766#7519#0" expanded="false" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="tel.html" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/views/directive-templates/field/tel.html">
+      <file leaf-file-name="formdata.js" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/scripts/services/formdata.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="4" column="25" selection-start="153" selection-end="153" vertical-scroll-proportion="-2.5">
-              <folding />
+            <state line="145" column="70" selection-start="3118" selection-end="3118" vertical-scroll-proportion="0.0">
+              <folding>
+                <element signature="e#153#2297#0" expanded="false" />
+                <element signature="e#2332#2511#0" expanded="false" />
+                <element signature="e#2555#2648#0" expanded="false" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="text.html" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/views/directive-templates/field/text.html">
+      <file leaf-file-name="formPreview.html" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/views/formPreview.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="4" column="24" selection-start="153" selection-end="153" vertical-scroll-proportion="-2.5">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="textarea.html" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/views/directive-templates/field/textarea.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="5" column="31" selection-start="194" selection-end="194" vertical-scroll-proportion="-3.125">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="time.html" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/views/directive-templates/field/time.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="4" column="24" selection-start="153" selection-end="153" vertical-scroll-proportion="-2.5">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="url.html" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/views/directive-templates/field/url.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="4" column="49" selection-start="169" selection-end="169" vertical-scroll-proportion="-2.5">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="week.html" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/views/directive-templates/field/week.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="11" column="21" selection-start="513" selection-end="513" vertical-scroll-proportion="-6.875">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="password.html" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/views/directive-templates/field/password.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="4" column="60" selection-start="175" selection-end="175" vertical-scroll-proportion="-2.5">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="checkbox.html" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/views/directive-templates/field/checkbox.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="3" column="34" selection-start="162" selection-end="162" vertical-scroll-proportion="-1.875">
+            <state line="23" column="6" selection-start="769" selection-end="769" vertical-scroll-proportion="-8.75">
               <folding />
             </state>
           </provider>
@@ -206,8 +131,6 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/app/views/directive-templates/field/color.html" />
-        <option value="$PROJECT_DIR$/app/views/directive-templates/field/dropdown.html" />
         <option value="$PROJECT_DIR$/app/views/directive-templates/field/email.html" />
         <option value="$PROJECT_DIR$/app/views/directive-templates/field/month.html" />
         <option value="$PROJECT_DIR$/app/views/directive-templates/field/number.html" />
@@ -222,6 +145,8 @@
         <option value="$PROJECT_DIR$/app/views/directive-templates/field/checkbox.html" />
         <option value="$PROJECT_DIR$/app/scripts/services/inputTypes.js" />
         <option value="$PROJECT_DIR$/app/scripts/services/outputfactory.js" />
+        <option value="$PROJECT_DIR$/app/scripts/services/formdata.js" />
+        <option value="$PROJECT_DIR$/app/views/formPreview.html" />
       </list>
     </option>
   </component>
@@ -641,7 +566,11 @@
       <created>1395087016389</created>
       <updated>1395087016389</updated>
     </task>
-    <option name="localTasksCounter" value="26" />
+    <task id="LOCAL-00026" summary="add form validation indicators, form decorator, ngModel decorator">
+      <created>1395099033455</created>
+      <updated>1395099033455</updated>
+    </task>
+    <option name="localTasksCounter" value="27" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -709,7 +638,7 @@
     <option name="WRAP_WHEN_TYPING_REACHES_RIGHT_MARGIN" value="false" />
     <option name="FORCE_NON_EMPTY_COMMENT" value="false" />
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="false" />
-    <option name="LAST_COMMIT_MESSAGE" value="refactor output view and functions" />
+    <option name="LAST_COMMIT_MESSAGE" value="add form validation indicators, form decorator, ngModel decorator" />
     <option name="MAKE_NEW_CHANGELIST_ACTIVE" value="false" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="false" />
     <option name="CHECK_FILES_UP_TO_DATE_BEFORE_COMMIT" value="false" />
@@ -723,7 +652,6 @@
     <option name="UPDATE_FILTER_BY_SCOPE" value="false" />
     <option name="SHOW_FILE_HISTORY_AS_TREE" value="false" />
     <option name="FILE_HISTORY_SPLITTER_PROPORTION" value="0.6" />
-    <MESSAGE value="form builder roughed out" />
     <MESSAGE value="output started, html angur , mongoose" />
     <MESSAGE value="added preview directive" />
     <MESSAGE value="cleanup options, wip" />
@@ -748,32 +676,16 @@
     <MESSAGE value="style cancel buttons" />
     <MESSAGE value="refactor html output function" />
     <MESSAGE value="refactor output view and functions" />
+    <MESSAGE value="add form validation indicators, form decorator, ngModel decorator" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/app/views/directive-templates/field/month.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="3" column="32" selection-start="108" selection-end="108" vertical-scroll-proportion="0.07640068">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/views/directive-templates/field/email.html">
       <provider selected="true" editor-type-id="text-editor">
         <state line="1" column="24" selection-start="65" selection-end="65" vertical-scroll-proportion="0.024916943">
           <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/formPreview.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="38" column="79" selection-start="1443" selection-end="1443" vertical-scroll-proportion="0.38879457">
-          <folding>
-            <element signature="tag#small#0;tag#label#0;tag#div#0;tag#fieldset#0;tag#form#0;tag#div#0;tag#div#0" expanded="false" />
-            <element signature="tag#small#1;tag#label#0;tag#div#0;tag#fieldset#0;tag#form#0;tag#div#0;tag#div#0" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -800,56 +712,56 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/views/directive-templates/field/tel.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="4" column="25" selection-start="153" selection-end="153" vertical-scroll-proportion="-2.5">
+        <state line="4" column="25" selection-start="153" selection-end="153" vertical-scroll-proportion="0.09966777">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/views/directive-templates/field/text.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="4" column="24" selection-start="153" selection-end="153" vertical-scroll-proportion="-2.5">
+        <state line="4" column="24" selection-start="153" selection-end="153" vertical-scroll-proportion="0.09966777">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/views/directive-templates/field/textarea.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="5" column="31" selection-start="194" selection-end="194" vertical-scroll-proportion="-3.125">
+        <state line="5" column="31" selection-start="194" selection-end="194" vertical-scroll-proportion="0.12458472">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/views/directive-templates/field/time.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="4" column="24" selection-start="153" selection-end="153" vertical-scroll-proportion="-2.5">
+        <state line="4" column="24" selection-start="153" selection-end="153" vertical-scroll-proportion="0.09966777">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/views/directive-templates/field/url.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="4" column="49" selection-start="169" selection-end="169" vertical-scroll-proportion="-2.5">
+        <state line="4" column="49" selection-start="169" selection-end="169" vertical-scroll-proportion="0.09966777">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/views/directive-templates/field/week.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="11" column="21" selection-start="513" selection-end="513" vertical-scroll-proportion="-6.875">
+        <state line="11" column="21" selection-start="513" selection-end="513" vertical-scroll-proportion="0.2801358">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/views/directive-templates/field/password.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="4" column="60" selection-start="175" selection-end="175" vertical-scroll-proportion="-2.5">
+        <state line="4" column="60" selection-start="175" selection-end="175" vertical-scroll-proportion="0.09966777">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/views/directive-templates/field/checkbox.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="3" column="34" selection-start="162" selection-end="162" vertical-scroll-proportion="-1.875">
+        <state line="3" column="34" selection-start="162" selection-end="162" vertical-scroll-proportion="0.07475083">
           <folding />
         </state>
       </provider>
@@ -861,15 +773,37 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/app/scripts/services/formdata.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="145" column="70" selection-start="3118" selection-end="3118" vertical-scroll-proportion="0.0">
+          <folding>
+            <element signature="e#153#2297#0" expanded="false" />
+            <element signature="e#2332#2511#0" expanded="false" />
+            <element signature="e#2555#2648#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/formPreview.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="23" column="6" selection-start="769" selection-end="769" vertical-scroll-proportion="-8.75">
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/app/scripts/services/outputfactory.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="290" column="65" selection-start="8149" selection-end="8149" vertical-scroll-proportion="1.0945274">
+        <state line="30" column="39" selection-start="732" selection-end="732" vertical-scroll-proportion="0.3115016">
           <folding>
             <element signature="e#126#178#0" expanded="false" />
-            <element signature="e#297#2734#0" expanded="false" />
-            <element signature="e#2775#3868#0" expanded="false" />
-            <element signature="e#3910#5688#0" expanded="false" />
-            <element signature="e#5730#7483#0" expanded="false" />
+            <element signature="e#327#443#0" expanded="false" />
+            <element signature="e#471#586#0" expanded="false" />
+            <element signature="e#619#732#0" expanded="false" />
+            <element signature="e#766#816#0" expanded="false" />
+            <element signature="e#849#1531#0" expanded="false" />
+            <element signature="e#2811#3904#0" expanded="false" />
+            <element signature="e#3946#5724#0" expanded="false" />
+            <element signature="e#5766#7519#0" expanded="false" />
           </folding>
         </state>
       </provider>

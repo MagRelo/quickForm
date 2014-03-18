@@ -35,6 +35,7 @@ angular.module('quickFormApp')
       }
       function inputAttrs(field){
         var attrs = 'id="' + field.id + '" '
+          + 'name="' + field.name + '" '
           + (field.placeholder ? field.placeholder.value !== '' ? ' placeholder="' + field.placeholder.value + '" ' :'':'')
           + (field.checked ? 'checked = ' + field.checked.value + ' ' :'')
           + (field.min ? field.min.value !== '' ? ' min="' + field.min.value + '" ' :'':'')
@@ -50,7 +51,7 @@ angular.module('quickFormApp')
         return '<label ' + labelClass() + labelAttrs(field) + '>' +  field.display_name + '</label>'
       }
       function inputElement(field){
-        return '<input type="' + field.input_type + '" ' + inputClass(field) + inputAttrs(field) + '>'
+        return '<input type="' + field.input_type + '" ' + inputClass() + inputAttrs(field) + '>'
       }
 
       function fieldSet(fields){
