@@ -3,10 +3,11 @@
         <label>
             <input type="radio"
                    value="{{option.value}}"
-                   id="{{field.id}}"
-                   name="{{field.name}}"
+                   id="{{field.id + '_' + $index}}"
+                   name="{{field.name + '_' + $index}}"
                    data-ng-model="field.value"
                    data-ng-required="field.required"/>
+
             <small data-ng-bind="option.name"></small>
         </label>
     </div>

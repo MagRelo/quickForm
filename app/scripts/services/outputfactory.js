@@ -13,7 +13,7 @@ angular.module('quickFormApp')
 
       function angularFormAttr(form){
         if(jsStyle == 'angular'){
-          return ' data-ng-submit="submit' + underScore(form.name) + '(' + underScore(form.name) + ')" ';
+          return ' data-ng-submit="submit' + underScore(form.name) + '(' + underScore(form.name) + ')"';
         }
        return ''
       }
@@ -144,15 +144,18 @@ angular.module('quickFormApp')
 
       var model = function(){
         var modelString = "var " + underScore(form.name) + "Schema = new Schema({" + newline;
-        for(var i = 0; i< form.fields.length; i++){
 
-          modelString += tab + underScore(form.fields[i].display_name) + ": " + '{type: '
-            + mgDataType(form.fields[i].input_type)
-            + mgRequired(form.fields[i].required)
-            + '}' + "," + newline
-          }
+        //add fields
+        angular.forEach(form.fields, function(field){
+          modelString += tab + underScore(field.display_name) + ": " + '{type: '
+            + mgDataType(field.input_type)
+            + mgRequired(field.required)
+            + '}' + "," + newline;
+        });
 
+        //close Schema
         modelString += "});" + newline + newline;
+
         return modelString
       };
 
@@ -163,12 +166,11 @@ angular.module('quickFormApp')
       var validations = function(){
         var validationString = '';
 
-
-        for(var i = 0; i< form.fields.length; i++){
-          validationString += underScore(form.name) + "Schema" + '.schema.path("' + underScore(form.fields[i].display_name) + '").validate(function (value) {' + newline
+        angular.forEach(form.fields, function(field){
+          validationString += underScore(form.name) + "Schema" + '.schema.path("' + underScore(field.display_name) + '").validate(function (value) {' + newline
             + tab + '//insert validation here' + newline
-            + '}, "Invalid message");' + newline + newline
-        }
+            + '}, "Invalid message");' + newline + newline;
+        });
 
         return validationString
       };

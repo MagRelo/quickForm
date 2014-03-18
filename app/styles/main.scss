@@ -153,6 +153,7 @@ small{
 }
 
 
+
 //*** output ***//
 
 //wrap around code
@@ -167,7 +168,11 @@ pre{
 }
 
 .labelSpacer{
-  margin-left: 5px;
+  margin-left: 14px;
+}
+
+button > label{
+  margin-bottom: 0;
 }
 
 

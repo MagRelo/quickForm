@@ -8,13 +8,14 @@
     <!--Output buttons-->
     <ul class="list-inline">
         <li>
-            <button class="btn btn-primary" data-ng-click="outputType = 'html'" data-ng-class="{active: outputType == 'html'}" >html</button>
-            <label class="labelSpacer">
-                <input class="" type="checkbox" data-ng-model="cssStyle" data-ng-true-value="bootstrap" data-ng-false-value="" > bootstrap
-            </label>
-            <label class="labelSpacer">
-                <input class="" type="checkbox" data-ng-model="jsStyle" data-ng-true-value="angular" data-ng-false-value="" > angular.js
-            </label>
+            <button class="btn btn-primary" data-ng-click="outputType = 'html'" data-ng-class="{active: outputType == 'html'}" >html
+                <label class="labelSpacer">
+                    <input class="" type="checkbox" data-ng-model="cssStyle" data-ng-true-value="bootstrap" data-ng-false-value="" > bootstrap
+                </label>
+                <label class="labelSpacer">
+                    <input class="" type="checkbox" data-ng-model="jsStyle" data-ng-true-value="angular" data-ng-false-value="" > angular.js
+                </label>
+            </button>
         </li>
         <li>
             <button class="btn btn-primary" data-ng-click="outputType = 'mongoose'" data-ng-class="{active: outputType == 'mongoose'}"  >mongoose</button>
