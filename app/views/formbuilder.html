@@ -19,7 +19,8 @@
             <div class="form-group">
                 <label>Add fields</label>
 
-                <ul class="list-inline">
+                <!--small screens-->
+                <ul class="list-inline hidden-xs">
 
                     <!--common-->
                     <li class="" data-ng-repeat="type in inputTypes | filter: {display_common: true} | orderBy: 'display_priority'">
@@ -42,6 +43,28 @@
                     </li>
 
                 </ul>
+
+                <!--other screens-->
+                <ul class="list-inline hidden-sm hidden-md hidden-lg">
+
+                    <!--all inputs-->
+                    <li class="dropdown">
+
+                        <button class="btn btn-info dropdown-toggle">Add field
+                            <span class="glyphicon glyphicon-plus"></span>
+                        </button>
+
+                        <ul class="dropdown-menu dropdown-menu_fieldTypes">
+                            <li class="fieldTypeButton" ng-repeat="type in inputTypes | orderBy: 'display_priority' ">
+                                <button class="btn btn-info btn-block"  data-ng-click="formData.addField(type)" >{{type.display_name}}</button>
+                            </li>
+                        </ul>
+
+                    </li>
+
+                </ul>
+
+
             </div>
 
         </div>
@@ -66,7 +89,7 @@
 
                             <button class="btn btn-sm btn-info pull-right">edit field</button>
                             <p class="mg_accordian_title">{{field.display_name}}
-                                <small class="pull-right">{{field.input_type}}</small>
+                                <small class="pull-right hidden-xs">{{field.input_type}}</small>
                             </p>
 
                         </accordion-heading>
