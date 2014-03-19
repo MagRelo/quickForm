@@ -1,8 +1,8 @@
 'use strict';
 
 angular.module('quickFormApp')
-  .controller('OutputCtrl',['$scope', 'formData', 'outputFactory',
-    function ($scope, formData, outputFactory) {
+  .controller('OutputCtrl',['$scope', 'formData', 'outputFunctions',
+    function ($scope, formData, outputFunctions) {
 
       //output options
       //$scope.options = outputFactory.outputOptions;
@@ -14,7 +14,7 @@ angular.module('quickFormApp')
 
       //default style
       $scope.codeSource = function(){
-        return outputFactory.outputFunction(formData, $scope.outputType, $scope.cssStyle, $scope.jsStyle);
+        return outputFunctions.outputFunction(formData, $scope.outputType, $scope.cssStyle, $scope.jsStyle);
       };
 
     }

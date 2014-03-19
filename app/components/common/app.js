@@ -18,6 +18,15 @@ angular.module('quickFormApp', [
     });
   }])
 
+  //formbuilder config
+  .config(['$provide', '$routeProvider', function($provide, $routeProvider) {
+    $routeProvider
+      .when('/formbuilder', {
+        templateUrl: 'components/formbuilder/formbuilder.html'
+      });
+
+  }])
+
   //formpreview config
   .config(['$provide', '$routeProvider', function($provide, $routeProvider) {
     $routeProvider
@@ -52,15 +61,6 @@ angular.module('quickFormApp', [
       }];
       return $delegate;
     });
-
-  }])
-
-  //formbuilder config
-  .config(['$provide', '$routeProvider', function($provide, $routeProvider) {
-    $routeProvider
-      .when('/formbuilder', {
-        templateUrl: 'components/formbuilder/formbuilder.html'
-      });
 
   }])
 

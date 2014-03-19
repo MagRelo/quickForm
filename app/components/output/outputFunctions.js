@@ -1,7 +1,7 @@
  'use strict';
 
 angular.module('quickFormApp')
-  .factory('outputFactory', function () {
+  .factory('outputFunctions', function () {
 
     function underScore(inputString){
       return inputString.replace(/ /g, '_');
