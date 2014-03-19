@@ -50,7 +50,7 @@ angular.module('quickFormApp')
         scope.format = scope.formats[0];
       }
 
-      var templateUrl = './views/directive-templates/field/' + scope.field.input_type + '.html';
+      var templateUrl = './components/formpreview/quickFormField-templates/field/' + scope.field.input_type + '.html';
 
       //get field template
       $http.get(templateUrl).success(function (data) {

@@ -1,6 +1,32 @@
 $icon-font-path: "/bower_components/sass-bootstrap/fonts/";
 
+$mg-white:              #D2D5D8;
+$mg-mid:                #5E6266;
+$mg-dark:               #3C3F42;
+$mg-darkest:            #282B2E;
+
+$brand-primary:         #2B7EC0 !default;
+$brand-success:         #27ae60 !default;
+$brand-warning:         #e67e22 !default;
+$brand-danger:          #B95050 !default;
+$brand-info:            #2B7EC0 !default;
+
+$body-bg:               $mg-darkest !default;
+$text-color:            $mg-white !default;
+
+// Forms
+$input-bg:              $mg-darkest !default;
+$input-color:           $mg-white !default;
+$input-border:          $mg-mid !default;
+
+// Panels
+$panel-bg:              $mg-dark !default;
+
+// Wells
+$well-bg:               $mg-dark !default;
+
 @import 'sass-bootstrap/lib/bootstrap';
+
 
 .browsehappy {
     margin: 0.2em 0;
@@ -24,12 +50,7 @@ body {
 
 /* Custom page header */
 .header {
-    border-bottom: 1px solid $mg-bg-white;
-}
-
-.mg_preview_well{
-  border: none;
-  padding: none;
+    border-bottom: 1px solid $mg-white;
 }
 
 /* Custom page footer */
@@ -38,6 +59,13 @@ body {
     color: #777;
     border-top: 1px solid #e5e5e5;
 }
+
+//dashed border around preview
+.mg_preview_well{
+  border: none;
+  padding: none;
+}
+
 
 /* Responsive: Portrait tablets and up */
 @media screen and (min-width: 768px) {
@@ -49,11 +77,11 @@ body {
         margin-bottom: 20px;
     }
 
-  .mg_preview_well{
-    border: dashed 2px #999999;
-    padding: 30px 30px 8px 30px;
-    border-radius: 14px;
-  }
+    .mg_preview_well{
+      border: dashed 2px #999999;
+      padding: 30px 30px 8px 30px;
+      border-radius: 14px;
+    }
 
 }
 
@@ -62,16 +90,18 @@ body {
 
 
 //*** bootstrap overrides ***//
-label{
-  color: $mg-bg-white;
-}
+
 
 
 //*** common **//
 
+label{
+  color: $mg-white;
+}
+
 //section well
 .mg_section_well{
-  background-color: $mg-bg-lighter;
+  background-color: $mg-dark;
 }
 
 //section titles
@@ -82,18 +112,18 @@ label{
   color: #3D9AE4
 }
 small{
-  color: $mg-bg-white;
+  color: $mg-white;
 }
 
 
 //date/delete button
 .btn-mg{
   background-color: $mg-mid;
-  color: $mg-bg-white;
+  color: $mg-white;
   border-color: $mg-mid;
 }
 .btn-mg.mg-delete:hover {
-  color: $mg-bg-white;
+  color: $mg-white;
   background-color: $brand-danger;
   border-color: $brand-danger;
 }
@@ -105,7 +135,7 @@ small{
 //*** form builder ***//
 
 .mg_model_well{
-  background-color: $body-bg;
+  background-color: $mg-darkest;
   padding-top: 0;
   margin-top: 14px;
 }
@@ -120,8 +150,8 @@ small{
 
 //accordian panel
 .panel-default > .panel-heading {
-  background-color: $mg-bg-lighter;
-  color: $mg-bg-white;
+  background-color: $mg-dark;
+  color: $mg-white;
 }
 .panel-default > .panel-heading + .panel-collapse .panel-body {
   border-top-color: $mg-mid;
@@ -157,7 +187,7 @@ small{
   padding: 0;
 }
 pre{
-  background-color: $body-bg;
+  background-color: $mg-darkest;
   border: none;
   margin-bottom: 0;
 }
@@ -172,5 +202,5 @@ button > label{
 
 //code output strings
 .hljs-tag .hljs-value{
-  color: #B95050;
+  color: $brand-warning;
 }
