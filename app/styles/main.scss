@@ -62,10 +62,6 @@ body {
 
 
 //*** bootstrap overrides ***//
-
-
-
-
 label{
   color: $mg-bg-white;
 }
@@ -73,36 +69,36 @@ label{
 
 //*** common **//
 
+//section well
+.mg_section_well{
+  background-color: $mg-bg-lighter;
+}
+
+//section titles
+.text-primary{
+  color: #3D9AE4
+}
+.text-primary:hover{
+  color: #3D9AE4
+}
 small{
   color: $mg-bg-white;
 }
 
-.text-primary{
-  color: #3D9AE4
-}
 
-//date button
-
+//date/delete button
 .btn-mg{
   background-color: $mg-mid;
   color: $mg-bg-white;
   border-color: $mg-mid;
 }
-
 .btn-mg.mg-delete:hover {
   color: $mg-bg-white;
   background-color: $brand-danger;
   border-color: $brand-danger;
 }
 
-.mg_section_well{
-  background-color: $mg-bg-lighter;
-}
-
-.mg_section_well,
-.mg_form_well,
-.mg_model_well,
-.mg_output_well, legend, .panel, .panel-default > .panel-heading {
+.well, legend, .panel, .panel-default > .panel-heading {
   border-color: $mg-mid;
 }
 
@@ -128,23 +124,19 @@ small{
   background-color: $mg-bg-lighter;
   color: $mg-bg-white;
 }
-
 .panel-default > .panel-heading + .panel-collapse .panel-body {
   border-top-color: $mg-mid;
 }
-
 .mg_accordian_title{
   padding-top: 5px;
   margin-bottom: 6px;
 }
-
 .mg_accordian_title > small{
   padding-top: 4px;
   text-transform: uppercase;
   font-weight: bold;
   margin-right: 20px;
 }
-
 .optionSpacer{
   margin-bottom: 7px;
 }
@@ -152,6 +144,7 @@ small{
 
 //*** form preview ***//
 
+//validation icons
 .validationSpacer{
   margin-left: 3px;
 }
@@ -160,59 +153,25 @@ small{
 
 //*** output ***//
 
-//wrap around code
+//well around code
+.mg_output_well{
+  padding: 0;
+}
 pre{
   background-color: $body-bg;
   border: none;
   margin-bottom: 0;
 }
 
-.mg_output_well{
-  padding: 0;
-}
-
+//labels in html button
 .labelSpacer{
   margin-left: 14px;
 }
-
 button > label{
   margin-bottom: 0;
 }
 
-
-
-//highlight.js
-//.hljs-string,
-//.hljs-title,
-//.hljs-constant,
-//.hljs-parent,
-//.hljs-tag .hljs-value,
-//.hljs-rules .hljs-value,
-//.hljs-rules .hljs-value .hljs-number,
-//.hljs-preprocessor,
-//.hljs-pragma,
-//.haml .hljs-symbol,
-//.ruby .hljs-symbol,
-//.ruby .hljs-symbol .hljs-string,
-//.hljs-aggregate,
-//.hljs-template_tag,
-//.django .hljs-variable,
-//.smalltalk .hljs-class,
-//.hljs-addition,
-//.hljs-flow,
-//.hljs-stream,
-//.bash .hljs-variable,
-//.apache .hljs-tag,
-//.apache .hljs-cbracket,
-//.tex .hljs-command,
-//.tex .hljs-special,
-//.erlang_repl .hljs-function_or_atom,
-//.asciidoc .hljs-header,
-//.markdown .hljs-header,
-//.coffeescript .hljs-attribute {
-//  color: #B95050;
-//}
-
+//code output strings
 .hljs-tag .hljs-value{
   color: #B95050;
 }
