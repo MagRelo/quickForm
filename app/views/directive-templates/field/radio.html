@@ -2,11 +2,10 @@
     <div data-ng-repeat="option in field.options">
         <label>
             <input type="radio"
-                   value="{{option.value}}"
-                   id="{{field.id + '_' + $index}}"
-                   name="{{field.name + '_' + $index}}"
+                   value="option.name"
                    data-ng-model="field.data"
-                   data-ng-required="field.required"/>
+                   id="{{field.id + '_' + $index}}"
+                   name="{{field.name}}"/>
 
             <small data-ng-bind="option.name"></small>
         </label>

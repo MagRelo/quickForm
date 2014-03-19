@@ -65,10 +65,41 @@ angular.module('quickFormApp')
         return attrs.trim();
       }
 
+      function selectOptions(field){
+        var optionsString = newline;
+        angular.forEach(field.options, function(option){
+          optionsString += tab + tab + tab + ' <option value="' + option.name + '">'+ option.name +'</option>' + newline
+        });
+        return optionsString
+      }
+
       function labelElement(field){
         return '<label ' + labelClass() + labelAttrs(field) + '>' +  field.display_name + '</label>'
       }
       function inputElement(field){
+
+        //dropdown
+        if(field.input_type == 'dropdown'){
+           return '<select ' + inputClass() + inputAttrs(field) + '>'
+             + selectOptions(field)
+             + tab + tab + '</select>';
+        }
+
+        //radio
+        if(field.input_type == 'radio'){
+          var radioString = '';
+          angular.forEach(field.options, function(option){
+            radioString += '<input type="radio" name="' + field.name +'" ' + 'value="' + option.name + '">' + newline + tab + tab
+          });
+          return radioString.trim()
+        }
+
+        //textarea
+        if(field.input_type == 'textarea'){
+          return '<textarea rows="3" ' + inputClass() + inputAttrs(field) + '></textarea>'
+        }
+
+        //standard input
         return '<input '+ inputClass() + 'type="' + field.input_type + '" '  + inputAttrs(field) + '>'
       }
 
