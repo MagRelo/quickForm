@@ -89,7 +89,7 @@ angular.module('quickFormApp')
         if(field.input_type == 'radio'){
           var radioString = '';
           angular.forEach(field.options, function(option){
-            radioString += '<input type="radio" name="' + field.name +'" ' + 'value="' + option.name + '">' + newline + tab + tab
+            radioString += '<input type="radio" name="' + field.name +'" ' + 'value="' + option.name + '">' + option.name + newline + tab + tab
           });
           return radioString.trim()
         }
