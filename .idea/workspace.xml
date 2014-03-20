@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="d835b246-4b0a-43a1-a368-f08243dbb63d" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/index.html" afterPath="$PROJECT_DIR$/app/index.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/styles/main.scss" afterPath="$PROJECT_DIR$/app/styles/main.scss" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="quickForm.iws" />
@@ -12,7 +12,7 @@
     <file path="/index.html" changelist="d835b246-4b0a-43a1-a368-f08243dbb63d" time="1395211832235" ignored="false" />
     <file path="/modelbuilder.js" changelist="d835b246-4b0a-43a1-a368-f08243dbb63d" time="1394679778033" ignored="false" />
     <file path="/modelbuilder.html" changelist="d835b246-4b0a-43a1-a368-f08243dbb63d" time="1394754869064" ignored="false" />
-    <file path="/Dummy.txt" changelist="d835b246-4b0a-43a1-a368-f08243dbb63d" time="1395277603849" ignored="false" />
+    <file path="/Dummy.txt" changelist="d835b246-4b0a-43a1-a368-f08243dbb63d" time="1395278741593" ignored="false" />
     <file path="/main.scss" changelist="d835b246-4b0a-43a1-a368-f08243dbb63d" time="1395268214159" ignored="false" />
     <file path="/outputfactory.js" changelist="d835b246-4b0a-43a1-a368-f08243dbb63d" time="1395208709214" ignored="false" />
     <file path="/fieldTypes.js" changelist="d835b246-4b0a-43a1-a368-f08243dbb63d" time="1394315188173" ignored="false" />
@@ -73,22 +73,31 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="main.scss" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="main.scss" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/styles/main.scss">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="16" column="99" selection-start="600" selection-end="600" vertical-scroll-proportion="0.0">
+            <state line="17" column="103" selection-start="569" selection-end="569" vertical-scroll-proportion="0.40734825">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="quickformfield.js" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="quickformfield.js" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/components/formpreview/quickformfield.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="63" column="110" selection-start="1739" selection-end="1739" vertical-scroll-proportion="0.52715653">
+            <state line="71" column="51" selection-start="1854" selection-end="1854" vertical-scroll-proportion="0.0">
               <folding>
                 <element signature="e#350#1390#0" expanded="false" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Gruntfile.js" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Gruntfile.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="280" column="89" selection-start="6933" selection-end="6933" vertical-scroll-proportion="-5.6">
+              <folding />
             </state>
           </provider>
         </entry>
@@ -125,8 +134,8 @@
         <option value="$PROJECT_DIR$/app/components/formpreview/quickformfield.js" />
         <option value="$PROJECT_DIR$/Gruntfile.js" />
         <option value="$PROJECT_DIR$/bower.json" />
-        <option value="$PROJECT_DIR$/app/styles/main.scss" />
         <option value="$PROJECT_DIR$/app/index.html" />
+        <option value="$PROJECT_DIR$/app/styles/main.scss" />
       </list>
     </option>
   </component>
@@ -480,7 +489,11 @@
       <created>1395277610311</created>
       <updated>1395277610311</updated>
     </task>
-    <option name="localTasksCounter" value="44" />
+    <task id="LOCAL-00044" summary="move google font out of bower build section to preserve it through the build">
+      <created>1395278748183</created>
+      <updated>1395278748183</updated>
+    </task>
+    <option name="localTasksCounter" value="45" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -548,7 +561,7 @@
     <option name="WRAP_WHEN_TYPING_REACHES_RIGHT_MARGIN" value="false" />
     <option name="FORCE_NON_EMPTY_COMMENT" value="false" />
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="false" />
-    <option name="LAST_COMMIT_MESSAGE" value="update and rebuild bower. update css that was in inadvertently in _validate.scss" />
+    <option name="LAST_COMMIT_MESSAGE" value="move google font out of bower build section to preserve it through the build" />
     <option name="MAKE_NEW_CHANGELIST_ACTIVE" value="false" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="false" />
     <option name="CHECK_FILES_UP_TO_DATE_BEFORE_COMMIT" value="false" />
@@ -562,7 +575,6 @@
     <option name="UPDATE_FILTER_BY_SCOPE" value="false" />
     <option name="SHOW_FILE_HISTORY_AS_TREE" value="false" />
     <option name="FILE_HISTORY_SPLITTER_PROPORTION" value="0.6" />
-    <MESSAGE value="unique ids" />
     <MESSAGE value="add trim and underscore to outputFactory, fix 'required' with radio elements" />
     <MESSAGE value="add min, max, maxlength attributes. updated inputTypes" />
     <MESSAGE value="added 'month' and 'week' templates" />
@@ -587,6 +599,7 @@
     <MESSAGE value="add label text to radio group output" />
     <MESSAGE value="prepare for build." />
     <MESSAGE value="update and rebuild bower. update css that was in inadvertently in _validate.scss" />
+    <MESSAGE value="move google font out of bower build section to preserve it through the build" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
@@ -681,13 +694,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Gruntfile.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="308" column="34" selection-start="7600" selection-end="7600" vertical-scroll-proportion="0.11980831">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/bower.json">
       <provider selected="true" editor-type-id="text-editor">
         <state line="3" column="105" selection-start="67" selection-end="67" vertical-scroll-proportion="-1.875">
@@ -698,13 +704,6 @@
     <entry file="file://$PROJECT_DIR$/app/bower_components/sass-bootstrap/lib/_variables.scss">
       <provider selected="true" editor-type-id="text-editor">
         <state line="32" column="102" selection-start="899" selection-end="899" vertical-scroll-proportion="0.12071778">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/styles/main.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="16" column="99" selection-start="600" selection-end="600" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
@@ -725,10 +724,24 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/components/formpreview/quickformfield.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="63" column="110" selection-start="1739" selection-end="1739" vertical-scroll-proportion="0.52715653">
+        <state line="71" column="51" selection-start="1854" selection-end="1854" vertical-scroll-proportion="0.0">
           <folding>
             <element signature="e#350#1390#0" expanded="false" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Gruntfile.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="280" column="89" selection-start="6933" selection-end="6933" vertical-scroll-proportion="-5.6">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/styles/main.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="17" column="103" selection-start="569" selection-end="569" vertical-scroll-proportion="0.40734825">
+          <folding />
         </state>
       </provider>
     </entry>
