@@ -1,22 +1,22 @@
 'use strict';
 
-describe('Controller: ModelbuilderCtrl', function () {
+describe('Controller: FormpreviewCtrl', function () {
 
   // load the controller's module
   beforeEach(module('quickFormApp'));
 
-  var ModelbuilderCtrl,
+  var FormpreviewCtrl,
     scope;
 
   // Initialize the controller and a mock scope
   beforeEach(inject(function ($controller, $rootScope) {
     scope = $rootScope.$new();
-    ModelbuilderCtrl = $controller('ModelbuilderCtrl', {
+    FormpreviewCtrl = $controller('FormpreviewCtrl', {
       $scope: scope
     });
   }));
 
-  it('should attach a list of awesomeThings to the scope', function () {
-    expect(scope.awesomeThings.length).toBe(3);
+  it('should attach a form data to the scope', function () {
+    expect(scope.form.fields.length).toBeGreaterThan(0);
   });
 });
