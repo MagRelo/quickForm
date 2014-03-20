@@ -1,7 +1,7 @@
 'use strict';
 
 angular.module('quickFormApp')
-  .directive('quickFormField', function ($http, $compile) {
+  .directive('quickFormField', ['$http', '$compile', function ($http, $compile) {
 
     var linkFunction;
     linkFunction = function (scope, element) {
@@ -68,4 +68,4 @@ angular.module('quickFormApp')
       restrict: 'E',
       link: linkFunction
     };
-  });
+  }]);

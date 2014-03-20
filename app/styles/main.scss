@@ -5,12 +5,13 @@ $mg-mid:                #5E6266;
 $mg-dark:               #3C3F42;
 $mg-darkest:            #282B2E;
 
+$brand-info:            #2B7EC0 !default;
 $brand-primary:         #2B7EC0 !default;
 $brand-success:         #27ae60 !default;
 $brand-warning:         #e67e22 !default;
 $brand-danger:          #B95050 !default;
-$brand-info:            #2B7EC0 !default;
 
+// Typography
 $body-bg:               $mg-darkest !default;
 $text-color:            $mg-white !default;
 
@@ -85,11 +86,8 @@ body {
 
 }
 
-//needed for angular-ui conponents
+//*** needed for angular-ui conponents ***//
 .nav, .pagination, .carousel, .panel-title a { cursor: pointer; }
-
-
-//*** bootstrap overrides ***//
 
 
 
@@ -128,7 +126,10 @@ small{
   border-color: $brand-danger;
 }
 
-.well, legend, .panel, .panel-default > .panel-heading {
+.well,
+legend,
+.panel,
+.panel-default > .panel-heading {
   border-color: $mg-mid;
 }
 

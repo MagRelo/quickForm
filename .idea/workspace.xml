@@ -2,7 +2,14 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="d835b246-4b0a-43a1-a368-f08243dbb63d" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/components/output/outputFunctions.js" afterPath="$PROJECT_DIR$/app/components/output/outputFunctions.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/fonts/glyphicons-halflings-regular.eot" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/fonts/glyphicons-halflings-regular.ttf" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/fonts/glyphicons-halflings-regular.woff" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/fonts/glyphicons-halflings-regular.svg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Gruntfile.js" afterPath="$PROJECT_DIR$/Gruntfile.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/components/common/app.js" afterPath="$PROJECT_DIR$/app/components/common/app.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/styles/main.scss" afterPath="$PROJECT_DIR$/app/styles/main.scss" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/components/formpreview/quickformfield.js" afterPath="$PROJECT_DIR$/app/components/formpreview/quickformfield.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="quickForm.iws" />
@@ -12,14 +19,14 @@
     <file path="/index.html" changelist="d835b246-4b0a-43a1-a368-f08243dbb63d" time="1395211832235" ignored="false" />
     <file path="/modelbuilder.js" changelist="d835b246-4b0a-43a1-a368-f08243dbb63d" time="1394679778033" ignored="false" />
     <file path="/modelbuilder.html" changelist="d835b246-4b0a-43a1-a368-f08243dbb63d" time="1394754869064" ignored="false" />
-    <file path="/Dummy.txt" changelist="d835b246-4b0a-43a1-a368-f08243dbb63d" time="1395241355830" ignored="false" />
-    <file path="/main.scss" changelist="d835b246-4b0a-43a1-a368-f08243dbb63d" time="1395218758622" ignored="false" />
+    <file path="/Dummy.txt" changelist="d835b246-4b0a-43a1-a368-f08243dbb63d" time="1395266650996" ignored="false" />
+    <file path="/main.scss" changelist="d835b246-4b0a-43a1-a368-f08243dbb63d" time="1395268214159" ignored="false" />
     <file path="/outputfactory.js" changelist="d835b246-4b0a-43a1-a368-f08243dbb63d" time="1395208709214" ignored="false" />
     <file path="/fieldTypes.js" changelist="d835b246-4b0a-43a1-a368-f08243dbb63d" time="1394315188173" ignored="false" />
     <file path="/formPreview.html" changelist="d835b246-4b0a-43a1-a368-f08243dbb63d" time="1395177884051" ignored="false" />
     <file path="/form.html" changelist="d835b246-4b0a-43a1-a368-f08243dbb63d" time="1394394065650" ignored="false" />
     <file path="/inputTypes.js" changelist="d835b246-4b0a-43a1-a368-f08243dbb63d" time="1395122979140" ignored="false" />
-    <file path="/quickformfield.js" changelist="d835b246-4b0a-43a1-a368-f08243dbb63d" time="1395200587591" ignored="false" />
+    <file path="/quickformfield.js" changelist="d835b246-4b0a-43a1-a368-f08243dbb63d" time="1395269867814" ignored="false" />
     <file path="/_variables.scss" changelist="d835b246-4b0a-43a1-a368-f08243dbb63d" time="1395217207195" ignored="false" />
     <file path="/navbar.html" changelist="d835b246-4b0a-43a1-a368-f08243dbb63d" time="1394512625582" ignored="false" />
     <file path="/.gitignore" changelist="d835b246-4b0a-43a1-a368-f08243dbb63d" time="1394578087711" ignored="false" />
@@ -47,12 +54,13 @@
     <file path="/time.html" changelist="d835b246-4b0a-43a1-a368-f08243dbb63d" time="1395191381102" ignored="false" />
     <file path="/url.html" changelist="d835b246-4b0a-43a1-a368-f08243dbb63d" time="1395191385792" ignored="false" />
     <file path="/date.html" changelist="d835b246-4b0a-43a1-a368-f08243dbb63d" time="1395191200313" ignored="false" />
-    <file path="/app.js" changelist="d835b246-4b0a-43a1-a368-f08243dbb63d" time="1395211906189" ignored="false" />
+    <file path="/app.js" changelist="d835b246-4b0a-43a1-a368-f08243dbb63d" time="1395269487562" ignored="false" />
     <file path="/text.html" changelist="d835b246-4b0a-43a1-a368-f08243dbb63d" time="1395190960092" ignored="false" />
     <file path="/week.html" changelist="d835b246-4b0a-43a1-a368-f08243dbb63d" time="1395191416268" ignored="false" />
     <file path="/month.html" changelist="d835b246-4b0a-43a1-a368-f08243dbb63d" time="1395191323423" ignored="false" />
     <file path="/tel.html" changelist="d835b246-4b0a-43a1-a368-f08243dbb63d" time="1395191370582" ignored="false" />
     <file path="$PROJECT_DIR$/.tmp/styles/main.css" changelist="d835b246-4b0a-43a1-a368-f08243dbb63d" time="1395214795769" ignored="false" />
+    <file path="/Gruntfile.js" changelist="d835b246-4b0a-43a1-a368-f08243dbb63d" time="1395268549739" ignored="false" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -72,28 +80,40 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="outputFunctions.js" pinned="false" current="true" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/app/components/output/outputFunctions.js">
+      <file leaf-file-name="main.scss" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/styles/main.scss">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="94" column="82" selection-start="3283" selection-end="3283" vertical-scroll-proportion="0.46982056">
+            <state line="32" column="52" selection-start="836" selection-end="836" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="app.js" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/components/common/app.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="30" column="86" selection-start="654" selection-end="654" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="quickformfield.js" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/components/formpreview/quickformfield.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="71" column="60" selection-start="1854" selection-end="1854" vertical-scroll-proportion="0.0">
               <folding>
-                <element signature="e#128#180#0" expanded="false" />
-                <element signature="e#338#513#0" expanded="false" />
-                <element signature="e#552#730#0" expanded="false" />
-                <element signature="e#759#876#0" expanded="false" />
-                <element signature="e#904#1020#0" expanded="false" />
-                <element signature="e#1053#1168#0" expanded="false" />
-                <element signature="e#1202#1252#0" expanded="false" />
-                <element signature="e#1285#2226#0" expanded="false" />
-                <element signature="e#2263#2528#0" expanded="false" />
-                <element signature="e#2564#2674#0" expanded="false" />
-                <element signature="e#2773#2930#0" expanded="false" />
-                <element signature="e#3346#3448#0" expanded="false" />
-                <element signature="e#4615#6775#0" expanded="false" />
-                <element signature="e#6817#8570#0" expanded="false" />
-                <element signature="e#8630#8917#0" expanded="false" />
-                <element signature="e#8989#9280#0" expanded="false" />
+                <element signature="e#350#1390#0" expanded="false" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Gruntfile.js" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/Gruntfile.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="308" column="34" selection-start="7600" selection-end="7600" vertical-scroll-proportion="0.11980831">
+              <folding />
             </state>
           </provider>
         </entry>
@@ -116,7 +136,6 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/app/scripts/directives/quickformfield.js" />
         <option value="$PROJECT_DIR$/app/views/formbuilder.html" />
         <option value="$PROJECT_DIR$/app/views/output.html" />
         <option value="$PROJECT_DIR$/app/views/directive-templates/field/radio.html" />
@@ -127,11 +146,12 @@
         <option value="$PROJECT_DIR$/app/scripts/app.js" />
         <option value="$PROJECT_DIR$/app/app.js" />
         <option value="$PROJECT_DIR$/app/bower_components/sass-bootstrap/lib/_variables.scss" />
-        <option value="$PROJECT_DIR$/app/styles/main.scss" />
-        <option value="$PROJECT_DIR$/app/components/formpreview/quickformfield.js" />
         <option value="$PROJECT_DIR$/app/components/output/output.js" />
-        <option value="$PROJECT_DIR$/app/components/common/app.js" />
         <option value="$PROJECT_DIR$/app/components/output/outputFunctions.js" />
+        <option value="$PROJECT_DIR$/app/styles/main.scss" />
+        <option value="$PROJECT_DIR$/app/components/common/app.js" />
+        <option value="$PROJECT_DIR$/app/components/formpreview/quickformfield.js" />
+        <option value="$PROJECT_DIR$/Gruntfile.js" />
       </list>
     </option>
   </component>
@@ -219,46 +239,6 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="quickForm" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="quickForm" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="app" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="components" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="output" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="quickForm" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="quickForm" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="app" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="components" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
         </subPane>
       </pane>
     </panes>
@@ -291,6 +271,7 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/app/fonts" />
       <recent name="$PROJECT_DIR$/app/styles" />
       <recent name="$PROJECT_DIR$/app/views" />
       <recent name="$PROJECT_DIR$/app/scripts/vendor" />
@@ -512,7 +493,11 @@
       <created>1395241364487</created>
       <updated>1395241364487</updated>
     </task>
-    <option name="localTasksCounter" value="41" />
+    <task id="LOCAL-00041" summary="add label text to radio group output">
+      <created>1395266659624</created>
+      <updated>1395266659624</updated>
+    </task>
+    <option name="localTasksCounter" value="42" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -524,7 +509,7 @@
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3262195" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.23309466" sideWeight="0.6737805" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.23309466" sideWeight="0.6737805" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
@@ -580,7 +565,7 @@
     <option name="WRAP_WHEN_TYPING_REACHES_RIGHT_MARGIN" value="false" />
     <option name="FORCE_NON_EMPTY_COMMENT" value="false" />
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="false" />
-    <option name="LAST_COMMIT_MESSAGE" value="further reorganize" />
+    <option name="LAST_COMMIT_MESSAGE" value="add label text to radio group output" />
     <option name="MAKE_NEW_CHANGELIST_ACTIVE" value="false" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="false" />
     <option name="CHECK_FILES_UP_TO_DATE_BEFORE_COMMIT" value="false" />
@@ -594,7 +579,6 @@
     <option name="UPDATE_FILTER_BY_SCOPE" value="false" />
     <option name="SHOW_FILE_HISTORY_AS_TREE" value="false" />
     <option name="FILE_HISTORY_SPLITTER_PROPORTION" value="0.6" />
-    <MESSAGE value="updated output factory" />
     <MESSAGE value="delete form directive, now field only." />
     <MESSAGE value="refactor field directive, add text area input to inputTypes service" />
     <MESSAGE value="unique ids" />
@@ -619,30 +603,12 @@
     <MESSAGE value="generate html for the odd elements" />
     <MESSAGE value="reorganize directory into components" />
     <MESSAGE value="further reorganize" />
+    <MESSAGE value="add label text to radio group output" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/app/components/formpreview/inputTemplates/checkbox.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="3" column="33" selection-start="163" selection-end="163" vertical-scroll-proportion="0.07475083">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/components/common/main.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="11" column="31" selection-start="370" selection-end="370" vertical-scroll-proportion="-6.875" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/.htaccess">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/404.html">
       <provider selected="true" editor-type-id="text-editor">
         <state line="136" column="82" selection-start="2926" selection-end="2926" vertical-scroll-proportion="-8.208333">
@@ -666,11 +632,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/.gitignore">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="6" column="27" selection-start="62" selection-end="62" vertical-scroll-proportion="0.0" />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/bower_components/sass-bootstrap/lib/_variables.scss">
       <provider selected="true" editor-type-id="text-editor">
         <state line="9" column="28" selection-start="181" selection-end="181" vertical-scroll-proportion="0.0">
@@ -685,26 +646,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/styles/main.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="24" column="8" selection-start="700" selection-end="700" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/components/formpreview/formPreview.html">
       <provider selected="true" editor-type-id="text-editor">
         <state line="23" column="32" selection-start="795" selection-end="795" vertical-scroll-proportion="-8.708333">
           <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/components/formpreview/quickformfield.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="69" column="6" selection-start="1824" selection-end="1824" vertical-scroll-proportion="0.0">
-          <folding>
-            <element signature="e#328#1368#0" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -722,16 +667,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/components/common/app.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="11" column="69" selection-start="185" selection-end="185" vertical-scroll-proportion="0.0">
-          <folding>
-            <element signature="e#920#1419#0" expanded="false" />
-            <element signature="e#1485#1977#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/components/formpreview/inputTemplates/radio.html">
       <provider selected="true" editor-type-id="text-editor">
         <state line="9" column="46" selection-start="366" selection-end="366" vertical-scroll-proportion="0.22350994">
@@ -739,9 +674,23 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/.gitattributes">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.gitignore">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="6" column="27" selection-start="62" selection-end="62" vertical-scroll-proportion="0.14376996">
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/app/components/output/outputFunctions.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="94" column="82" selection-start="3283" selection-end="3283" vertical-scroll-proportion="0.46982056">
+        <state line="94" column="82" selection-start="3283" selection-end="3283" vertical-scroll-proportion="0.0">
           <folding>
             <element signature="e#128#180#0" expanded="false" />
             <element signature="e#338#513#0" expanded="false" />
@@ -760,6 +709,36 @@
             <element signature="e#8630#8917#0" expanded="false" />
             <element signature="e#8989#9280#0" expanded="false" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/styles/main.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="32" column="52" selection-start="836" selection-end="836" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/components/common/app.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="30" column="86" selection-start="654" selection-end="654" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/components/formpreview/quickformfield.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="71" column="60" selection-start="1854" selection-end="1854" vertical-scroll-proportion="0.0">
+          <folding>
+            <element signature="e#350#1390#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Gruntfile.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="308" column="34" selection-start="7600" selection-end="7600" vertical-scroll-proportion="0.11980831">
+          <folding />
         </state>
       </provider>
     </entry>

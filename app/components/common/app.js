@@ -35,7 +35,7 @@ angular.module('quickFormApp', [
       });
 
     //decorators for form and ngModel to allow for dynamic naming in form preview
-    $provide.decorator('formDirective', function($delegate) {
+    $provide.decorator('formDirective',['$delegate', function($delegate) {
       var form = $delegate[0], controller = form.controller;
       form.controller = ['$scope', '$element', '$attrs', '$injector', function(scope, element, attrs, $injector) {
         var $interpolate = $injector.get('$interpolate');
@@ -47,8 +47,8 @@ angular.module('quickFormApp', [
         });
       }];
       return $delegate;
-    });
-    $provide.decorator('ngModelDirective', function($delegate) {
+    }]);
+    $provide.decorator('ngModelDirective', ['$delegate', function($delegate) {
       var ngModel = $delegate[0], controller = ngModel.controller;
       ngModel.controller = ['$scope', '$element', '$attrs', '$injector', function(scope, element, attrs, $injector) {
         var $interpolate = $injector.get('$interpolate');
@@ -60,7 +60,7 @@ angular.module('quickFormApp', [
         });
       }];
       return $delegate;
-    });
+    }]);
 
   }])
 
