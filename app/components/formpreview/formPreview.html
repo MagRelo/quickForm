@@ -11,10 +11,10 @@
 
             <fieldset>
                 <legend>
-                    <span class="h4">{{form.name}}</span>
+                    <span class="h4">{{formData.name}}</span>
                 </legend>
 
-                <div  class="form-group" data-ng-repeat="field in form.fields">
+                <div  class="form-group" data-ng-repeat="field in formData.fields">
 
                     <!--field label-->
                     <label for="{{field.id}}">{{field.display_name}}
@@ -23,12 +23,12 @@
                             (required)
                         </small>
                         <!--invalid-->
-                        <span class="text-danger validationSpacer" data-ng-show="elementForm.{{field.name}}.$invalid && elementForm.{{field.name}}.$dirty">
+                        <span class="text-danger validationSpacer" data-ng-show="elementForm.{{field.name}}.mgl_displayErrorIcon()">
                             <span class="glyphicon glyphicon-remove"></span>
                         </span>
 
                         <!--valid-->
-                        <span class="text-success validationSpacer" data-ng-show="elementForm.{{field.name}}.$valid && elementForm.{{field.name}}.$dirty && elementForm.{{field.name}}.$modelValue !== '' ">
+                        <span class="text-success validationSpacer" data-ng-show="elementForm.{{field.name}}.mgl_displaySuccessIcon()">
                             <span class="glyphicon glyphicon-ok"></span>
                         </span>
                     </label>
@@ -39,7 +39,41 @@
                 </div>
 
             </fieldset>
+
+
+
         </form>
     </div>
 
+
+    <div class="text-center">
+        <h4>
+            <span>form status: </span>
+
+            <span ng-show="elementForm.$invalid">
+                <button class="btn btn-danger">Invalid</button>
+            </span>
+
+            <span ng-show="elementForm.$valid">
+                <button class="btn btn-success">Valid</button>
+            </span>
+
+            <!--<span class="text-success" ng-show="elementForm.$valid" >form is valid</span>-->
+        </h4>
+
+
+
+        <!--<h4>-->
+            <!--<span>required: </span>-->
+            <!--<span class="text-info" ng-repeat="field in elementForm.$error.required">{{field.mgl_displayName + ', '}}</span>-->
+        <!--</h4>-->
+
+        <!--<h4>-->
+            <!--<span>required fields: </span>-->
+            <!--<span class="text-info mgl_box" ng-repeat="field in elementForm.$error.required">{{field.mgl_displayName}}</span>-->
+        <!--</h4>-->
+    </div>
+
+
 </div>
+

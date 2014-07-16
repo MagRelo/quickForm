@@ -15,7 +15,7 @@ angular.module('quickFormApp')
         };
         scope.today();
 
-        scope.showWeeks = true;
+        scope.showWeeks = false;
         scope.toggleWeeks = function () {
           scope.showWeeks = !scope.showWeeks;
         };
@@ -24,25 +24,14 @@ angular.module('quickFormApp')
           scope.dt = null;
         };
 
-        // Disable weekend selection
-        scope.disabled = function (date, mode) {
-          return ( mode === 'day' && ( date.getDay() === 0 || date.getDay() === 6 ) );
-        };
-
-        scope.toggleMin = function () {
-          scope.minDate = ( scope.minDate ) ? null : new Date();
-        };
-        scope.toggleMin();
-
         scope.open = function (event) {
           event.preventDefault();
           event.stopPropagation();
-
           scope.opened = !scope.opened;
         };
 
         scope.dateOptions = {
-          'year-format': "'yy'",
+          'year-format': "'yyyy'",
           'starting-day': 1
         };
 
@@ -50,21 +39,18 @@ angular.module('quickFormApp')
         scope.format = scope.formats[0];
       }
 
+      //set template URL
       var templateUrl = './components/formpreview/inputTemplates/' + scope.field.input_type + '.html';
 
-      //get field template
+      //get template
       $http.get(templateUrl).success(function (data) {
         element.html(data);
         $compile(element.contents())(scope);
       });
 
-      //prevents FOUC flicker - pre-render???
-      element.html('');
-
     };
 
     return {
-      template: '<div>{{field}}</div>',
       restrict: 'E',
       link: linkFunction
     };

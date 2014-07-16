@@ -193,17 +193,27 @@ pre{
 }
 
 
-.mg_github_well{
-  position: absolute;
-  right: 20px;
-  z-index: 9999;
-  pointer-events: auto;
-  padding: 0;
+a.mg_github{
+  margin-top: 2px;
+  color: $mg-white;
+  text-decoration: none;
+  padding: 7px 0 9px 13px;
+  background-color: $mg-dark;
+  border: solid 1px $mg-mid;
   border-radius: 20px;
 }
 
-.mg_github_well > label > a,
-.mg_github_well > label > a:hover,{
-  color: $mg-white;
-  padding: 0 5px 0 15px;
+a.mg_github:hover{
+  background-color: $mg-mid;
+  text-shadow: $mg-darkest 1px 1px 2px;
+}
+
+.github_img{
+  margin-top: 4px;
+}
+
+.mgl_box{
+  border: 1px solid;
+  padding: 5px;
+  margin: 5px;
 }

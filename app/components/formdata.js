@@ -156,6 +156,18 @@ angular.module('quickFormApp')
 
     };
 
+    this.displayValue =  function(fieldName){
+      var displayName = '';
+
+      angular.forEach(this.fields, function(field){
+        if(field.name === fieldName){
+          displayName = field.display_name;
+        }
+      });
+
+      return displayName;
+    };
+
     return this;
   });
 

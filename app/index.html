@@ -36,17 +36,20 @@
     <![endif]-->
 
     <!-- Add your site or application content here -->
-    <div class="well mg_github_well hidden-xs">
-        <label><a href="https://github.com/magrelo/quickForm">View on GitHub</a></label>
-        <img src="fonts/GitHub-Mark-Light-32px.png">
-    </div>
+
 
     <div class="container">
 
-        <div class="headerBox">
-            <div class="header">
-                <h1>generate forms & backend models</h1>
-            </div>
+        <div class="header">
+
+            <a class="pull-right" href="https://github.com/magrelo/quickForm">
+                <img class="github_img" src="fonts/GitHub-Mark-Light-32px.png">
+            </a>
+
+            <h1>quick form
+                <small>generate html forms & backend models</small>
+            </h1>
+
         </div>
 
         <div data-ng-view=""></div>
@@ -83,8 +86,8 @@
     <!-- endbuild -->
 
         <!-- build:js({.tmp,app}) scripts/scripts.js -->
-        <script src="components/common/app.js"></script>
-        <script src="components/common/formdata.js"></script>
+        <script src="components/app.js"></script>
+        <script src="components/formdata.js"></script>
         <script src="components/formbuilder/inputTypes.js"></script>
         <script src="components/formbuilder/formbuilder.js"></script>
         <script src="components/formpreview/quickformfield.js"></script>

@@ -11,7 +11,7 @@ angular.module('quickFormApp', [
   .config(['$routeProvider', function($routeProvider) {
     $routeProvider
       .when('/', {
-        templateUrl: 'components/common/main.html'
+        templateUrl: 'components/main.html'
       })
       .otherwise({
         redirectTo: '/'
@@ -31,36 +31,70 @@ angular.module('quickFormApp', [
   .config(['$provide', '$routeProvider', function($provide, $routeProvider) {
     $routeProvider
       .when('/formpreview', {
-        templateUrl: 'components/formpreview/formpreview.html'
+        templateUrl: 'components/formpreview/formPreview.html'
       });
 
-    //decorators for form and ngModel to allow for dynamic naming in form preview
-    $provide.decorator('formDirective',['$delegate', function($delegate) {
-      var form = $delegate[0], controller = form.controller;
-      form.controller = ['$scope', '$element', '$attrs', '$injector', function(scope, element, attrs, $injector) {
-        var $interpolate = $injector.get('$interpolate');
-        attrs.$set('name', $interpolate(attrs.name || attrs.ngForm || '')(scope));
-        $injector.invoke(controller, this, {
-          '$scope': scope,
-          '$element': element,
-          '$attrs': attrs
-        });
-      }];
-      return $delegate;
-    }]);
+
+
+
+
     $provide.decorator('ngModelDirective', ['$delegate', function($delegate) {
+
       var ngModel = $delegate[0], controller = ngModel.controller;
+
       ngModel.controller = ['$scope', '$element', '$attrs', '$injector', function(scope, element, attrs, $injector) {
+
+        //use $injector to get the interpolate service
         var $interpolate = $injector.get('$interpolate');
-        attrs.$set('name', $interpolate(attrs.name || '')(scope));
+
+        //use the $interpolate service to evaluate the name expression and set attribute
+        attrs.$set('name', $interpolate(attrs.name  || '')(scope));
+
+
+        if(scope.field){
+          this.mgl_displayName = scope.field.display_name || '';
+        }
+
+        this.mgl_displayErrorIcon = function(){
+
+          return this.$dirty && this.$invalid;
+        };
+
+
+        this.mgl_displaySuccessIcon = function(){
+
+          return this.$valid && this.$dirty && this.$modelValue !== '';
+        };
+
+        this.mgl_errorArray = function(){
+          var errorFields = [];
+
+          //angular.forEach(this.function)
+        };
+
+
+        //invoke will use these locals first
         $injector.invoke(controller, this, {
           '$scope': scope,
           '$element': element,
           '$attrs': attrs
         });
       }];
+
       return $delegate;
     }]);
+
+
+//    $provide.decorator('formDirective', function($delegate) {
+//
+//      var directive = $delegate[0];
+//      var controllerFunction = directive.controller;
+//
+//      directive.controller[5] = controllerFunction;
+//
+//      return $delegate;
+//    });
+
 
   }])
 
